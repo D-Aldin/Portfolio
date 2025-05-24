@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: fontPoppins;
+  src: url(./assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: fontPoppins;
+  // display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

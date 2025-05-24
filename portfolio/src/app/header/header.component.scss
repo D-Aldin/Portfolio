@@ -1,0 +1,9 @@
+@import "./../../../src/styles/variables";
+
+header {
+  background-color: $backgorund-primary-color;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
