@@ -1,9 +1,71 @@
 @import "./../../../src/styles/variables";
+@import "./../../../src/styles/mixins";
 
 header {
-  background-color: $backgorund-primary-color;
-  width: 100%;
+  background-color: $background-primary-color;
   height: 100px;
+  padding: 0 100px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .logo {
+      margin: 0;
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-left: 10px;
+        height: 50px;
+        width: 165px;
+      }
+    }
+
+    .nav-links-wrapper {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 100px;
+
+      .navigation-links {
+        display: flex;
+        gap: 30px;
+        font-size: 21px;
+
+        a {
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            color: $color-green;
+          }
+        }
+      }
+
+      .lang {
+        display: flex;
+        gap: 10px;
+
+        button {
+          width: 38px;
+          height: 32px;
+          border-radius: 10px;
+          background: none;
+          border: 1px solid white;
+          color: white;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $color-purple;
+            border-color: $color-purple;
+          }
+        }
+      }
+    }
+  }
 }

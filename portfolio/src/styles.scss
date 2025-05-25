@@ -1,6 +1,6 @@
 @font-face {
   font-family: fontPoppins;
-  src: url(./assets/fonts/Poppins/Poppins-Medium.ttf);
+  src: url(./assets/fonts/Poppins/Poppins-Light.ttf);
 }
 
 * {
@@ -15,7 +15,6 @@ html {
 
 body {
   font-family: fontPoppins;
-  // display: flex;
   flex-direction: column;
   height: 100vh;
 }
