@@ -13,6 +13,7 @@ section {
 
     .hero-wrapper {
       display: flex;
+      margin: 0;
     }
 
     .shadows {
@@ -44,6 +45,10 @@ section {
       }
 
       .title-text {
+        display: flex;
+        flex-direction: column;
+        padding-top: 80px;
+
         .name {
           margin: 0;
           display: flex;
@@ -61,6 +66,20 @@ section {
           h2 {
             font-size: 58px;
             color: $color-purple;
+          }
+        }
+
+        .lets-talk {
+          button {
+            margin-top: 40px;
+            width: 165px;
+            height: 58px;
+            @include button-style();
+
+            &:hover {
+              background-color: $color-purple;
+              transform: scale(1.2);
+            }
           }
         }
       }
