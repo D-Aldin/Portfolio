@@ -7,7 +7,7 @@ import { HeroComponent } from './hero/hero.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, HeaderComponent],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, HeroComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
