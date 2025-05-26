@@ -7,6 +7,9 @@ header {
   padding: 0 100px;
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 
   nav {
     @include flex-center($justify: space-between);
