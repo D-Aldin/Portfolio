@@ -20,11 +20,23 @@ section {
 
 .hero-image-container {
   margin: 0;
+  position: relative;
+}
 
-  img {
-    width: 790px;
-    height: 790px;
-  }
+.shadow-img {
+  width: 790px;
+  height: 790px;
+}
+
+.me {
+  width: 69%;
+  max-width: 539px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -22.51%);
+  z-index: 1000;
 }
 
 .title-container {
@@ -87,11 +99,11 @@ section {
   position: absolute;
   top: 175px;
   width: 100%;
+}
 
-  img {
-    width: 100%;
-    height: auto;
-  }
+.hero-background-image {
+  min-width: 1900px !important;
+  height: auto !important;
 }
 
 .social-container {
