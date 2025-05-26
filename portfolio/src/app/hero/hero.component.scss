@@ -5,103 +5,143 @@ section {
   background-color: $background-primary-color;
   width: 100%;
   height: 100vh;
+}
 
-  .hero-content {
-    @include flex-center($justify: flex-start);
-    position: relative;
-    padding-top: 130px;
+.hero-content {
+  @include flex-center($justify: flex-start);
+  position: relative;
+  padding-top: 130px;
+}
 
-    .hero-wrapper {
-      display: flex;
-      margin: 0;
-    }
+.hero-wrapper {
+  display: flex;
+  margin: 0;
+}
 
-    .hero-image-container {
-      margin: 0;
+.hero-image-container {
+  margin: 0;
 
-      img {
-        width: 790px;
-        height: 790px;
-      }
-    }
-
-    .title-container {
-      display: grid;
-      grid-template-columns: 110px 630px;
-      grid-template-rows: 200px 80px;
-      align-items: center;
-      margin: 0;
-      color: white;
-      width: 100%;
-      height: 100%;
-      z-index: 999;
-
-      .vertical-text {
-        margin: 0;
-        display: flex;
-        writing-mode: vertical-rl;
-        transform: rotate(180deg);
-        font-size: 64px;
-      }
-
-      .title-text {
-        display: flex;
-        flex-direction: column;
-        padding-top: 80px;
-
-        .name {
-          margin: 0;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-
-          h1 {
-            font-family: fontPoppinsBold;
-            font-size: 90px;
-            margin: 0;
-          }
-        }
-
-        .frontend-text {
-          h2 {
-            font-size: 58px;
-            color: $color-purple;
-          }
-        }
-
-        .lets-talk {
-          button {
-            margin-top: 40px;
-            width: 165px;
-            height: 58px;
-            @include button-style();
-
-            &:hover {
-              background-color: $color-purple;
-              transform: scale(1.2);
-            }
-          }
-        }
-      }
-    }
+  img {
+    width: 790px;
+    height: 790px;
   }
+}
 
-  .background-hero {
-    // display: none;
-    position: absolute;
-    top: 175px;
+.title-container {
+  display: grid;
+  grid-template-columns: 110px 630px;
+  grid-template-rows: 200px 80px;
+  align-items: center;
+  margin: 0 0 0 200px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.vertical-text {
+  margin: 0;
+  display: flex;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 64px;
+}
+
+.title-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+.name {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h1 {
+    font-family: fontPoppinsBold;
+    font-size: 90px;
+    margin: 0;
+  }
+}
+
+.frontend-text h2 {
+  font-size: 58px;
+  color: $color-purple;
+}
+
+.lets-talk button {
+  margin-top: 40px;
+  width: 165px;
+  height: 58px;
+  @include button-style();
+
+  &:hover {
+    background-color: $color-purple;
+    transform: scale(1.2);
+  }
+}
+
+.hero-background {
+  position: absolute;
+  top: 175px;
+  width: 100%;
+
+  img {
     width: 100%;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
+    height: auto;
   }
+}
 
-  .social-buttons-container {
-    display: flex;
-    z-index: 999;
-    position: relative;
-    bottom: 140px;
+.social-container {
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    margin: 0px;
+    width: 30px;
+    height: 30px;
   }
+}
+
+.scroll {
+  margin: 0;
+  writing-mode: vertical-rl;
+  margin-right: 150px;
+
+  h3 {
+    color: white;
+  }
+}
+
+.social-buttons {
+  display: flex;
+  margin: 0 45px 0 45px;
+  gap: 50px;
+}
+
+.line {
+  border: 2px solid $color-purple;
+  border-radius: 0px 10px 10px 0px;
+  width: 110px;
+  height: 2px;
+  margin: 0;
+}
+
+.email {
+  margin: 0;
+}
+
+.social-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  position: relative;
+  bottom: 946px;
 }
