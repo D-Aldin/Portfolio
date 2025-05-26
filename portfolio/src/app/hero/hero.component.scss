@@ -16,7 +16,7 @@ section {
       margin: 0;
     }
 
-    .shadows {
+    .hero-image-container {
       margin: 0;
 
       img {
@@ -87,12 +87,21 @@ section {
   }
 
   .background-hero {
+    // display: none;
     position: absolute;
     top: 175px;
     width: 100%;
 
     img {
       width: 100%;
+      height: auto;
     }
+  }
+
+  .social-buttons-container {
+    display: flex;
+    z-index: 999;
+    position: relative;
+    bottom: 140px;
   }
 }
