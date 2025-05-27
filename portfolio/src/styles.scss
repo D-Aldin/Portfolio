@@ -8,6 +8,11 @@
   src: url(./assets/fonts/Poppins/Poppins-Bold.ttf);
 }
 
+@font-face {
+  font-family: fontPoppinsMedium;
+  src: url(./assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0 auto;
@@ -24,6 +29,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(19, 28, 46);
+  overflow-x: hidden;
 }
 
 main {

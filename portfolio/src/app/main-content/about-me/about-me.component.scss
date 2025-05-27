@@ -1,0 +1,55 @@
+@import "../../../styles/variables";
+@import "./../../../styles/mixins";
+
+section {
+  @include flex-center($justify: "space-between");
+  z-index: 1001;
+  position: relative;
+}
+
+.about-me-container {
+  color: white;
+  padding-left: 100px;
+  margin: 0;
+
+  h1 {
+    font-size: 90px;
+    font-family: fontPoppinsMedium;
+  }
+}
+
+.portrait-container {
+  @include flex-center();
+  margin: 0;
+
+  img {
+    width: 453px;
+    height: 453px;
+    border: 4px solid $color-green;
+    border-radius: 50%;
+    margin: 0;
+  }
+
+  .line {
+    border: 2px solid $color-green;
+    width: 300px;
+    height: 2px;
+    margin: 0;
+  }
+}
+
+.shadow {
+  width: 100%;
+  height: auto;
+}
+
+.shadow-image {
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 100%;
+    transform: translateX(-50%);
+    bottom: -160px;
+  }
+}
