@@ -1,26 +1,35 @@
 <section>
-    <div class="my-skills-container">
-        <div class="stack">
-            <div class="grid-container">
-               <div *ngFor="let icon of skillsIcons">
-                <img [src]="icon" [alt]="icon">
-               </div>
+   <div class="my-skills-container">
+      <div class="stack">
+         <div class="grid-container">
+            <div *ngFor="let icon of skillsIcons">
+               <img [src]="icon" [alt]="icon">
             </div>
-        </div>
-        <div class="my-skills">
-            <div class="title">
-                <h1>My skills</h1>
-                <div class="line"></div>
+         </div>
+      </div>
+      <div class="my-skills">
+        
+         <div class="text-container">
+             <div class="title">
+            <h1>My skills</h1>
+            <div class="line-container">
+                  <div class="line"></div>
             </div>
+          
+         </div>
             <div class="tech-experience">
-                <span>
-                    I've built several front-end projects using different tools. In my Join Kanban app, I worked with HTML, CSS, JavaScript, and Firebase. I created a Valkyrie game using OOP in JavaScript, and built Pokémon Desk with a REST API. I also enjoy working with TypeScript, Angular, Material Design, and using Git in Scrum-based teams.
-                </span>
+               <h3>
+                  I've built several front-end projects using different tools. In my Join Kanban app, I worked with HTML, CSS, JavaScript, and Firebase. I created a Valkyrie game using OOP in JavaScript, and built Pokémon Desk with a REST API. I also enjoy working with TypeScript, Angular, Material Design, and using Git in Scrum-based teams.
+               </h3>
             </div>
-
-            
-            
-            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis doloremque illum perferendis tenetur suscipit quae fugit cum ea asperiores, harum nemo recusandae aliquid sed adipisci dicta reprehenderit fugiat sit eius.</span>
-        </div>
-    </div>
+            <div class="another-skill">
+               <h2>Looking for <span>another skill</span>?</h2>
+               <h3>I'm always excited to learn new technologies and frameworks. I enjoy exploring how different tools work together to build better, faster, and more dynamic applications. Whether it's diving into a new JavaScript framework, experimenting with backend services like Firebase, or refining UI with modern design systems, I love the challenge of staying up to date and constantly improving my skills.</h3>
+            </div>
+            <div class="button-container">
+               <button>Get in touch</button>
+            </div>
+         </div>
+      </div>
+   </div>
 </section>

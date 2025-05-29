@@ -2,21 +2,81 @@
 @import "./../../../styles/mixins";
 
 section {
+  margin-top: 90px;
   padding: 50px 0 0 100px;
   color: white;
 }
 
 .my-skills-container {
+  @include flex-center();
+  gap: 300px;
+}
+
+.my-skills {
+  text-align: right;
+
+  h3 {
+    font-family: fontPoppins;
+    font-weight: normal;
+  }
+}
+
+.title {
   display: flex;
   align-items: center;
+  h1 {
+    font-size: 90px;
+    font-family: fontPoppinsMedium;
+    margin-right: 0;
+  }
+}
+
+.line-container {
+  position: absolute;
+  right: 0;
+}
+
+.line {
+  width: 70px;
+  height: 2px;
+  border: 3px solid;
+  border-color: $color-purple;
+  margin: 0;
+}
+
+.text-container {
+  padding-right: 100px;
+}
+
+.another-skill {
+  margin-bottom: 40px;
+
+  h2 {
+    margin: 20px 0 20px 0;
+  }
+
+  h2,
+  span {
+    font-size: 32px;
+    font-family: fontPoppinsMedium;
+  }
+
+  span {
+    color: $color-purple;
+  }
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-template-rows: 3;
 
   img {
     padding: 30px;
   }
+}
+
+button {
+  width: 200px;
+  height: 58px;
+  @include button-style($color-green);
 }

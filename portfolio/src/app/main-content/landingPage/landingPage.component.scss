@@ -87,7 +87,7 @@ section {
   margin-top: 40px;
   width: 165px;
   height: 58px;
-  @include button-style();
+  @include button-style($color-green);
 
   &:hover {
     background-color: $color-purple;
