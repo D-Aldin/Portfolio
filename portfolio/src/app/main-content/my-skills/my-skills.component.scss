@@ -1,0 +1,22 @@
+@import "../../../styles/variables";
+@import "./../../../styles/mixins";
+
+section {
+  padding: 50px 0 0 100px;
+  color: white;
+}
+
+.my-skills-container {
+  display: flex;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 3;
+
+  img {
+    padding: 30px;
+  }
+}

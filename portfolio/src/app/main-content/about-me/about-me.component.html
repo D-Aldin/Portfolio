@@ -2,20 +2,17 @@
     <div class="about-me-container">
         <div class="title">
             <h1>About me</h1>
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ducimus expedita voluptates, tenetur praesentium et error? <br>Rerum dolores cupiditate, cumque voluptate illum, ea facilis a nulla ipsam hic voluptates ex!</h4>
+            <h4>My journey into programming began with curiosity especially when 
+                I discovered Python. I was fascinated by how such a simple and readable 
+                language could be used to automate tasks and understand the logic behind software. 
+                After gaining a solid foundation with Python, I shifted my focus to web development and started learning HTML, CSS, and JavaScript. I was drawn to the visual and interactive side of coding being able to create something users can see and interact with in real time was incredibly motivating.</h4>
         </div>
-        <div class="location">
-            <span>some text</span>
-            <img src="./../../../assets/icons/about/Capa_small.png" alt="location">
+        <div *ngFor="let block of aboutBlocks" [class]="block.cssClass">
+                <img [src]="block.icon" [alt]="block.alt" />
+                <span>{{ block.text }}</span>
         </div>
-        <div class="improving">
-            <span>some text</span>
-            <img src="./../../../assets/icons/about/Vector_small.png" alt="light bulb">
-        </div>
-        <div class="problem-solving">
-            <span>some text</span>
-            <img src="./../../../assets/icons/about/puzzle_small.png" alt="puzzle">
-        </div>
+
+   
     </div>
     <div class="portrait-container">
         <img src="./../../../assets/img/me2.png" alt="">
@@ -24,8 +21,7 @@
     <div class="shadow-container">
         <div class="shadow-image">
             <img src="./../../../assets/img/aboutImages/30. Purple shadow about me.png" alt="">
-        </div>
-        
+        </div> 
     </div>
     
 </section>
