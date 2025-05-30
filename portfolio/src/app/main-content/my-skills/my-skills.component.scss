@@ -80,3 +80,14 @@ button {
   height: 58px;
   @include button-style($color-green);
 }
+
+.shadow-image {
+  position: relative;
+
+  img {
+    position: absolute;
+    right: 100%;
+    transform: translateX(27%);
+    top: -318px;
+  }
+}
