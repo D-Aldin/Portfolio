@@ -7,15 +7,15 @@
         </div>
     </div>
 
-    
     <div class="guide">
         <h3>Explore a selection of my work here- Interact with projects to see my skills in action</h3>
     </div>
 
-    @for(project of projects; track project.name){
+
+        @for(project of projects; track project.name){
         <app-projects [project]="project"></app-projects>
     }
 
-   
 
+    
 </section>

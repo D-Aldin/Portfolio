@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 interface projects {
   name: string;
+  description: string;
   technology: string[];
   image: string;
 }

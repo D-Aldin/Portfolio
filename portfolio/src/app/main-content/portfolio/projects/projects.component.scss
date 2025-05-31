@@ -1,4 +1,39 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
 .content-wrapper {
   display: flex;
   align-items: center;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 32px;
+  font-family: fontPoppinsBold;
+  color: $color-purple;
+}
+
+.tech {
+  display: flex;
+  align-items: center;
+
+  h4,
+  span {
+    margin: 0;
+    font-size: 23px;
+    font-weight: normal;
+    color: $color-green;
+    white-space: pre-wrap;
+  }
+}
+
+.description {
+  h5 {
+    font-size: 16px;
+    font-weight: normal;
+  }
 }
