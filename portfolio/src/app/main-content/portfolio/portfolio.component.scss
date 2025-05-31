@@ -10,16 +10,26 @@ section {
 
 .first-line {
   @include purple-line();
+  position: absolute;
+  right: 100%;
 }
 
 .secound-line {
-  @include purple-line($width: 550px);
+  @include purple-line($width: calc(100% + 370px));
+  position: absolute;
+  left: 100%;
 }
 
-.title {
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 
   h1 {
     margin: 0 20px 0 20px;
@@ -27,5 +37,17 @@ section {
     text-align: center;
     font-size: 90px;
     font-family: fontPoppinsMedium;
+    order: 2;
+  }
+}
+
+.guide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    font-family: fontPoppins;
+    font-weight: normal;
   }
 }

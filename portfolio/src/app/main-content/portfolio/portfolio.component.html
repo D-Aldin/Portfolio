@@ -1,11 +1,21 @@
 <section>
-    <div class="title">
-        <div class="first-line"></div>
-        <h1>Portfolio</h1>
-        <div class="secound-line"></div>
+    <div class="title-wrapper">
+        <div class="title-container">
+            <div class="first-line"></div>
+            <h1>Portfolio</h1>
+            <div class="secound-line"></div>
+        </div>
     </div>
-    <div class="guideline">
+
+    
+    <div class="guide">
         <h3>Explore a selection of my work here- Interact with projects to see my skills in action</h3>
     </div>
+
+    @for(project of projects; track project.name){
+        <app-projects [project]="project"></app-projects>
+    }
+
+   
 
 </section>
