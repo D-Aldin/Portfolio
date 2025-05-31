@@ -139,11 +139,7 @@ section {
 }
 
 .line {
-  border: 2px solid $color-purple;
-  border-radius: 0px 10px 10px 0px;
-  width: 110px;
-  height: 2px;
-  margin: 0;
+  @include purple-line($width: 110px);
 }
 
 .email {
