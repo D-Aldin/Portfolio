@@ -3,6 +3,7 @@ import { HeaderComponent } from './header/header.component';
 import { LandingPageComponent } from './landingPage/landingPage.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @Component({
   selector: 'app-main-content',
@@ -12,6 +13,7 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
     LandingPageComponent,
     AboutMeComponent,
     MySkillsComponent,
+    PortfolioComponent,
   ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss',

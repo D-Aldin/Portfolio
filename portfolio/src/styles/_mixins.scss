@@ -16,3 +16,11 @@
   color: white;
   font-size: 23px;
 }
+
+@mixin purple-line($width: 100px, $margin: 0) {
+  border: 2px solid rgb(151, 71, 255);
+  border-radius: 0px 10px 10px 0px;
+  width: $width;
+  height: 2px;
+  margin: $margin;
+}

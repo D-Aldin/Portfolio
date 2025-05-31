@@ -1,0 +1,31 @@
+@import "../../../styles/variables";
+@import "./../../../styles/mixins";
+
+section {
+  //   display: flex;
+  margin-top: 300px;
+  color: white;
+  margin-top: 140px;
+}
+
+.first-line {
+  @include purple-line();
+}
+
+.secound-line {
+  @include purple-line($width: 550px);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  h1 {
+    margin: 0 20px 0 20px;
+    font-size: 90px;
+    text-align: center;
+    font-size: 90px;
+    font-family: fontPoppinsMedium;
+  }
+}

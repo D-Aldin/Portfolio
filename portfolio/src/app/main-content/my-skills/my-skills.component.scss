@@ -24,6 +24,7 @@ section {
 .title {
   display: flex;
   align-items: center;
+  gap: 30px;
   h1 {
     font-size: 90px;
     font-family: fontPoppinsMedium;
@@ -37,11 +38,7 @@ section {
 }
 
 .line {
-  width: 70px;
-  height: 2px;
-  border: 3px solid;
-  border-color: $color-purple;
-  margin: 0;
+  @include purple-line($width: 70px, $margin: 0);
 }
 
 .text-container {
