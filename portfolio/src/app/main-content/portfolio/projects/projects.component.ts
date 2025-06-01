@@ -18,9 +18,8 @@ interface projects {
 })
 export class ProjectsComponent {
   projects = PROJECTS;
-
+  @Input() isReversed?: boolean;
   @Input({ required: true }) project!: projects;
-  // @Input({ required: true }) technology: string[] = [];
 
   get imagePath() {
     return './../../../../assets/icons/projects/' + this.project.image + '.png';

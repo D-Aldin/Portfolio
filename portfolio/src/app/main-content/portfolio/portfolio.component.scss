@@ -51,3 +51,14 @@ section {
     font-weight: normal;
   }
 }
+
+.shadow {
+  position: relative;
+
+  img {
+    position: absolute;
+    right: 100%;
+    transform: translateX(57%);
+    top: 806px;
+  }
+}

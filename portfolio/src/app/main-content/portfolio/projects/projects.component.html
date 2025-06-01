@@ -1,23 +1,23 @@
-<div class="content-wrapper">
-   <div class="image-container">
+<div class="content-wrapper" [style.flex-direction]="isReversed ? 'row' : 'row-reverse'">
+   <div class="image-container" >
       <img [src]="imagePath" [alt]="project.name">
    </div>
    <div class="text-wrapper">
-      <div class="title">
+          <div class="title" [ngStyle]="{justifyContent: isReversed ? 'flex-start' : 'flex-end', display: 'flex'}">
          <h3>{{project.name}}</h3>
       </div>
-      <div class="tech">
+      <div class="tech" [style.justify-content]="isReversed? 'flex-start' : 'flex-end'">
          <ng-container *ngFor="let tech of project.technology; let i = index">
             <h4>{{ tech }}</h4>
             <span *ngIf="i < project.technology.length - 1"> | </span>
          </ng-container>
       </div>
-      <div class="description">
+      <div class="description" [style.text-align]="isReversed ? 'left' : 'right'">
         <h5>{{project.description}}</h5>
       </div>
-      <div class="buttons-container">
-         <button>Live test</button>
-         <button>Github</button>
+      <div class="buttons-container" [ngStyle]="{justifyContent: isReversed ? 'flex-start' : 'flex-end', alignItems: 'center', display: 'flex'}">
+         <button class="test-btn">Live test</button>
+         <button class="git-btn">Github</button>
       </div>
    </div>
 </div>
