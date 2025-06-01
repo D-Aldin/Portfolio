@@ -1,0 +1,43 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
+.review-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.review-block {
+  padding: 0 50px 0 50px;
+}
+
+.review-container {
+  width: 1171.5px;
+  height: 272px;
+  display: flex;
+  border: 3px solid $color-green;
+  border-radius: 25px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.review-text {
+  padding: 50px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  h3 {
+    display: flex;
+    white-space: nowrap;
+  }
+}
+
+.line-in-review {
+  @include purple-line($width: 95%);
+}
