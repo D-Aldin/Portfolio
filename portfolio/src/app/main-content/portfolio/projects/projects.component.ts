@@ -22,6 +22,10 @@ export class ProjectsComponent {
   @Input({ required: true }) project!: projects;
 
   get imagePath() {
-    return './../../../../assets/icons/projects/' + this.project.image + '.png';
+    return (
+      './../../../../assets/icons/portfolio/projects/' +
+      this.project.image +
+      '.png'
+    );
   }
 }
