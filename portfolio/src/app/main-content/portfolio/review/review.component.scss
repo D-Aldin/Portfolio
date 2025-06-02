@@ -13,7 +13,17 @@
 .review-block {
   display: flex;
   gap: 20px;
-  padding: 0 50px 0 50px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.exclamation {
+  position: relative;
+  img {
+    position: absolute;
+    bottom: 110px;
+    right: -30px;
+  }
 }
 
 .review-container {
@@ -23,11 +33,12 @@
   border: 3px solid $color-green;
   border-radius: 25px;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
 }
 
 .review-text {
-  padding: 50px;
+  padding: 0 50px 0 50px;
+  width: 100%;
 }
 
 .name {
@@ -45,6 +56,22 @@
   @include purple-line($width: 95%);
 }
 
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    border: 3px solid $color-purple;
+    border-radius: 50%;
+    width: 242px;
+    height: 245px;
+  }
+}
+
+.line {
+  @include purple-line($width: 104px);
+}
 .review-buttons {
   display: flex;
   align-items: center;
@@ -57,7 +84,7 @@
 
 .dots-container {
   display: flex;
-  gap: 15px;
+  gap: 35px;
   margin: 15px;
 }
 
