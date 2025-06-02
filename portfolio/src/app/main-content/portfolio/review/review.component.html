@@ -2,19 +2,26 @@
       <div class="review-block">
          <div class="review-container">
             <div class="review-text">
-               <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus laboriosam minima excepturi 
-               ex commodi, sit mollitia vero amet omnis aspernatur eum, cum labore minus praesentium voluptatibus blanditiis beatae nulla nostrum.</span>
+               <span>{{this.reviews[this.counter].review}}</span>
                <div class="name">
                   <div class="line-in-review"></div>
-                  <h3>Dobric Aldin</h3>
+                  <h3>{{this.reviews[this.counter].name}}</h3>
                </div>
             </div>
          </div>
-      </div>
-      <div class="image-container">
+         <div class="image-container">
          <img src="./../../../assets/icons/portfolio/review/Frame 280.png" alt="">
       </div>
+      </div>
+      
+      <div class="review-buttons">
+         <img (click)="backReview()" src="./../../../../assets/icons/portfolio/review/left.png" alt="">
+         <div class="dots-container">
+            @for(review of reviews; let i = $index; track i ) {
+               <div class="dot" [ngClass]="{ 'active-dot': i === this.selectedReview }" id="dot-{{i}}"></div>
+            }
+         </div>
+         <img (click)="nextReview()" src="./../../../../assets/icons/portfolio/review/right.png" alt="">
+      </div>
    </div>
-   <div class="review-buttons">
-    
-   </div>
+ 

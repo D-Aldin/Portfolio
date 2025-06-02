@@ -6,10 +6,13 @@
   align-items: center;
   width: 100%;
   justify-content: center;
+  flex-direction: column;
   margin-top: 20px;
 }
 
 .review-block {
+  display: flex;
+  gap: 20px;
   padding: 0 50px 0 50px;
 }
 
@@ -40,4 +43,32 @@
 
 .line-in-review {
   @include purple-line($width: 95%);
+}
+
+.review-buttons {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 0;
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.dots-container {
+  display: flex;
+  gap: 15px;
+  margin: 15px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: $color-purple;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active-dot {
+  background-color: $color-green;
 }

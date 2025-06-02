@@ -15,24 +15,6 @@
    @for(project of projects; track project.name; let i = $index) {
    <app-projects [project]="project" [isReversed]="i % 2 === 0"></app-projects>
    }
-   <div class="review-wrapper">
-      <div class="review-block">
-         <div class="review-container">
-            <div class="review-text">
-               <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus laboriosam minima excepturi 
-               ex commodi, sit mollitia vero amet omnis aspernatur eum, cum labore minus praesentium voluptatibus blanditiis beatae nulla nostrum.</span>
-               <div class="name">
-                  <div class="line-in-review"></div>
-                  <h3>Dobric Aldin</h3>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="image-container">
-         <img src="./../../../assets/icons/portfolio/review/Frame 280.png" alt="">
-      </div>
-   </div>
-   <div class="review-buttons">
-    
-   </div>
+   
+   <app-review></app-review>
 </section>
