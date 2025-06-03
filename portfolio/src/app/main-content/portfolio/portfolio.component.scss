@@ -62,3 +62,15 @@ section {
     top: 806px;
   }
 }
+
+.shadow-2 {
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 85%;
+    transform: translateX(-57%);
+    top: -410px;
+    rotate: 80deg;
+  }
+}

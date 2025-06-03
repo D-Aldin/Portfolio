@@ -1,0 +1,48 @@
+@import "../../../styles/variables";
+@import "./../../../styles/mixins";
+
+section {
+  margin-top: 200px;
+}
+
+.title {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  .line {
+    @include purple-line($width: 39%);
+    position: absolute;
+    left: 0;
+  }
+
+  h1 {
+    font-size: 90px;
+    font-family: fontPoppinsMedium;
+    order: 2;
+  }
+}
+
+.content-wrapper {
+  padding: 100px 200px 0 200px;
+  gap: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  color: white;
+
+  h2 {
+    font-family: fontPoppinsMedium;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+}
