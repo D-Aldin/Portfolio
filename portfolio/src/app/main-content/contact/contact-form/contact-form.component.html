@@ -1,23 +1,26 @@
 <div class="container">
-  <form>
+  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contact-form">
 
     <label for="name"></label>
-    <input type="text" id="name" name="name" placeholder="Your name">
+    <input [(ngModel)]="contactData.name" minlength="3" type="text" id="name" name="name" placeholder="Your name" required>
 
     <label for="email"></label>
-    <input type="text" id="email" name="email" placeholder="Your email">
+    <input [(ngModel)]="contactData.email" type="text" id="email" name="email" placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
 
     <label for="subject"></label>
-    <textarea id="subject" name="subject" placeholder="Your message" style="height:200px"></textarea>
+    <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="5" id="subject" name="subject" placeholder="Your message" style="height:200px" required></textarea>
+    @if (!message.valid && message.touched && !message.disabled) {
+      <span>Plase enter a massage</span>
+    }
 
     <div class="checkbox">
       <label for="policy">I've read the <span>privacy policy</span> and agree to the processing of my data as outlined</label>
       <input type="checkbox" id="policy" name="policy" value="newsletter">
     </div>
   
-
-    <input type="submit" value="Send message :)">
-    
-
+    <div class="submit-btn">
+       <input type="submit" value="Send message :)">
+    </div>
+   
   </form>
 </div>
