@@ -15,11 +15,11 @@
 
     <div class="checkbox">
       <label for="policy">I've read the <span>privacy policy</span> and agree to the processing of my data as outlined</label>
-      <input type="checkbox" id="policy" name="policy" value="newsletter">
+      <input type="checkbox" id="policy" name="policy" value="newsletter" [(ngModel)] = "isChecked" required >
     </div>
   
     <div class="submit-btn">
-       <input type="submit" value="Send message :)">
+       <input [ngClass]="{'isChecked': isChecked}" type="submit" value="Send message :)">
     </div>
    
   </form>

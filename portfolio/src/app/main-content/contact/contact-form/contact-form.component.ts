@@ -1,27 +1,27 @@
-import { Component, Inject, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
-
 import { NgForm } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [FormsModule, HttpClientModule],
+  imports: [FormsModule, HttpClientModule, CommonModule],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss',
 })
 export class ContactFormComponent {
   http = inject(HttpClient);
+  isChecked: boolean = false;
+  mailTest: boolean = true;
 
   contactData = {
     name: '',
     email: '',
     message: '',
   };
-
-  mailTest = true;
 
   post = {
     endPoint: 'https://www.aldin-dobric.de//sendMail.php',
