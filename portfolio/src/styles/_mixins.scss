@@ -41,3 +41,25 @@
     }
   }
 }
+
+@mixin link-underline($color) {
+  position: relative;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%; /* nur die Hälfte der Breite */
+    height: 2px;
+    background-color: $color;
+    transition: transform 0.3s ease;
+    transform-origin: left bottom;
+    transform: scaleX(0); /* Anfang: unsichtbar */
+  }
+
+  &:hover::before {
+    transform: scaleX(1); /* beim Hover: sichtbar */
+  }
+}

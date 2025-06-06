@@ -8,19 +8,32 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 50px;
+
+  span {
+    font-size: 23px;
+    color: white;
+  }
 }
 
 .logo {
   img {
-    height: 50px;
-    width: 165px;
+    height: 60px;
+    width: 200px;
+  }
+}
+
+.legal-notice {
+  font-size: 16px;
+
+  a {
+    color: white;
+    @include link-underline($color-green);
   }
 }
 
 .social-media {
   display: flex;
   align-items: center;
-
   height: 100%;
   gap: 20px;
   cursor: pointer;
@@ -31,6 +44,7 @@ footer {
       "./../../../../assets/icons/social/git.png",
       "./../../../../assets/icons/social/git_hover.png"
     );
+    // cursor: pointer;
   }
 
   .email {
@@ -49,3 +63,7 @@ footer {
     );
   }
 }
+
+// .underline {
+//   @include link-underline($color-green);
+// }
