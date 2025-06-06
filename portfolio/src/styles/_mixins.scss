@@ -24,3 +24,20 @@
   height: 2px;
   margin: $margin;
 }
+
+@mixin social-media-icon($size: 30px, $icon-url, $hover-url: null) {
+  width: $size;
+  height: $size;
+  background-image: url($icon-url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @if $hover-url != null {
+    &:hover {
+      background-image: url($hover-url);
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
