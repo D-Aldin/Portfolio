@@ -2,15 +2,21 @@
   <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contact-form">
 
     <label for="name"></label>
-    <input [(ngModel)]="contactData.name" minlength="3" type="text" id="name" name="name" placeholder="Your name" required>
+    <input #name="ngModel" [(ngModel)]="contactData.name" minlength="3" type="text" id="name" name="name" placeholder="Your name" required [ngClass]="{'wrong-input': name.invalid && name.touched && !name.disabled, 'error-icon': name.invalid && name.touched && !name.disabled, 'success-icon': !name.invalid && name.touched && !name.disabled}">
+   @if(name.invalid && name.touched && !name.disabled) {
+      <h6 class="wrong-input">Your name is required</h6>
+    }
 
     <label for="email"></label>
-    <input [(ngModel)]="contactData.email" type="text" id="email" name="email" placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-
+    <input #email="ngModel" [(ngModel)]="contactData.email" type="text" id="email" name="email" placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" [ngClass]="{'wrong-input': email.invalid && email.touched && !email.disabled, 'error-icon': email.invalid && email.touched && !email.disabled, 'success-icon': !email.invalid && email.touched && !email.disabled}">
+    @if(email.invalid && email.touched && !email.disabled) {
+      <h6 class="wrong-input">Please enter a valid email</h6>
+    }
+    
     <label for="subject"></label>
-    <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="5" id="subject" name="subject" placeholder="Your message" style="height:200px" required></textarea>
+    <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="5" id="subject" name="subject" placeholder="Your message" style="height:200px" required [ngClass]="{'wrong-input': message.invalid && message.touched && !message.disabled, 'error-icon': message.invalid && message.touched && !message.disabled, 'success-icon': !message.invalid && message.touched && !message.disabled}"></textarea>
     @if (!message.valid && message.touched && !message.disabled) {
-      <span>Plase enter a massage</span>
+      <h6 class="wrong-input">Your message is empty</h6>
     }
 
     <div class="checkbox">

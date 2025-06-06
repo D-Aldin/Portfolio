@@ -1,0 +1,14 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
+footer {
+  margin-top: 120px;
+  border-top: 1px solid $color-green;
+}
+
+.logo {
+  img {
+    height: 50px;
+    width: 165px;
+  }
+}

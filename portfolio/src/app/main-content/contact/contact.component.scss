@@ -46,3 +46,19 @@ section {
     margin-bottom: 20px;
   }
 }
+
+.shadow {
+  width: 100%;
+  height: auto;
+}
+
+.shadow-image {
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 100%;
+    transform: translateX(-50%);
+    bottom: -160px;
+  }
+}
