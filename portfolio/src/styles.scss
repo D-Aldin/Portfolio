@@ -32,8 +32,12 @@ body {
   overflow-x: hidden;
 }
 
-main {
+.page-wrapper {
+  position: relative;
   max-width: 1980px;
-  margin: 0 auto;
-  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
 }
