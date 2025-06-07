@@ -43,7 +43,7 @@ section {
   grid-template-columns: 110px 630px;
   grid-template-rows: 200px 80px;
   align-items: center;
-  margin: 0 0 0 200px;
+  margin: 0 0 0 140px;
   color: white;
   width: 100%;
   height: 100%;
@@ -82,15 +82,23 @@ section {
   color: $color-purple;
 }
 
-.lets-talk button {
-  margin-top: 40px;
-  width: 165px;
-  height: 58px;
-  @include button-style($color-green);
+.lets-talk {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 5px;
 
-  &:hover {
-    background-color: $color-purple;
-    transform: scale(1.2);
+  button {
+    margin-top: 40px;
+    width: 165px;
+    height: 58px;
+    @include button-style($color-green);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $color-purple;
+      transform: scale(1.2);
+    }
   }
 }
 
