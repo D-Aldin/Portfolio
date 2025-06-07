@@ -39,7 +39,7 @@ header {
 
         a {
           color: white;
-          text-decoration: none;
+          @include link-underline($color-green);
 
           &:hover {
             color: $color-green;

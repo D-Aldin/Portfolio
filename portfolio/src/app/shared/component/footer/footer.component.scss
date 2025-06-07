@@ -3,11 +3,15 @@
 
 footer {
   margin-top: 120px;
-  border-top: 1px solid $color-green;
+  border-top: 3px solid rgb(112, 230, 28);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 50px;
+  background-color: rgb(20, 29, 47);
+  z-index: 999;
+  position: relative;
+  height: 291px;
 
   span {
     font-size: 23px;
@@ -44,7 +48,6 @@ footer {
       "./../../../../assets/icons/social/git.png",
       "./../../../../assets/icons/social/git_hover.png"
     );
-    // cursor: pointer;
   }
 
   .email {
@@ -64,6 +67,6 @@ footer {
   }
 }
 
-// .underline {
-//   @include link-underline($color-green);
-// }
+.underline {
+  @include link-underline($color-green);
+}

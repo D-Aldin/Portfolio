@@ -48,17 +48,15 @@ section {
 }
 
 .shadow {
-  width: 100%;
-  height: auto;
-}
-
-.shadow-image {
   position: relative;
 
   img {
     position: absolute;
-    left: 100%;
-    transform: translateX(-50%);
-    bottom: -160px;
+    right: 100%;
+    transform: translateX(70%) translateY(50%);
+    bottom: 20px;
+    z-index: 1;
+    rotate: 11deg;
+    height: 559px;
   }
 }

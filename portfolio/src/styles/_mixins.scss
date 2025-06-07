@@ -51,15 +51,15 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 50%; /* nur die Hälfte der Breite */
+    width: 50%;
     height: 2px;
     background-color: $color;
     transition: transform 0.3s ease;
     transform-origin: left bottom;
-    transform: scaleX(0); /* Anfang: unsichtbar */
+    transform: scaleX(0);
   }
 
   &:hover::before {
-    transform: scaleX(1); /* beim Hover: sichtbar */
+    transform: scaleX(1);
   }
 }
