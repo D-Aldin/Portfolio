@@ -1,24 +1,21 @@
 <section>
-    <div class="about-me-container">
-        <div class="title">
-            <h1>{{langPath.aboueMe.title}}</h1>
-            <h4>{{langPath.aboueMe.description}}</h4>
-        </div>
-        <div *ngFor="let block of aboutBlocks" [class]="block.cssClass">
-                <img [src]="block.icon" [alt]="block.alt" />
-                <span>{{ block.text }}</span>
-        </div>
-
-   
-    </div>
-    <div class="portrait-container">
-        <img src="./../../../assets/img/aboutImages/me.png" alt="">
-        <div class="line"></div>
-    </div>
-    <div class="shadow-container">
-        <div class="shadow-image">
-            <img src="./../../../assets/img/aboutImages/30. Purple shadow about me.png" alt="">
-        </div> 
-    </div>
-    
+   <div class="about-me-container">
+      <div class="title">
+         <h1>{{langPath.aboutMe.title}}</h1>
+         <h4>{{langPath.aboutMe.description}}</h4>
+      </div>
+      <div *ngFor="let block of aboutBlocks; let i = index"  [class]="block.cssClass">
+      <img [src]="block.icon" [alt]="block.alt" />
+      <span>{{langPath.aboutMe.blocks[i]}}</span>
+   </div>
+   </div>
+   <div class="portrait-container">
+      <img src="./../../../assets/img/aboutImages/me.png" alt="">
+      <div class="line"></div>
+   </div>
+   <div class="shadow-container">
+      <div class="shadow-image">
+         <img src="./../../../assets/img/aboutImages/30. Purple shadow about me.png" alt="">
+      </div>
+   </div>
 </section>
