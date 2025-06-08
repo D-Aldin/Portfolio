@@ -1,11 +1,8 @@
 <section>
     <div class="about-me-container">
         <div class="title">
-            <h1>About me</h1>
-            <h4>My journey into programming began with curiosity especially when 
-                I discovered Python. I was fascinated by how such a simple and readable 
-                language could be used to automate tasks and understand the logic behind software. 
-                After gaining a solid foundation with Python, I shifted my focus to web development and started learning HTML, CSS, and JavaScript. I was drawn to the visual and interactive side of coding being able to create something users can see and interact with in real time was incredibly motivating.</h4>
+            <h1>{{langPath.aboueMe.title}}</h1>
+            <h4>{{langPath.aboueMe.description}}</h4>
         </div>
         <div *ngFor="let block of aboutBlocks" [class]="block.cssClass">
                 <img [src]="block.icon" [alt]="block.alt" />

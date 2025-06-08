@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LanguageService } from '../../language';
+import { TRANSLATION } from '../../translation';
 
 @Component({
   selector: 'app-about-me',
@@ -9,6 +11,12 @@ import { CommonModule } from '@angular/common';
   styleUrl: './about-me.component.scss',
 })
 export class AboutMeComponent {
+  constructor(private languageService: LanguageService) {}
+
+  get langPath() {
+    return this.languageService.getCurrentTranslations();
+  }
+
   aboutBlocks = [
     {
       icon: '../../../assets/icons/about/Capa_small.png',

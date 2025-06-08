@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../../language';
+import { TRANSLATION } from '../../translation';
 
 @Component({
   selector: 'app-landingPage',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
   templateUrl: './landingPage.component.html',
   styleUrl: './landingPage.component.scss',
 })
-export class LandingPageComponent {}
+export class LandingPageComponent {
+  constructor(private languageService: LanguageService) {}
+
+  get langPath() {
+    return this.languageService.getCurrentTranslations();
+  }
+}
