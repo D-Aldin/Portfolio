@@ -1,10 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { PROJECTS } from './projects';
 import { CommonModule } from '@angular/common';
+import { LanguageService } from '../../../language';
 
 interface projects {
   name: string;
-  description: string;
+  englishDescription: string;
+  germanDescription: string;
   technology: string[];
   image: string;
 }
@@ -17,6 +19,8 @@ interface projects {
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
+  constructor(private languageService: LanguageService) {}
+
   projects = PROJECTS;
   @Input() isReversed?: boolean;
   @Input({ required: true }) project!: projects;
@@ -27,5 +31,9 @@ export class ProjectsComponent {
       this.project.image +
       '.png'
     );
+  }
+
+  get currentLanguage() {
+    return this.languageService.language;
   }
 }

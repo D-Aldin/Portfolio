@@ -46,7 +46,19 @@ export const TRANSLATION = {
       guide:
         'Explore a selection of my work here – Interact with projects to see my skills in action',
     },
+
+    contact: {
+      title: 'Got a problem to slove?',
+      content:
+        "If you're looking for a passionate and reliable front-end developer to bring your ideas to life, feel free to reach out! I'm always open to new opportunities, collaborations, or just a good conversation about building great digital experiences.\n\
+                Let’s connect and create something meaningful together! I'm a front-end developer with a strong focus on creating user-friendly, responsive, and visually engaging web interfaces. I'm particularly interested in roles where I can work closely with design and backend teams to build seamless user experiences.\n\
+                I bring value to your project by combining clean, maintainable code with a deep understanding of UI/UX principles. I care about performance, accessibility, and making sure the final product not only works great but also feels intuitive to your users. Whether it's optimizing load times, improving mobile responsiveness, or turning complex features into smooth interactions—I make sure your vision becomes reality.\n\
+                Let’s build something exceptional together!",
+      contactMe: 'Need a Frontend developer? Contact me!',
+    },
   },
+
+  // GERMAN ---
 
   de: {
     header: {
@@ -94,6 +106,18 @@ export const TRANSLATION = {
     portfolio: {
       guide:
         'Hier findest du eine Auswahl meiner Arbeiten – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.',
+    },
+
+    contact: {
+      title: 'Ein Problem zu lösen?',
+      content:
+        'Wenn du auf der Suche nach einem leidenschaftlichen und zuverlässigen Frontend-Entwickler bist, der deine Ideen zum Leben erweckt, dann melde dich gerne bei mir! Ich bin offen für neue Chancen, spannende Kooperationen oder einfach ein gutes Gespräch über großartige digitale Erlebnisse.<br><br>\
+    Lass uns vernetzen und gemeinsam etwas Bedeutungsvolles schaffen!\
+    Ich bin ein Frontend-Entwickler mit einem starken Fokus auf benutzerfreundliche, responsive und visuell ansprechende Web-Oberflächen. Besonders interessiere ich mich für Rollen, in denen ich eng mit Design- und Backend-Teams zusammenarbeiten kann, um nahtlose Nutzererfahrungen zu gestalten.<br><br>\
+    Ich bringe echten Mehrwert für dein Projekt, indem ich sauberen, wartbaren Code mit einem tiefen Verständnis für UI/UX-Prinzipien verbinde. Dabei lege ich großen Wert auf Performance, Barrierefreiheit und ein intuitives Nutzungserlebnis. Ob es darum geht, Ladezeiten zu optimieren, die mobile Darstellung zu verbessern oder komplexe Features in reibungslose Interaktionen zu verwandeln – ich sorge dafür, dass deine Vision Wirklichkeit wird.<br><br>\
+    Lass uns gemeinsam etwas Außergewöhnliches erschaffen!',
+      contactMe:
+        'Brauchen Sie einen Frontend-Entwickler? Kontaktieren Sie mich!',
     },
   },
 };

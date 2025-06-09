@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LanguageService } from '../../language';
 
 @Component({
   selector: 'app-my-skills',
@@ -9,6 +10,12 @@ import { CommonModule } from '@angular/common';
   styleUrl: './my-skills.component.scss',
 })
 export class MySkillsComponent {
+  constructor(private languageService: LanguageService) {}
+
+  get langPath() {
+    return this.languageService.getCurrentTranslations();
+  }
+
   skillsIcons = [
     './../../../assets/icons/my-skills/html.png',
     './../../../assets/icons/my-skills/css.png',

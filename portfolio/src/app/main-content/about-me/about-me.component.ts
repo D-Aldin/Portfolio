@@ -21,7 +21,6 @@ export class AboutMeComponent {
     {
       icon: '../../../assets/icons/about/Capa_small.png',
       alt: 'location',
-
       cssClass: 'location',
     },
     {

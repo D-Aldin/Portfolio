@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { REVIEW_DATA } from './review-data';
 import { CommonModule } from '@angular/common';
+import { LanguageService } from '../../../language';
 
 @Component({
   selector: 'app-review',
@@ -10,6 +11,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './review.component.scss',
 })
 export class ReviewComponent {
+  constructor(private languageService: LanguageService) {}
+
   reviews = REVIEW_DATA;
   review: string = '';
   name: string = '';
@@ -31,5 +34,9 @@ export class ReviewComponent {
     } else {
       this.counter--;
     }
+  }
+
+  get currentLanguage() {
+    return this.languageService.language;
   }
 }

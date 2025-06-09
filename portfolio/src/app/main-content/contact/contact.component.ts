@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { LanguageService } from '../../language';
 
 @Component({
   selector: 'app-contact',
@@ -8,4 +9,10 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
-export class ContactComponent {}
+export class ContactComponent {
+  constructor(private languageService: LanguageService) {}
+
+  get langPath() {
+    return this.languageService.getCurrentTranslations();
+  }
+}

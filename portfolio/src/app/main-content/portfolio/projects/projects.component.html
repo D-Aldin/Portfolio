@@ -13,7 +13,11 @@
          </ng-container>
       </div>
       <div class="description" [style.text-align]="isReversed ? 'left' : 'right'">
-        <h5>{{project.description}}</h5>
+            @if(this.currentLanguage === "en") {
+               <h5>{{project.englishDescription}}</h5>
+            } @else {
+               <h5>{{project.germanDescription}}</h5>
+            }         
       </div>
       <div class="buttons-container" [ngStyle]="{justifyContent: isReversed ? 'flex-start' : 'flex-end', alignItems: 'center', display: 'flex'}">
          <button class="test-btn">Live test</button>

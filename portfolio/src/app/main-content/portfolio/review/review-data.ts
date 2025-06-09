@@ -1,20 +1,19 @@
 export const REVIEW_DATA = [
   {
     name: 'Robby Runge - Team Partner',
-    review:
+    englishReview:
+      'Aldin was an extremely diligent and disciplined team member who always completed his tasks quickly and precisely. His work ethic was exemplary – no matter how challenging the project, you could always count on him. He wasn’t just a reliable individual contributor, but also a fantastic team player who collaborated with us in a supportive and cooperative manner. His positive attitude and commitment significantly strengthened the team.',
+    germanReview:
       'Aldin war ein äußerst fleißiger und disziplinierter Mitarbeiter, der seine Aufgaben stets schnell und präzise erledigt hat. Seine Arbeitsmoral war vorbildlich – egal wie herausfordernd das Projekt war, man konnte sich immer auf ihn verlassen. Dabei war er nicht nur ein zuverlässiger Einzelkämpfer, sondern auch ein toller Teamplayer, der stets unterstützend und kooperativ mit uns zusammengearbeitet hat. Seine positive Einstellung und sein Engagement haben das Team spürbar gestärkt.',
     image: './../../../../assets/icons/portfolio/review/robby.png',
   },
 
   {
-    name: 'Wladi Bender',
-    review: 'test data',
-    image: 'https://randomuser.me/api/portraits',
-  },
-
-  {
-    name: 'Semiur ',
-    review: 'new test',
-    image: 'https://randomuser.me/api/portraits',
+    name: 'Wladi Bender - Team Partner',
+    englishReview:
+      'Working with Aldin is simply a great experience! He brings not only solid expertise but also embodies real team spirit – always helpful, dedicated, and motivating. It was truly a pleasure to work with him – anytime again!',
+    germanReview:
+      'Die Zusammenarbeit mit Aldin macht einfach richtig Spaß! Er bringt nicht nur fachliches Know-how mit, sondern lebt echten Teamgeist – immer hilfsbereit, engagiert und motivierend. Es war mir eine große Freude, mit ihm zusammenzuarbeiten – jederzeit wieder!',
+    image: './../../../../assets/icons/portfolio/review/wladi.png',
   },
 ];
