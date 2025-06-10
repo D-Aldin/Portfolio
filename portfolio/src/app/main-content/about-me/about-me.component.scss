@@ -31,13 +31,41 @@ section {
   align-items: center;
   margin: 20px 0 20px;
 
-  img {
-    padding: 30px;
-    margin: 0;
-  }
-
   span {
     margin: 0;
+  }
+}
+
+.image-location {
+  background-image: url("./../../../assets/icons/about/Capa_small.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px;
+
+  &:hover {
+    background-image: url("./../../../assets/icons/about/Capa_big.png");
+  }
+}
+
+.image-light-bulb {
+  background-image: url("./../../../assets/icons/about/Vector_small.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px;
+
+  &:hover {
+    background-image: url("./../../../assets/icons/about/Vector_big.png");
+  }
+}
+
+.image-puzzle {
+  background-image: url("./../../../assets/icons/about/puzzle_small.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px;
+
+  &:hover {
+    background-image: url("./../../../assets/icons/about/puzzle_big.png");
   }
 }
 

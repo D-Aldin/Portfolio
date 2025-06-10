@@ -5,7 +5,7 @@
          <h4>{{langPath.aboutMe.description}}</h4>
       </div>
       <div *ngFor="let block of aboutBlocks; let i = index"  [class]="block.cssClass">
-      <img [src]="block.icon" [alt]="block.alt" />
+      <div [class]="'image-' + block.alt" ></div>
       <span>{{langPath.aboutMe.blocks[i]}}</span>
    </div>
    </div>

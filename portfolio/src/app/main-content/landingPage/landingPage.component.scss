@@ -159,4 +159,29 @@ section {
   justify-content: space-between;
   position: relative;
   bottom: 946px;
+  cursor: pointer;
+
+  .git {
+    @include social-media-icon(
+      30px,
+      "./../../../assets/icons/social/git.png",
+      "./../../../assets/icons/social/git_hover.png"
+    );
+  }
+
+  .email {
+    @include social-media-icon(
+      30px,
+      "./../../../assets/icons/social/email.png",
+      "./../../../assets/icons/social/email_hover.png"
+    );
+  }
+
+  .in {
+    @include social-media-icon(
+      30px,
+      "./../../../assets/icons/social/in.png",
+      "./../../../assets/icons/social/in_hover.png"
+    );
+  }
 }
