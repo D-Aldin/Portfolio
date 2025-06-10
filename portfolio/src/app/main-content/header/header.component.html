@@ -7,13 +7,13 @@
     <div class="nav-links-wrapper">
       <div class="navigation-links">
         @for (link of langPath.header.links; track $index) {
-          <a href="">{{link}}</a>
+          <a (click)="goTo(generateID(link)); " [class]="generateID(link)" [class.underlineActive]="generateID(link) === sectionIsActive">{{link}}</a>
         }
       </div>
 
       <div class="lang">
-        <button #de (click)="switchLang('de')">DE</button>
-        <button #en (click)="switchLang('en')">EN</button>
+        <button class="german" #de (click)="switchLang('de');" [ngStyle]="{ 'background-color': this.currentLanguageActive === 'de' ? 'rgba(112, 230, 28, 1)' : 'transparent' }">DE</button>
+        <button class= "english" #en (click)="switchLang('en'); "[ngStyle]="{ 'background-color': this.currentLanguageActive === 'en' ? 'rgba(112, 230, 28, 1)' : 'transparent' }">EN</button>
       </div>
     </div>
   </nav>

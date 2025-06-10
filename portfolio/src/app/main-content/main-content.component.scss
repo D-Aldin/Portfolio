@@ -2,3 +2,9 @@
   display: flex;
   z-index: 1001;
 }
+
+.page-wrapper {
+  position: relative;
+  max-width: 1920px;
+  overflow: hidden;
+}

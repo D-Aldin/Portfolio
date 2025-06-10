@@ -10,62 +10,81 @@ header {
   position: sticky;
   top: 0;
   z-index: 9999;
+}
 
-  nav {
-    @include flex-center($justify: space-between);
+nav {
+  @include flex-center($justify: space-between);
+  width: 100%;
+}
+
+.logo {
+  margin: 0;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-left: 10px;
+    height: 50px;
+    width: 165px;
+  }
+}
+
+.nav-links-wrapper {
+  margin: 0;
+  @include flex-center;
+  gap: 100px;
+}
+
+.navigation-links {
+  display: flex;
+  gap: 30px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.navigation-links a {
+  color: white;
+  @include link-underline($color-green);
+
+  &:hover {
+    color: $color-green;
+  }
+}
+
+.lang {
+  display: flex;
+  gap: 10px;
+}
+
+.lang button {
+  width: 38px;
+  height: 32px;
+  border-radius: 10px;
+  background: none;
+  border: 1px solid $color-green;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $color-purple !important;
+    border-color: $color-purple !important;
+  }
+}
+
+.underlineActive {
+  position: relative;
+  text-decoration: none;
+  pointer-events: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px; /* adjust depending on font */
+    height: 2px; /* thin line */
     width: 100%;
-
-    .logo {
-      margin: 0;
-      display: flex;
-      align-items: center;
-
-      img {
-        margin-left: 10px;
-        height: 50px;
-        width: 165px;
-      }
-    }
-
-    .nav-links-wrapper {
-      margin: 0;
-      @include flex-center;
-      gap: 100px;
-
-      .navigation-links {
-        display: flex;
-        gap: 30px;
-        font-size: 21px;
-
-        a {
-          color: white;
-          @include link-underline($color-green);
-
-          &:hover {
-            color: $color-green;
-          }
-        }
-      }
-
-      .lang {
-        display: flex;
-        gap: 10px;
-
-        button {
-          width: 38px;
-          height: 32px;
-          border-radius: 10px;
-          background: none;
-          border: 1px solid white;
-          color: white;
-          cursor: pointer;
-
-          &:hover {
-            background-color: $color-purple;
-            border-color: $color-purple;
-          }
-        }
-      }
-    }
+    background: $color-purple;
+    opacity: 0.6;
   }
 }
