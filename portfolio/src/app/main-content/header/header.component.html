@@ -12,8 +12,12 @@
       </div>
 
       <div class="lang">
-        <button class="german" #de (click)="switchLang('de');" [ngStyle]="{ 'background-color': this.currentLanguageActive === 'de' ? 'rgba(112, 230, 28, 1)' : 'transparent' }">DE</button>
-        <button class= "english" #en (click)="switchLang('en'); "[ngStyle]="{ 'background-color': this.currentLanguageActive === 'en' ? 'rgba(112, 230, 28, 1)' : 'transparent' }">EN</button>
+        <button class="german" #de (click)="switchLang('de');" [ngStyle]="{ 'background-color': this.currentLanguageActive === 'de' ? 'rgba(112, 230, 28, 1)' : 'transparent',
+          'pointer-events': this.currentLanguageActive === 'de' ? 'none' : 'visiblePainted'
+         }">DE</button>
+        <button class= "english" #en (click)="switchLang('en'); "[ngStyle]="{ 'background-color': this.currentLanguageActive === 'en' ? 'rgba(112, 230, 28, 1)' : 'transparent',
+          'pointer-events': this.currentLanguageActive === 'en' ? 'none' : 'visiblePainted'
+         }">EN</button>
       </div>
     </div>
   </nav>
