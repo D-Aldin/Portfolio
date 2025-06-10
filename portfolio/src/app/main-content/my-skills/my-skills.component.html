@@ -2,9 +2,16 @@
    <div class="my-skills-container">
       <div class="stack">
          <div class="grid-container">
-            <div *ngFor="let icon of skillsIcons">
-               <img [src]="icon" [alt]="icon">
+            <div class="icon-container" *ngFor="let icon of skillsIcons; let i = index">
+               <img class="icons" [src]="icon" alt="icon {{i + 1}}">
+               <img [src]="this.skillsIconName[i]" alt="">    
             </div>
+            <div class="bubble-container">
+               <div class="interest"></div>
+               <img class="bubble" src="./../../../assets/icons/my-skills/bubble.png" alt="">
+               
+            </div>
+            
          </div>
       </div>
       <div class="my-skills">
@@ -12,9 +19,7 @@
             <h1>{{langPath.skills.title}}</h1>
             <div class="line"></div>
          </div>
-        
          <div class="text-container">
-       
             <div class="tech-experience">
                <h3>{{langPath.skills.descriptionExperience}}</h3>
             </div>
@@ -23,15 +28,12 @@
                <h3>{{langPath.skills.descriptionAnother}}</h3>
             </div>
             <div class="button-container">
-               <button>Get in touch</button>
+               <button (click)="goToContact()">Get in touch</button>
             </div>
          </div>
       </div>
-      
    </div>
    <div class="shadow-image">
       <img src="./../../../assets/icons/my-skills/31. Green shadow Skills Portfolio.png" alt="">
-
    </div>
-   
 </section>

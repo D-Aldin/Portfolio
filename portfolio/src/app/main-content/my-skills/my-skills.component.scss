@@ -67,9 +67,58 @@ section {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
 
   img {
+    margin-bottom: 12px;
+  }
+}
+
+.icons {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+.bubble-container {
+  position: relative;
+
+  .interest {
     padding: 30px;
+    transform: translateY(-9px);
+    background-image: url("./../../../assets/icons/my-skills/interest.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 140px;
+    height: 175px;
+
+    &:hover + .bubble {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-10px);
+    }
+
+    &:hover {
+      background-image: url("./../../../assets/icons/my-skills/interest-white.png");
+    }
+  }
+
+  .bubble {
+    position: absolute;
+    bottom: 135px;
+    left: 32px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease, transform 0.4s ease;
+    transform: translateY(0);
   }
 }
 
@@ -77,6 +126,12 @@ button {
   width: 200px;
   height: 58px;
   @include button-style($color-green);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $color-purple;
+    transform: scale(1.2);
+  }
 }
 
 .shadow-image {
