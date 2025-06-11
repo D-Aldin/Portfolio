@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { PROJECTS } from './projects';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from '../../../language';
+import { log } from 'console';
 
 interface projects {
   name: string;
@@ -9,6 +10,7 @@ interface projects {
   germanDescription: string;
   technology: string[];
   image: string;
+  pageLink: string;
 }
 
 @Component({
@@ -24,6 +26,7 @@ export class ProjectsComponent {
   projects = PROJECTS;
   @Input() isReversed?: boolean;
   @Input({ required: true }) project!: projects;
+  @Input() name?: string;
 
   get imagePath() {
     return (

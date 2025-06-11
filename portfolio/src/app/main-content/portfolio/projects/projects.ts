@@ -7,7 +7,7 @@ export const PROJECTS = [
       'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie sie zu und kategorisieren Sie sie.',
     technology: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
     image: 'join',
-    link: 'http://www.join.com',
+    pageLink: 'https://www.aldin-dobric.de/join/index.html',
   },
   {
     name: 'Valyrie',
@@ -17,7 +17,7 @@ export const PROJECTS = [
       'Ein einfaches Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf der Walküre, Münzen und Schwerter zu finden, um gegen den Minotaurus zu kämpfen.',
     technology: ['JavaScript', 'HTML', 'CSS'],
     image: 'valkyrie',
-    link: null,
+    pageLink: 'https://www.aldin-dobric.de/valkyrie/index.html',
   },
   {
     name: 'Pokedex',
@@ -27,7 +27,7 @@ export const PROJECTS = [
       'Basierend auf der PokeAPI – eine einfache Bibliothek zur Bereitstellung und Katalogisierung von Pokémon-Informationen.',
     technology: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
     image: 'pokemon',
-    link: null,
+    pageLink: 'https://aldin-dobric.de/pokedex/index.html',
   },
   {
     name: 'DA Bubble',
@@ -37,6 +37,6 @@ export const PROJECTS = [
       'Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeitnachrichten und einer leistungsstarken Kanalorganisation.',
     technology: ['Angular', 'TypeScript', 'Firebase'],
     image: 'dab',
-    link: null,
+    pageLink: 'https://aldin-dobric.de/pokedex/index.html',
   },
 ];

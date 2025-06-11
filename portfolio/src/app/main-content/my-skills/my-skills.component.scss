@@ -26,6 +26,7 @@ section {
   display: flex;
   align-items: center;
   gap: 30px;
+  justify-content: flex-end;
   h1 {
     font-size: 90px;
     font-family: fontPoppinsMedium;
@@ -74,6 +75,7 @@ section {
   align-items: center;
   flex-direction: column;
   padding: 30px;
+  z-index: 99999;
 
   img {
     margin-bottom: 12px;
