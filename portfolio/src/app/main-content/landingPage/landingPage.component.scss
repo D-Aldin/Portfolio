@@ -161,6 +161,13 @@ section {
   bottom: 946px;
   cursor: pointer;
 
+  .git-wrapper,
+  .email-wrapper,
+  .in-wrapper {
+    width: 42px;
+    height: 42px;
+  }
+
   .git {
     @include social-media-icon(
       30px,
