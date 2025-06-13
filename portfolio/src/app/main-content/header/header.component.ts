@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { LanguageService } from '../../language';
 import { NgModel } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,9 +12,16 @@ import { CommonModule } from '@angular/common';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  constructor(private languageService: LanguageService) {}
+  constructor(
+    private languageService: LanguageService,
+    private router: Router
+  ) {}
 
   sectionIsActive: string = '';
+
+  isOnImpressum(): boolean {
+    return this.router.url === '/impressum';
+  }
 
   get langPath() {
     return this.languageService.getCurrentTranslations();

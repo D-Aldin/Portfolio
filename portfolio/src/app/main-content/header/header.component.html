@@ -5,7 +5,7 @@
     </a>
 
     <div class="nav-links-wrapper">
-      <div class="navigation-links">
+      <div class="navigation-links" [ngStyle]="{'display': this.isOnImpressum() === true ? 'none' : 'flex'}">
         @for (link of langPath.header.links; track $index) {
           <a (click)="goTo(generateID(link)); " [class]="generateID(link)" [class.underlineActive]="generateID(link) === sectionIsActive">{{link}}</a>
         }
