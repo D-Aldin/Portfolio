@@ -68,4 +68,5 @@ footer {
 
 .underline {
   @include link-underline($color-green);
+  cursor: pointer;
 }
