@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { LanguageService } from '../../language';
 import { ScrollService } from '../../scrollToContact';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-landingPage',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './landingPage.component.html',
   styleUrl: './landingPage.component.scss',
 })
@@ -21,5 +22,9 @@ export class LandingPageComponent {
 
   goToContact(): void {
     this.scrollService.scrollToContact();
+  }
+
+  get currentLang() {
+    return this.languageService.language;
   }
 }
