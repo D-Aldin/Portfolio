@@ -1,4 +1,40 @@
+.section-wrapper {
+  max-width: 1920px;
+  position: relative;
+  overflow: hidden;
+}
+
+section {
+  color: white;
+  padding: 100px;
+  display: inline-block;
+  z-index: 999;
+}
+
 h1 {
-  color: red;
-  font-size: 120px;
+  font-size: 60px;
+}
+
+.shadow-image-1 {
+  position: relative;
+
+  img {
+    position: absolute;
+    right: 100%;
+    transform: translateX(27%);
+    top: -318px;
+    z-index: -1;
+  }
+}
+
+.shadow-image-2 {
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 76%;
+    transform: translateX(27%);
+    top: -648px;
+    z-index: -1;
+  }
 }
