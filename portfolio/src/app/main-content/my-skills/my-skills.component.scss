@@ -179,3 +179,36 @@ button {
     padding: 25px;
   }
 }
+
+@media only screen and (max-width: 1300px) and (min-width: 1024px) {
+  section {
+    padding: 50px 0 0 50px;
+    margin-top: 80px;
+  }
+
+  h1 {
+    font-size: 3.125rem !important;
+  }
+
+  h3 {
+    font-size: 0.875rem;
+  }
+
+  h2,
+  span {
+    font-size: 1.65rem !important;
+  }
+
+  .my-skills-container {
+    gap: 50px;
+  }
+
+  .icon-container {
+    padding: 20px;
+
+    // img {
+    //   width: 50px;
+    //   height: 20px;
+    // }
+  }
+}

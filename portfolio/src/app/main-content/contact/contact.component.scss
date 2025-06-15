@@ -39,7 +39,7 @@ section {
 
   h2 {
     font-family: fontPoppinsMedium;
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 20px;
   }
 
@@ -80,5 +80,24 @@ section {
 
   .line {
     width: 30% !important;
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1024px) {
+  h1 {
+    font-size: 3.125rem !important;
+  }
+
+  h2 {
+    font-size: 1.7rem !important;
+  }
+
+  .content-wrapper {
+    padding: 90px 50px 90px 50px;
+    gap: 50px;
+  }
+
+  .line {
+    width: 35% !important;
   }
 }
