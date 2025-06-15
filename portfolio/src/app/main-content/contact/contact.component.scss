@@ -55,9 +55,30 @@ section {
   img {
     position: absolute;
     right: 100%;
-    transform: translateX(60%) translateY(50%);
-    bottom: 108px;
+    transform: translateX(100%) translateY(50%);
+    bottom: 114px;
     z-index: 1;
-    rotate: 11deg;
+  }
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1601px) {
+  .content-wrapper {
+    padding: 100px 100px 100px 100px;
+    gap: 90px;
+  }
+
+  .line {
+    width: 35% !important;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1301px) {
+  .content-wrapper {
+    padding: 100px 70px 100px 70px;
+    gap: 60px;
+  }
+
+  .line {
+    width: 30% !important;
   }
 }

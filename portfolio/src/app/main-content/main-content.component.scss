@@ -6,5 +6,15 @@
 .page-wrapper {
   position: relative;
   max-width: 1920px;
-  overflow: hidden;
+  overflow-y: hidden;
+}
+
+app-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  width: 100%;
+  // padding: 1rem;
+  z-index: 1000000; /* ensures header stays above other content */
+  display: block;
 }

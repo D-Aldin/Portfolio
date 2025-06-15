@@ -103,3 +103,23 @@
 .active-dot {
   background-color: $color-green;
 }
+
+@media only screen and (max-width: 1920px) and (min-width: 1601px) {
+  .review-container {
+    width: 1091px;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1301px) {
+  .review-container {
+    width: 810px;
+  }
+
+  .review-text {
+    padding: 0 25px 0 25px;
+  }
+
+  span {
+    font-size: 0.813rem;
+  }
+}

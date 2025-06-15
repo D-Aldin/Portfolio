@@ -10,13 +10,13 @@
       <h3>{{langPath.portfolio.guide}}</h3>
    </div>
    <div class="shadow">
-      <img src="./../../../assets/img/portfolio/32 Purple shadow portfolio.png" alt="">
+      <img src="./../../../assets/img/portfolio/portfolio-shadow-1.png" alt="">
    </div>
    @for(project of projects; track project.name; let i = $index) {
    <app-projects [project]="project" [isReversed]="i % 2 === 0"></app-projects>
    }
    <app-review></app-review>
    <div class="shadow-2">
-      <img src="./../../../assets/img/portfolio/54. Green shadow 3 (skills and portfolio section).png" alt="">
+      <img src="./../../../assets/img/portfolio/portfolio-shadow-2.png" alt="">
    </div>
 </section>

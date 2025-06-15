@@ -15,6 +15,7 @@ section {
 }
 
 .secound-line {
+  // display: none;
   @include purple-line($width: calc(100% + 370px));
   position: absolute;
   left: 100%;
@@ -58,7 +59,7 @@ section {
   img {
     position: absolute;
     right: 100%;
-    transform: translateX(57%);
+    transform: translateX(100%);
     top: 806px;
   }
 }
@@ -68,9 +69,25 @@ section {
 
   img {
     position: absolute;
-    left: 85%;
-    transform: translateX(-57%);
-    top: -410px;
-    rotate: 80deg;
+    right: 0;
+    transform: translateX(0%);
+    bottom: -29px;
+  }
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1601px) {
+  h1 {
+    font-size: 5.025rem !important;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1301px) {
+  h1 {
+    font-size: 4.225rem !important;
+  }
+
+  .shadow img {
+    width: 440px;
+    height: auto;
   }
 }

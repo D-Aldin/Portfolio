@@ -7,9 +7,11 @@ header {
   padding: 0 100px;
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0;
+  justify-content: space-between;
+  // position: sticky;
+  // top: 0;
   z-index: 999999;
+  width: 100%;
 }
 
 nav {
@@ -24,7 +26,7 @@ nav {
 
   img {
     margin-left: 10px;
-    height: 50px;
+    height: auto;
     width: 165px;
   }
 }
@@ -38,7 +40,7 @@ nav {
 .navigation-links {
   display: flex;
   gap: 30px;
-  font-size: 21px;
+  font-size: 1.313rem;
   cursor: pointer;
 }
 
@@ -87,4 +89,44 @@ nav {
     background: $color-purple;
     opacity: 0.6;
   }
+}
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 992px) {
+  header {
+    padding: 0 70px;
+  }
+
+  .logo img {
+    width: 123px;
+  }
+
+  .nav-links-wrapper {
+    gap: 30px;
+  }
+
+  .navigation-links {
+    font-size: 1rem;
+    gap: 27px;
+  }
+
+  .lang button {
+    width: 33px;
+    height: 30px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1600px) {
 }

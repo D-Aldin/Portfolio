@@ -3,6 +3,7 @@ import { LanguageService } from '../../language';
 import { NgModel } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +11,7 @@ import { Router } from '@angular/router';
   imports: [CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class HeaderComponent {
   constructor(

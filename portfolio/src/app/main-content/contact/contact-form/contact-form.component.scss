@@ -188,3 +188,21 @@ textarea {
     border-radius: 13px;
   }
 }
+
+@media only screen and (max-width: 1600px) and (min-width: 1301px) {
+  input[type="text"],
+  textarea,
+  select {
+    width: 400px !important;
+  }
+
+  .checkbox label {
+    font-size: 0.75rem;
+  }
+
+  input[type="submit"] {
+    width: 206px;
+    height: 48px;
+    font-size: 1.313rem;
+  }
+}

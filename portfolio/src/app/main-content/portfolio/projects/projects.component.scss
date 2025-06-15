@@ -80,3 +80,22 @@
     @include button-style(transparent);
   }
 }
+
+@media only screen and (max-width: 1920px) and (min-width: 1601px) {
+  .content-wrapper {
+    gap: 240px;
+    padding: 0 100px 0 100px;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1301px) {
+  .content-wrapper {
+    gap: 70px;
+    padding: 0 70px 0 70px;
+  }
+
+  .image-container img {
+    width: 400px;
+    height: 400px;
+  }
+}

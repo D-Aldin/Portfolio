@@ -28,13 +28,13 @@ section {
 }
 
 .me {
-  width: 69%;
-  max-width: 539px;
+  max-width: 28.1vw;
+  // min-width: 27vw;
   height: auto;
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, -24.51%);
+  transform: translate(-50%, -23.51%);
   z-index: 1000;
 }
 
@@ -55,7 +55,7 @@ section {
   display: flex;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  font-size: 64px;
+  font-size: 4rem;
 }
 
 .title-text {
@@ -72,13 +72,13 @@ section {
 
   h1 {
     font-family: fontPoppinsBold;
-    font-size: 90px;
+    font-size: 5.625rem;
     margin: 0;
   }
 }
 
 .frontend-text {
-  font-size: 58px;
+  font-size: 3.625rem;
   color: $color-purple;
 }
 
@@ -109,7 +109,9 @@ section {
 }
 
 .hero-background-image {
-  min-width: 1920px !important;
+  position: absolute;
+  top: 0;
+  min-width: 100%;
   height: auto !important;
 }
 
@@ -132,7 +134,8 @@ section {
 .scroll {
   margin: 0;
   writing-mode: vertical-rl;
-  margin-right: 150px;
+  margin-right: 120px;
+  z-index: 999;
 
   h3 {
     color: white;
@@ -158,37 +161,138 @@ section {
   align-items: baseline;
   justify-content: space-between;
   position: relative;
-  bottom: 946px;
+  top: 530px;
   cursor: pointer;
+}
 
-  .git-wrapper,
-  .email-wrapper,
-  .in-wrapper {
-    width: 42px;
-    height: 42px;
+.git-wrapper,
+.email-wrapper,
+.in-wrapper {
+  width: 42px;
+  height: 42px;
+}
+
+.git {
+  @include social-media-icon(
+    30px,
+    "./../../../assets/icons/social/git.png",
+    "./../../../assets/icons/social/git_hover.png"
+  );
+}
+
+.email {
+  @include social-media-icon(
+    30px,
+    "./../../../assets/icons/social/email.png",
+    "./../../../assets/icons/social/email_hover.png"
+  );
+}
+
+.in {
+  @include social-media-icon(
+    30px,
+    "./../../../assets/icons/social/in.png",
+    "./../../../assets/icons/social/in_hover.png"
+  );
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1601px) {
+  .title-container {
+    margin-left: 0px;
   }
 
-  .git {
-    @include social-media-icon(
-      30px,
-      "./../../../assets/icons/social/git.png",
-      "./../../../assets/icons/social/git_hover.png"
-    );
+  .title-text {
+    padding-top: 65px;
   }
 
-  .email {
-    @include social-media-icon(
-      30px,
-      "./../../../assets/icons/social/email.png",
-      "./../../../assets/icons/social/email_hover.png"
-    );
+  h1 {
+    font-size: 5.025rem !important;
   }
 
-  .in {
-    @include social-media-icon(
-      30px,
-      "./../../../assets/icons/social/in.png",
-      "./../../../assets/icons/social/in_hover.png"
-    );
+  .vertical-text {
+    font-size: 3.6rem !important;
   }
+
+  .frontend-text {
+    font-size: 3.123rem !important;
+  }
+
+  .lets-talk {
+    margin-right: 135px;
+
+    button {
+      width: 143px;
+      height: 53px;
+      font-size: 1.338rem;
+    }
+  }
+
+  .social-wrapper {
+    top: 460px;
+  }
+
+  // .shadow-img {
+  //   bottom: -40px;
+  // }
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1800px) {
+  .social-wrapper {
+    top: 500px;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1301px) {
+  .title-text {
+    padding-top: 40px !important;
+  }
+
+  .title-container {
+    margin: 0;
+  }
+
+  .shadow-img {
+    width: 710px;
+  }
+
+  .title-text {
+    padding-top: 65px;
+  }
+
+  h1 {
+    font-size: 4.225rem !important;
+  }
+
+  .frontend-text {
+    font-size: 2.7rem !important;
+  }
+
+  .vertical-text {
+    font-size: 3.1rem !important;
+    margin-bottom: 30px !important;
+  }
+
+  .lets-talk {
+    margin-right: 195px;
+
+    button {
+      width: 120px;
+      height: 53px;
+      font-size: 1.138rem;
+    }
+  }
+
+  .social-wrapper {
+    top: 380px;
+  }
+
+  .shadow-img {
+    bottom: 677px !important;
+  }
+}
+
+@media (width: 1440px) {
+  // .me {
+  //   transform: translate(-50%, -57.726%) !important;
+  // }
 }

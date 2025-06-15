@@ -142,7 +142,40 @@ button {
   img {
     position: absolute;
     right: 100%;
-    transform: translateX(27%);
+    transform: translateX(69%);
     top: -318px;
+  }
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1601px) {
+  h1 {
+    font-size: 5.025rem;
+  }
+
+  .my-skills-container {
+    gap: 120px;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1301px) {
+  section {
+    padding: 50px 0 0 70px;
+    margin-top: 80px;
+  }
+
+  h1 {
+    font-size: 4.225rem !important;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .my-skills-container {
+    gap: 50px;
+  }
+
+  .icon-container {
+    padding: 25px;
   }
 }
