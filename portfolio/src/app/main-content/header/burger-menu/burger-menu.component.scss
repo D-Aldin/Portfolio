@@ -1,0 +1,64 @@
+@import "./../../../../styles/variables";
+@import "./../../../../styles/mixins";
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: $background-primary-color;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: $background-primary-color;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 120px;
+    height: auto;
+  }
+}
+
+.open-menu {
+  display: inline-block;
+}
+
+.close-menu {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 17px;
+  //   display: block;
+  display: flex;
+  align-items: center;
+}
+
+.topnav a.icon {
+  width: 65px;
+  height: 65px;
+  background: transparent;
+  background-image: url("./../../../../assets/icons/burger-menu/bar.png");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  display: block;
+}
+
+.topnav a:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.active {
+  background-color: $background-primary-color;
+  color: rgb(201, 8, 8);
+  height: 109px;
+}

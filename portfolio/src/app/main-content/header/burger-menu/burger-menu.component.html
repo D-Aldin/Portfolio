@@ -1,0 +1,16 @@
+
+
+<div class="topnav">
+  <a href="index.html" class="active">
+    <img src="../../../../assets/icons/logo.png">
+  </a>
+
+  <a class="icon" (click)="toogleMenuBurger()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+  <div #myLinks class="open-menu" [ngClass]="{'close-menu': !isOpen, 'opem-menu': isOpen}">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>

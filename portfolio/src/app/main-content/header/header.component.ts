@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { LanguageService } from '../../language';
-import { NgModel } from '@angular/forms';
+import { ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { ViewEncapsulation } from '@angular/core';
+import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, BurgerMenuComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   encapsulation: ViewEncapsulation.None,
@@ -19,6 +20,7 @@ export class HeaderComponent {
     private router: Router
   ) {}
 
+  @ViewChild('burger') burgerMenu!: BurgerMenuComponent;
   sectionIsActive: string = '';
 
   isOnImpressum(): boolean {
@@ -55,4 +57,6 @@ export class HeaderComponent {
     }
     this.sectionIsActive = section;
   }
+
+  toggleBurger() {}
 }

@@ -329,22 +329,27 @@ section {
     margin-bottom: 6px !important;
   }
 
+  .title-text {
+    padding-top: 34px;
+  }
+
   h3 {
     margin-block-start: 0em;
   }
 
   .lets-talk {
-    margin-right: 100px;
+    margin-right: 10px;
 
     button {
-      width: 120px;
-      height: 53px;
-      font-size: 1.138rem;
+      margin-top: 10px;
+      width: 90px;
+      height: 43px;
+      font-size: 1.1rem;
     }
   }
 
   .social-wrapper {
-    top: 335px;
+    top: 280px;
   }
 
   .scroll {

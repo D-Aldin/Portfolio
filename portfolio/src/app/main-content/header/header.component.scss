@@ -1,6 +1,10 @@
 @import "../../../styles/variables";
 @import "./../../../styles/mixins";
 
+.burger-menu {
+  display: none;
+}
+
 header {
   background-color: $background-primary-color;
   height: 100px;
@@ -111,5 +115,15 @@ nav {
 
   nav {
     font-size: 1.09rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .burger-menu {
+    display: inline;
+  }
+
+  header {
+    display: none;
   }
 }
