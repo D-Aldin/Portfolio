@@ -46,3 +46,8 @@ main {
   justify-content: center;
   display: block;
 }
+
+.no-scroll {
+  overflow: hidden !important;
+  height: 100vh !important;
+}

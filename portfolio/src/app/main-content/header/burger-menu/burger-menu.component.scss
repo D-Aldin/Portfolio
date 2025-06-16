@@ -1,12 +1,17 @@
 @import "./../../../../styles/variables";
 @import "./../../../../styles/mixins";
 
+.no-scroll {
+  overflow: hidden !important;
+  height: 100vh !important;
+}
+
 .mobile-container {
   max-width: 480px;
   margin: auto;
   background-color: $background-primary-color;
   height: 500px;
-  color: white;
+  color: rgb(231, 6, 6);
   border-radius: 10px;
 }
 
@@ -25,7 +30,24 @@
 }
 
 .open-menu {
-  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); // semi-transparent background
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 24px;
+  }
 }
 
 .close-menu {
@@ -33,7 +55,7 @@
 }
 
 .topnav a {
-  color: white;
+  color: rgb(184, 11, 11);
   padding: 14px 50px;
   text-decoration: none;
   font-size: 17px;
@@ -54,7 +76,7 @@
 
 .topnav a:hover {
   background-color: transparent;
-  color: black;
+  //   color: black;
 }
 
 .active {
