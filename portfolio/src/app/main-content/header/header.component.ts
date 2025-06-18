@@ -57,6 +57,4 @@ export class HeaderComponent {
     }
     this.sectionIsActive = section;
   }
-
-  toggleBurger() {}
 }

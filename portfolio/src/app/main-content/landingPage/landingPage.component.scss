@@ -29,12 +29,13 @@ section {
 
 .me {
   max-width: 28.1vw;
-  // min-width: 27vw;
+  min-width: 304.5px;
   height: auto;
+  max-height: 600px;
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, -23.51%);
+  transform: translate(-50%, -74.3979%);
   z-index: 1000;
 }
 
@@ -111,6 +112,8 @@ section {
 .hero-background-image {
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
   min-width: 100%;
   max-width: 1920px;
   width: 100vw;
@@ -245,6 +248,10 @@ section {
 }
 
 @media only screen and (max-width: 1600px) and (min-width: 1301px) {
+  .hero-background-image {
+    top: calc(50.7vh - 749.7px);
+  }
+
   .title-text {
     padding-top: 40px !important;
   }
@@ -293,9 +300,19 @@ section {
   }
 }
 
+@media only screen and (max-width: 1490px) and (min-width: 1300px) {
+  .hero-background-image {
+    top: calc(53.2vh - 775.9px);
+  }
+}
+
 @media (width: 1440px) {
   .me {
     transform: translate(-50%, -57.726%) !important;
+  }
+
+  .hero-background-image {
+    top: calc(53.2vh - 758.6px);
   }
 }
 
@@ -306,8 +323,8 @@ section {
   }
 
   .me {
-    transform: translate(-50%, -40.5821%) !important;
-    max-width: 34.4vw;
+    transform: translate(-50%, -34.5821%) !important;
+    max-width: 28.4vw;
   }
 
   .title-container {
@@ -354,5 +371,87 @@ section {
 
   .scroll {
     margin-right: 45px;
+  }
+}
+
+@media (width: 1024px) {
+  .hero-background-image {
+    top: calc(53.2vh - 705.7px);
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .hero-background-image {
+    height: 40vh !important;
+    top: calc(53.2vh - 625px);
+  }
+
+  .me {
+    width: 400px !important;
+    height: 400px !important;
+    transform: translate(-50%, -30.8866%) !important;
+    left: 222px;
+  }
+
+  .shadow-img {
+    width: 540px;
+    height: 540px;
+    position: relative;
+    top: 70px;
+    left: -60px;
+  }
+
+  .title-container {
+    margin: 0;
+    grid-template-columns: 70px 375px;
+    grid-template-rows: 190px 50px;
+  }
+
+  .title-text {
+    padding-top: 50px;
+  }
+
+  h1 {
+    font-size: 3.1rem !important;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+  }
+
+  .frontend-text {
+    font-size: 2.1rem !important;
+  }
+
+  .lets-talk {
+    // margin-right: 195px;
+
+    button {
+      margin-top: 10px;
+      width: 90px;
+      height: 43px;
+      font-size: 1.1rem;
+    }
+  }
+
+  .social-wrapper {
+    top: 302px;
+  }
+
+  .in-wrapper {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social-container a {
+    font-size: 1.375rem;
+  }
+
+  .scroll h3 {
+    font-size: 1.238rem;
+  }
+
+  h4 span {
+    font-size: 0.875rem !important;
   }
 }

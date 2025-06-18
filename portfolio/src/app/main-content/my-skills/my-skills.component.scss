@@ -212,3 +212,42 @@ button {
     // }
   }
 }
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  section {
+    padding: 50px 0 0 50px;
+    margin-top: 80px;
+  }
+
+  .my-skills-container {
+    gap: 50px;
+  }
+
+  h1 {
+    font-size: 3.1rem !important;
+  }
+
+  h3 {
+    font-size: 0.875rem;
+  }
+
+  .icon-container {
+    padding: 20px;
+  }
+
+  .icons {
+    width: 52px;
+    height: auto;
+  }
+
+  .another-skill {
+    font-size: 1.563rem;
+  }
+
+  .line {
+    width: 50px;
+  }
+
+  .text-container {
+    padding-right: 80px;
+  }
+}

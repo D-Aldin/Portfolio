@@ -4,6 +4,8 @@ import { Renderer2, OnDestroy } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
 
+import { Input } from '@angular/core';
+
 @Component({
   selector: 'app-burger-menu',
   standalone: true,
@@ -19,19 +21,30 @@ export class BurgerMenuComponent {
 
   isOpen: boolean = false;
 
+  @Input() goToFn!: (section: string) => void;
+
   toogleMenuBurger() {
     this.isOpen = !this.isOpen;
-
-    if (this.isOpen) {
-      this.renderer.addClass(document.body, 'no-scroll');
-    } else {
-      this.renderer.removeClass(document.body, 'no-scroll');
-    }
+    this.preventScrolling();
   }
 
   ngOnDestroy() {
     if (isPlatformBrowser(this.platformId)) {
       this.renderer.removeClass(document.body, 'no-scroll');
     }
+  }
+
+  preventScrolling() {
+    if (this.isOpen) {
+      this.renderer.addClass(document.body, 'no-scroll');
+    }
+  }
+
+  navigateToSection(section: string, delay: number = 500) {
+    this.renderer.removeClass(document.body, 'no-scroll');
+    this.goToFn(section);
+    setTimeout(() => {
+      this.isOpen = false;
+    }, delay);
   }
 }

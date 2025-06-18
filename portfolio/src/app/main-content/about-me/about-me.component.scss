@@ -183,3 +183,31 @@ section {
     bottom: -45px !important;
   }
 }
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .about-me-container {
+    padding: 0 50px 0 50px;
+  }
+
+  h1 {
+    font-size: 3.1rem !important;
+  }
+
+  .portrait-container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .line {
+    width: 50px !important;
+  }
+
+  .shadow-image {
+    bottom: 212px;
+
+    img {
+      width: 240px;
+      height: auto;
+    }
+  }
+}

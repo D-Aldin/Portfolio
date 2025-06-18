@@ -59,13 +59,15 @@ export class LandingPageComponent implements OnInit {
 
   transformStyle() {
     const baseWidth = 1920;
-    const baseOffset = 23.51;
+    const baseOffset = 36.51;
+
+    console.log(this.width);
 
     let adjustedOffset: number;
 
     if (this.width < baseWidth) {
       const widthDifference = baseWidth - this.width;
-      adjustedOffset = baseOffset + widthDifference * 0.06779;
+      adjustedOffset = baseOffset + widthDifference * 0.0478;
     } else {
       adjustedOffset = baseOffset;
     }

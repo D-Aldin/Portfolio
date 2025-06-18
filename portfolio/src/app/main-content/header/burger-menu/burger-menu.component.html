@@ -5,12 +5,17 @@
     <img src="../../../../assets/icons/logo.png">
   </a>
 
-  <a class="icon" (click)="toogleMenuBurger()">
+  <a class="icon" (click)="toogleMenuBurger()" [ngStyle]="{
+  'background-image': 'url(' + 
+    (isOpen ? './../../../assets/icons/burger-menu/close2.png' : 
+              './../../../assets/icons/burger-menu/bar.png') + ')'
+}">
     <i class="fa fa-bars"></i>
   </a>
 </div>
-  <div #myLinks class="open-menu" [ngClass]="{'close-menu': !isOpen, 'opem-menu': isOpen}">
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+  <div #myLinks class="open-menu" [ngClass]="{'close-menu': !isOpen, 'opem-menu': isOpen}" >
+    <a (click)="navigateToSection('about-me')" >About me</a>
+    <a  (click)="navigateToSection('skills')">My skills</a>
+    <a (click)="navigateToSection('portfolio')">Portfolio</a>
+    <a (click)="navigateToSection('contact')">Contact</a>
   </div>

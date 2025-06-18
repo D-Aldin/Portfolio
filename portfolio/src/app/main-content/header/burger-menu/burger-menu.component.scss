@@ -1,11 +1,6 @@
 @import "./../../../../styles/variables";
 @import "./../../../../styles/mixins";
 
-.no-scroll {
-  overflow: hidden !important;
-  height: 100vh !important;
-}
-
 .mobile-container {
   max-width: 480px;
   margin: auto;
@@ -32,22 +27,33 @@
 .open-menu {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
+  right: 0;
+  width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); // semi-transparent background
-  z-index: 1000;
+  background: rgba(19, 28, 45, 0.74);
+  z-index: 10;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
   a {
     color: white;
     text-decoration: none;
     margin: 10px 0;
-    font-size: 24px;
+    font-size: 40px;
+    position: relative;
+    top: 30%;
   }
+}
+
+.open-menu.opem-menu {
+  transform: translateX(0);
+}
+
+.open-menu.close-menu {
+  transform: translateX(100%);
 }
 
 .close-menu {
@@ -67,11 +73,15 @@
 .topnav a.icon {
   width: 65px;
   height: 65px;
+  display: block;
+}
+
+.icon {
   background: transparent;
   background-image: url("./../../../../assets/icons/burger-menu/bar.png");
   background-repeat: no-repeat;
   background-size: 60px 60px;
-  display: block;
+  z-index: 9999;
 }
 
 .topnav a:hover {
