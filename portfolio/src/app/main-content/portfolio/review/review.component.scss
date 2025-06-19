@@ -150,3 +150,34 @@
     font-size: 0.875rem;
   }
 }
+
+@media only screen and (max-width: 1024px) and (min-width: 970px) {
+  .review-container {
+    width: 600px;
+  }
+
+  .review-text {
+    padding: 20px 20px 20px 20px;
+  }
+
+  span {
+    font-size: 0.793rem;
+  }
+
+  .image-container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .line {
+    width: 50px;
+  }
+
+  .name h3 {
+    font-size: 0.875rem;
+  }
+
+  .review-buttons {
+    margin: 10px 90px 10px 0;
+  }
+}

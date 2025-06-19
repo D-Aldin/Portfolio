@@ -126,3 +126,26 @@ section {
     }
   }
 }
+
+@media only screen and (max-width: 1024px) and (min-width: 970px) {
+  h1 {
+    font-size: 3.1rem !important;
+  }
+
+  h3 {
+    font-size: 0.875rem;
+  }
+
+  .shadow {
+    position: relative;
+
+    img {
+      position: absolute;
+      right: 100%;
+      transform: translateX(100%);
+      top: 806px;
+      width: 280px;
+      height: auto;
+    }
+  }
+}

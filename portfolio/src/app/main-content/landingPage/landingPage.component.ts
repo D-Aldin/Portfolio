@@ -61,8 +61,6 @@ export class LandingPageComponent implements OnInit {
     const baseWidth = 1920;
     const baseOffset = 36.51;
 
-    console.log(this.width);
-
     let adjustedOffset: number;
 
     if (this.width < baseWidth) {

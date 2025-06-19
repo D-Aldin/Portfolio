@@ -136,6 +136,13 @@ section {
   }
 }
 
+.git-wrapper,
+.email-wrapper,
+.in-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .scroll {
   margin: 0;
   writing-mode: vertical-rl;
@@ -249,7 +256,7 @@ section {
 
 @media only screen and (max-width: 1600px) and (min-width: 1301px) {
   .hero-background-image {
-    top: calc(50.7vh - 749.7px);
+    top: calc(50.7vh - 432.6px);
   }
 
   .title-text {
@@ -302,7 +309,7 @@ section {
 
 @media only screen and (max-width: 1490px) and (min-width: 1300px) {
   .hero-background-image {
-    top: calc(53.2vh - 775.9px);
+    top: calc(53.2vh - 420.9px);
   }
 }
 
@@ -380,10 +387,10 @@ section {
   }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media only screen and (max-width: 1024px) and (min-width: 970px) {
   .hero-background-image {
     height: 40vh !important;
-    top: calc(53.2vh - 625px);
+    top: calc(53.2vh - 177.6px);
   }
 
   .me {
@@ -453,5 +460,86 @@ section {
 
   h4 span {
     font-size: 0.875rem !important;
+  }
+}
+
+@media only screen and (max-width: 970px) and (min-width: 670px) {
+  .hero-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 4.1rem !important;
+  }
+
+  h3 {
+    font-size: 3.5rem !important;
+  }
+
+  .frontend-text {
+    font-size: 2.7rem !important;
+  }
+
+  .hero-wrapper {
+    flex-direction: column;
+  }
+
+  .hero-background-image {
+    height: 45.5vh !important;
+    top: calc(53.2vh - 301px) !important;
+    top: auto;
+    right: auto;
+    left: auto;
+  }
+
+  .hero-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shadow-img {
+    width: 600px !important;
+    height: 600px;
+    position: relative;
+    bottom: 120px;
+  }
+
+  .me {
+    max-width: 600px;
+    width: 307px !important;
+    height: 400px !important;
+    transform: translate(-50%, -75.3866%) !important;
+    // left: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+  }
+
+  .title-container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 349px;
+  }
+
+  .scroll {
+    display: none;
+  }
+
+  .my-email {
+    display: none;
+  }
+
+  .social-wrapper {
+    top: 600px !important;
+  }
+
+  .line {
+    width: calc(50vw - 136px) !important;
   }
 }

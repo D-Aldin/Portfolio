@@ -1,20 +1,23 @@
 <section id="skills">
    <div class="my-skills-container">
-      <div class="stack">
+      <div #stack class="stack" >
          <div class="grid-container">
             <div class="icon-container" *ngFor="let icon of skillsIcons; let i = index">
-               <img class="icons" [src]="icon" alt="icon {{i + 1}}">
-               <img [src]="this.skillsIconName[i]" alt="">    
+               <div #icon class="icon-{{i + 1}}">
+                   <img class="icons" [src]="icon" alt="icon {{i + 1}}">
+                  <img [src]="this.skillsIconName[i]" alt="">    
+               </div>
+              
             </div>
-            <div class="bubble-container">
+            <div #bubble class="bubble-container">
                <div class="interest"></div>
                <img class="bubble" src="./../../../assets/icons/my-skills/bubble.png" alt="">
-               
             </div>
-            
          </div>
+         <div #mobileView class="mobile-view"></div>
       </div>
-      <div class="my-skills">
+      
+      <div #skills class="my-skills">
          <div class="title">
             <h1>{{langPath.skills.title}}</h1>
             <div class="line"></div>
@@ -23,7 +26,7 @@
             <div class="tech-experience">
                <h3>{{langPath.skills.descriptionExperience}}</h3>
             </div>
-            <div class="another-skill">
+            <div #anotherSkill class="another-skill">
                <h2>{{langPath.skills.lookingFor}} <span>{{langPath.skills.anotherSkill}}</span>?</h2>
                <h3>{{langPath.skills.descriptionAnother}}</h3>
             </div>

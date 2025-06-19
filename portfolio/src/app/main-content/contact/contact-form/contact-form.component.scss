@@ -224,3 +224,21 @@ textarea {
     font-size: 1rem;
   }
 }
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  input[type="text"],
+  textarea,
+  select {
+    width: 340px !important;
+  }
+
+  .checkbox label {
+    font-size: 0.75rem;
+  }
+
+  input[type="submit"] {
+    width: 180px;
+    height: 48px;
+    font-size: 1rem;
+  }
+}

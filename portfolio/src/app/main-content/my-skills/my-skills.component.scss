@@ -8,6 +8,15 @@ section {
   scroll-margin-top: 300px;
 }
 
+@for $i from 0 through 10 {
+  .icon-#{$i} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
 .my-skills-container {
   @include flex-center();
   gap: 300px;
@@ -212,7 +221,7 @@ button {
     // }
   }
 }
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media only screen and (max-width: 1024px) and (min-width: 970px) {
   section {
     padding: 50px 0 0 50px;
     margin-top: 80px;
@@ -249,5 +258,62 @@ button {
 
   .text-container {
     padding-right: 80px;
+  }
+}
+
+@media only screen and (max-width: 970px) and (min-width: 670px) {
+  section {
+    padding: 10px 0 0 20px;
+    margin-top: 80px;
+  }
+
+  h1 {
+    font-size: 2.813rem !important;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .my-skills-container {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .stack {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-view {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 20px;
+
+    div {
+      padding: 30px;
+    }
+
+    .bubble-container {
+      padding: 0;
+    }
+  }
+
+  .grid-container > :nth-last-child(-n + 1) {
+    display: none;
   }
 }

@@ -101,3 +101,22 @@ section {
     width: 35% !important;
   }
 }
+
+@media only screen and (max-width: 1024px) and (min-width: 970px) {
+  h1 {
+    font-size: 3.1rem !important;
+  }
+
+  h3 {
+    font-size: 0.875rem !important;
+  }
+
+  .line {
+    width: 35% !important;
+  }
+
+  .content-wrapper {
+    padding: 90px 50px 90px 50px;
+    gap: 50px;
+  }
+}
