@@ -8,6 +8,22 @@ section {
   margin-top: 140px;
 }
 
+.shadow-wrapper {
+  position: relative;
+  width: 160px;
+  height: 40px;
+}
+
+.shadow {
+  background-image: url("./../../../assets/img/portfolio/shadow1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: relative;
+  // top: 889px;
+  left: 120%;
+}
+
 .first-line {
   @include purple-line();
   justify-self: end;
@@ -147,5 +163,27 @@ section {
       width: 280px;
       height: auto;
     }
+  }
+}
+
+@media only screen and (max-width: 970px) and (min-width: 670px) {
+  h1 {
+    font-size: 2.813rem !important;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  .shadow-wrapper {
+    top: 69px;
+  }
+
+  .shadow {
+    width: 1750px;
+    height: 650px;
+    top: 910px;
+    left: 60%;
+    z-index: -1;
   }
 }

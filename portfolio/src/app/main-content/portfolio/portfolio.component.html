@@ -17,9 +17,11 @@
    <div class="guide">
       <h3>{{langPath.portfolio.guide}}</h3>
    </div>
-   <div class="shadow">
-      <img src="./../../../assets/img/portfolio/portfolio-shadow-1.png" alt="">
+   <div class="shadow-wrapper">
+      <div class="shadow"></div>
    </div>
+
+   
    @for(project of projects; track project.name; let i = $index) {
    <app-projects [project]="project" [isReversed]="i % 2 === 0"></app-projects>
    }

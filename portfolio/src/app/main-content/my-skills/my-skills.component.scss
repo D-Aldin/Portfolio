@@ -316,4 +316,10 @@ button {
   .grid-container > :nth-last-child(-n + 1) {
     display: none;
   }
+
+  .shadow-image img {
+    top: -699px !important;
+    width: 260px;
+    height: auto;
+  }
 }
