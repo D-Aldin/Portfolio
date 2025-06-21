@@ -148,7 +148,7 @@ section {
   }
 
   .shadow-image img {
-    bottom: -20px !important;
+    bottom: -190px !important;
   }
 }
 
@@ -178,13 +178,13 @@ section {
   }
 
   .shadow-image img {
-    width: 230px;
+    bottom: -20px !important;
+    width: 234px;
     height: auto;
-    bottom: -45px !important;
   }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 970px) {
+@media only screen and (max-width: 1023px) and (min-width: 970px) {
   .about-me-container {
     padding: 0 50px 0 50px;
   }
@@ -232,5 +232,46 @@ section {
       width: 190px;
       height: auto;
     }
+  }
+}
+
+@media only screen and (max-width: 670px) and (min-width: 310px) {
+  h1 {
+    font-size: 2.45rem !important;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    font-size: 1rem;
+    z-index: 2222;
+    position: relative;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+
+  .portrait-container {
+    display: none;
+  }
+
+  .about-me-container {
+    padding: 0 25px 0 25px;
+  }
+
+  .shadow-image {
+    bottom: 212px;
+
+    img {
+      width: 180px;
+      height: auto;
+    }
+  }
+
+  .image-light-bulb,
+  .image-location,
+  .image-puzzle {
+    padding: 20px;
+    padding-right: 30px;
   }
 }

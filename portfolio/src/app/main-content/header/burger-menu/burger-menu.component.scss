@@ -42,7 +42,7 @@
     color: white;
     text-decoration: none;
     margin: 10px 0;
-    font-size: 40px;
+    font-size: 2.5rem;
     position: relative;
     top: 30%;
   }
@@ -65,7 +65,6 @@
   padding: 14px 50px;
   text-decoration: none;
   font-size: 17px;
-  //   display: block;
   display: flex;
   align-items: center;
 }
@@ -86,11 +85,33 @@
 
 .topnav a:hover {
   background-color: transparent;
-  //   color: black;
 }
 
 .active {
   background-color: $background-primary-color;
   color: rgb(201, 8, 8);
   height: 109px;
+}
+
+.lang {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  top: 31%;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  h4 {
+    margin-block-end: 0em;
+    margin-block-start: 1.33em;
+  }
+}
+
+@media only screen and (max-width: 670px) and (min-width: 310px) {
+  .open-menu {
+    a {
+      font-size: 1.438rem;
+    }
+  }
 }

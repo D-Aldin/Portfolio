@@ -186,4 +186,53 @@ section {
     left: 60%;
     z-index: -1;
   }
+
+  .shadow-2 {
+    bottom: 281px;
+
+    img {
+      width: 220px;
+      height: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 670px) and (min-width: 310px) {
+  h1 {
+    font-size: 2.45rem !important;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  .shadow-wrapper {
+    top: 69px;
+  }
+
+  .shadow {
+    width: 1750px;
+    height: 300px;
+    top: 1026px;
+    left: 30%;
+    z-index: -1;
+  }
+
+  .shadow-2 {
+    bottom: 281px;
+
+    img {
+      width: 220px;
+      height: auto;
+    }
+  }
+
+  .guide {
+    padding: 20px;
+  }
+
+  .first-line {
+    width: 40%;
+    margin-right: 0;
+  }
 }

@@ -1,24 +1,12 @@
-  
-               <img class="hero-background-image" >
-          
-<section class="hero">
-   
+<img class="hero-background-image" >
+<section id="landingPage" class="hero">
    <div class="hero-content">
-   
       <div class="hero-wrapper">
-         
-        
          <div class="hero-image-container">
             <img class="shadow-img" src="./../../assets/img/heroImages/29. photo shadows.png" alt="">
-            
             <img  class="me" src="assets/img/me3.png" alt="">
-           
-            
-      
          </div>
-            
-         
-         <div class="title-container">
+         <div class="title-container" [attr.data-custom]="currentLang">
             <div class="vertical-text" [ngStyle]="{'font-size': currentLang === 'de' ? '2.813rem' : '4rem'}">
                <h3>{{langPath.landingPage.me}}</h3>
             </div>
@@ -36,32 +24,28 @@
          </div>
       </div>
       <div class="hero-background">
-            <div class="social-wrapper">
-               <div>
-                      <div class="social-container">
-               <div class="line"></div>
-               <div class="social-buttons">
-                  <div class="git-wrapper">
-                     <a class="git" href="https://github.com/D-Aldin" target="_blank" rel="noopener noreferrer"></a>
+         <div class="social-wrapper">
+            <div>
+               <div class="social-container">
+                  <div class="line"></div>
+                  <div class="social-buttons">
+                     <div class="git-wrapper">
+                        <a class="git" href="https://github.com/D-Aldin" target="_blank" rel="noopener noreferrer"></a>
+                     </div>
+                     <div class="email-wrapper">
+                        <a class="email" (click)="goToContact()"></a>
+                     </div>
+                     <div class="in-wrapper">
+                        <a class="in" href="www.linkedin.com/in/aldin-dobric-58801936b" target="_blank" rel="noopener noreferrer"></a>
+                     </div>
                   </div>
-                  <div class="email-wrapper">
-                     <a class="email" (click)="goToContact()"></a>
-
-                  </div>
-                  <div class="in-wrapper">
-                     <a class="in" href="www.linkedin.com/in/aldin-dobric-58801936b" target="_blank" rel="noopener noreferrer"></a>
-                  </div>
+                  <a class="my-email" (click)="goToContact()" >dobricaldin&#64;gmail.com</a>
                </div>
-               <a class="my-email" (click)="goToContact()" >dobricaldin&#64;gmail.com</a>
             </div>
-
-               </div>
-        
             <div class="scroll">
                <h3>Scroll down <b>→</b> </h3>
             </div>
          </div>
-         
       </div>
    </div>
 </section>

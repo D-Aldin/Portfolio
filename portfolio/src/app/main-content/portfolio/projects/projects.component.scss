@@ -217,3 +217,49 @@
     justify-content: center;
   }
 }
+
+@media only screen and (max-width: 670px) and (min-width: 310px) {
+  .content-wrapper {
+    gap: 5px;
+    padding: 0 25px 50px 25px;
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .image-container img {
+    width: 250px;
+    height: 250px;
+  }
+
+  h3 {
+    font-size: 2rem !important;
+  }
+
+  .tech h4 {
+    font-size: 0.825rem !important;
+  }
+
+  .buttons-container {
+    // height: 50px;
+
+    .test-btn,
+    .git-btn {
+      margin: 25px 25px 25px 0;
+      width: 100.7px;
+      font-size: 1.1rem !important;
+    }
+  }
+
+  .buttons-container {
+    .test-btn,
+    .git-btn {
+      height: 48px;
+    }
+  }
+
+  .text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

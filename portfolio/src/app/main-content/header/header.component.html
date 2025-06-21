@@ -1,26 +1,23 @@
-<app-burger-menu [goToFn]="goTo" class="burger-menu"></app-burger-menu>
+<app-burger-menu [goToFn]="goTo" [switchLang]="switchLang.bind(this)" class="burger-menu"></app-burger-menu>
 <header>
-  <nav>
-    <a href="index.html" class="logo">
+   <nav>
+      <a href="index.html" class="logo">
       <img src="assets/icons/logo.png" alt="Aldin">
-    </a>
-  
-
-    <div class="nav-links-wrapper">
-      <div class="navigation-links" [ngStyle]="{'display': this.isOnImpressum() === true ? 'none' : 'flex'}">
-        @for (link of langPath.header.links; track $index) {
-          <a (click)="goTo(generateID(link)); " [class]="generateID(link)" [class.underlineActive]="generateID(link) === sectionIsActive">{{link}}</a>
-        }
+      </a>
+      <div class="nav-links-wrapper">
+         <div class="navigation-links" [ngStyle]="{'display': this.isOnImpressum() === true ? 'none' : 'flex'}">
+            @for (link of langPath.header.links; track $index) {
+            <a (click)="goTo(generateID(link)); " [class]="generateID(link)" [class.underlineActive]="generateID(link) === sectionIsActive">{{link}}</a>
+            }
+         </div>
+         <div class="lang">
+            <button class="german" #de (click)="switchLang('de');" [ngStyle]="{ 'background-color': this.currentLanguageActive === 'de' ? 'rgba(112, 230, 28, 1)' : 'transparent',
+            'pointer-events': this.currentLanguageActive === 'de' ? 'none' : 'visiblePainted'
+            }">DE</button>
+            <button class= "english" #en (click)="switchLang('en'); "[ngStyle]="{ 'background-color': this.currentLanguageActive === 'en' ? 'rgba(112, 230, 28, 1)' : 'transparent',
+            'pointer-events': this.currentLanguageActive === 'en' ? 'none' : 'visiblePainted'
+            }">EN</button>
+         </div>
       </div>
-
-      <div class="lang">
-        <button class="german" #de (click)="switchLang('de');" [ngStyle]="{ 'background-color': this.currentLanguageActive === 'de' ? 'rgba(112, 230, 28, 1)' : 'transparent',
-          'pointer-events': this.currentLanguageActive === 'de' ? 'none' : 'visiblePainted'
-         }">DE</button>
-        <button class= "english" #en (click)="switchLang('en'); "[ngStyle]="{ 'background-color': this.currentLanguageActive === 'en' ? 'rgba(112, 230, 28, 1)' : 'transparent',
-          'pointer-events': this.currentLanguageActive === 'en' ? 'none' : 'visiblePainted'
-         }">EN</button>
-      </div>
-    </div>
-  </nav>
+   </nav>
 </header>

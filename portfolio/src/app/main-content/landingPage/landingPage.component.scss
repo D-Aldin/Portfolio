@@ -218,6 +218,11 @@ section {
 @media only screen and (max-width: 1920px) and (min-width: 1601px) {
   .title-container {
     margin-left: 0px;
+
+    &[data-custom="de"] {
+      grid-template-columns: 84px 630px;
+      grid-template-rows: 204px 78px;
+    }
   }
 
   .title-text {
@@ -230,6 +235,10 @@ section {
 
   .vertical-text {
     font-size: 3.6rem !important;
+
+    .title-container[data-custom="de"] & {
+      font-size: 2.54rem !important;
+    }
   }
 
   .frontend-text {
@@ -250,9 +259,9 @@ section {
     top: 461px;
   }
 
-  // .shadow-img {
-  //   bottom: -40px;
-  // }
+  .scroll {
+    margin-right: 80px;
+  }
 }
 
 @media only screen and (max-width: 1600px) and (min-width: 1400px) {
@@ -266,6 +275,10 @@ section {
 
   .title-container {
     margin: 0;
+
+    &[data-custom="de"] {
+      grid-template-columns: 90px 630px;
+    }
   }
 
   .shadow-img {
@@ -287,6 +300,10 @@ section {
   .vertical-text {
     font-size: 3.1rem !important;
     margin-bottom: 30px !important;
+
+    .title-container[data-custom="de"] & {
+      font-size: 2.14rem !important;
+    }
   }
 
   .lets-talk {
@@ -305,6 +322,10 @@ section {
 
   .shadow-img {
     bottom: 677px !important;
+  }
+
+  .scroll {
+    margin-right: 60px;
   }
 }
 
@@ -336,6 +357,10 @@ section {
     grid-template-columns: 90px 380px;
     grid-template-rows: 101px 80px;
     padding-top: 20px;
+
+    &[data-custom="de"] {
+      grid-template-columns: 50px 370px;
+    }
   }
 
   h1 {
@@ -349,6 +374,10 @@ section {
   .vertical-text {
     font-size: 2.3rem !important;
     margin-bottom: 6px !important;
+
+    .title-container[data-custom="de"] & {
+      font-size: 1.54rem !important;
+    }
   }
 
   .title-text {
@@ -375,7 +404,7 @@ section {
   }
 
   .scroll {
-    margin-right: 45px;
+    margin-right: 60px;
   }
 }
 
@@ -411,6 +440,11 @@ section {
     grid-template-columns: 70px 365px;
     grid-template-rows: 130px 50px;
     padding-top: 0;
+
+    &[data-custom="de"] {
+      grid-template-columns: 50px 390px;
+      grid-template-rows: 148px 50px;
+    }
   }
 
   .title-text {
@@ -419,6 +453,11 @@ section {
 
   .vertical-text {
     margin: 0 !important;
+    font-size: 2.6rem;
+
+    // .title-container[data-custom="de"] & {
+    //   font-size: 1.54rem !important;
+    // }
   }
 
   h1 {
@@ -427,6 +466,10 @@ section {
 
   h3 {
     font-size: 2.6rem;
+
+    .title-container[data-custom="de"] & {
+      font-size: 1.74rem !important;
+    }
   }
 
   .frontend-text {
@@ -442,6 +485,10 @@ section {
       height: 43px;
       font-size: 1.1rem;
     }
+  }
+
+  .scroll {
+    margin-right: 60px !important;
   }
 
   .social-wrapper {
@@ -500,6 +547,11 @@ section {
     padding-top: 0;
     position: relative;
     left: -70px;
+
+    &[data-custom="de"] {
+      grid-template-columns: 50px 390px;
+      grid-template-rows: 148px 50px;
+    }
   }
 
   .title-text {
@@ -516,6 +568,10 @@ section {
 
   h3 {
     font-size: 2.6rem;
+
+    .title-container[data-custom="de"] & {
+      font-size: 1.74rem !important;
+    }
   }
 
   .frontend-text {
@@ -553,6 +609,10 @@ section {
   h4 span {
     font-size: 0.875rem !important;
   }
+
+  .scroll {
+    margin-right: 60px !important;
+  }
 }
 
 @media only screen and (max-width: 1071px) and (min-width: 970px) {
@@ -574,5 +634,198 @@ section {
   .title-container {
     grid-template-columns: 50px 325px;
     grid-template-rows: 130px 50px;
+  }
+
+  .scroll {
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 970px) and (min-width: 670px) {
+  .my-email {
+    display: none;
+  }
+
+  .scroll {
+    display: none;
+  }
+
+  .hero-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shadow-img {
+    width: 620px;
+    height: 620px;
+    position: relative;
+    top: -50px;
+    left: 0;
+  }
+
+  .me {
+    height: auto;
+    max-height: 465px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -44.8149%);
+    z-index: 1000;
+  }
+
+  h1 {
+    font-size: 4.5rem !important;
+  }
+
+  h3 {
+    font-size: 3.9rem;
+
+    .title-container[data-custom="de"] & {
+      font-size: 2.54rem !important;
+    }
+  }
+  h4 span {
+    font-size: 0.875rem !important;
+  }
+
+  .frontend-text {
+    font-size: 2.9rem !important;
+  }
+
+  .hero-background-image {
+    min-height: 570px;
+  }
+
+  .hero-image-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+  .title-container {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -246px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .social-wrapper {
+    top: 730px;
+  }
+
+  .line {
+    min-width: calc(100% - 181px);
+  }
+}
+
+@media only screen and (max-width: 670px) and (min-width: 310px) {
+  .my-email,
+  .scroll {
+    display: none;
+  }
+
+  .hero-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shadow-img {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: -50px;
+    left: 0;
+  }
+
+  .me {
+    height: auto;
+    max-height: 290px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -43.6149%);
+    z-index: 1000;
+  }
+
+  h1 {
+    font-size: 2.45rem !important;
+  }
+
+  h3 {
+    font-size: 2rem;
+
+    .title-container[data-custom="de"] & {
+      font-size: 1.34rem !important;
+    }
+  }
+  h4 span {
+    font-size: 0.875rem !important;
+  }
+
+  .frontend-text {
+    font-size: 1.55rem !important;
+  }
+
+  .hero-background-image {
+    min-height: 179px;
+    top: 234px;
+  }
+
+  .hero-image-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+  .title-container {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -180px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .social-wrapper {
+    top: 380px;
+  }
+
+  .social-buttons {
+    gap: 20px;
+    margin-left: 25px;
+  }
+
+  .line {
+    min-width: calc(100% - 166px);
+    width: 50%;
+  }
+
+  .lets-talk {
+    margin-top: 0px;
+
+    button {
+      width: 130px;
+      height: 49px;
+    }
   }
 }

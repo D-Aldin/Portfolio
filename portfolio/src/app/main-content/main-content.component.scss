@@ -18,3 +18,15 @@ app-header {
   z-index: 1000000; /* ensures header stays above other content */
   display: block;
 }
+
+@media only screen and (max-width: 970px) and (min-width: 670px) {
+  .page-wrapper {
+    overflow-y: visible;
+  }
+}
+
+@media only screen and (max-width: 670px) and (min-width: 310px) {
+  .page-wrapper {
+    overflow: hidden;
+  }
+}

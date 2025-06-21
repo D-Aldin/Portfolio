@@ -323,3 +323,103 @@ button {
     height: auto;
   }
 }
+
+@media only screen and (max-width: 670px) and (min-width: 310px) {
+  section {
+    padding: 10px 0 0 20px;
+    margin-top: 80px;
+  }
+
+  h1 {
+    font-size: 2.45rem !important;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .my-skills-container {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .stack {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .mobile-view {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 20px;
+
+    div {
+      padding: 30px;
+    }
+
+    .bubble-container {
+      padding: 0;
+    }
+  }
+
+  .grid-container > :nth-last-child(-n + 1) {
+    display: none;
+  }
+
+  .shadow-image img {
+    top: -699px !important;
+    width: 228px;
+    height: auto;
+  }
+
+  .icons {
+    width: 30px;
+    height: auto;
+  }
+
+  .icon-container {
+    padding: 10px;
+  }
+
+  .interest {
+    padding: 10px !important;
+    background-size: 60px auto;
+    width: 128px !important;
+    height: 75px !important;
+  }
+
+  .another-skill {
+    padding: 20px;
+    h2,
+    span {
+      font-size: 1.5rem;
+    }
+  }
+
+  .line {
+    width: 35px;
+  }
+
+  .icon-10 {
+    padding: 10px;
+  }
+
+  .tech-experience {
+    padding: 20px;
+  }
+}

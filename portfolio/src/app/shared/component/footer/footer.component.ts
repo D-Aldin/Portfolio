@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, viewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ScrollService } from '../../../scrollToContact';
+import { ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -11,6 +12,8 @@ import { ScrollService } from '../../../scrollToContact';
 })
 export class FooterComponent {
   constructor(private scrollService: ScrollService) {}
+
+  @ViewChild('legalNotice') legalNotice!: ElementRef;
 
   goToContact(): void {
     this.scrollService.scrollToContact();

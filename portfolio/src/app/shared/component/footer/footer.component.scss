@@ -11,6 +11,7 @@ footer {
   z-index: 999;
   position: relative;
   height: 291px;
+  flex-direction: column;
 
   span {
     font-size: 23px;
@@ -28,6 +29,11 @@ footer {
 
 .legal-notice {
   font-size: 16px;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 80px;
 
   a {
     color: white;
@@ -47,6 +53,8 @@ footer {
   .in-wrapper {
     width: 42px;
     height: 42px;
+    display: flex;
+    align-items: center;
   }
 
   .git {
@@ -77,4 +85,73 @@ footer {
 .underline {
   @include link-underline($color-green);
   cursor: pointer;
+}
+
+.footer-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 970px) and (min-width: 670px) {
+  footer {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo img {
+    width: 200px;
+    height: 60px;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+  }
+
+  .legal-notice {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .left-side {
+    margin-bottom: 20px;
+  }
+
+  .social-media {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 670px) and (min-width: 310px) {
+  footer {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo img {
+    width: 200px;
+    height: 60px;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+  }
+
+  .legal-notice {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .left-side {
+    margin-bottom: 20px;
+  }
+
+  .social-media {
+    padding: 20px;
+  }
 }

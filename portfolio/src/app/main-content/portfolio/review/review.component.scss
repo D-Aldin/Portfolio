@@ -195,4 +195,61 @@
   span {
     font-size: 0.793rem;
   }
+
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .line {
+    min-width: calc(100% - 484px);
+  }
+}
+
+@media only screen and (max-width: 670px) and (min-width: 310px) {
+  .review-block {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .review-container {
+    width: 280px;
+    height: 457px;
+  }
+
+  span {
+    font-size: 0.793rem;
+    z-index: 2222;
+    position: relative;
+  }
+
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .line {
+    min-width: calc(100% - 484px);
+  }
+
+  .image-container img {
+    width: 144px;
+    height: 144px;
+  }
+
+  .exclamation img {
+    width: 45px;
+    height: auto;
+    bottom: 210px;
+  }
+
+  .review-text {
+    padding: 8px;
+  }
+
+  .name h3 {
+    font-size: 0.793rem;
+  }
 }

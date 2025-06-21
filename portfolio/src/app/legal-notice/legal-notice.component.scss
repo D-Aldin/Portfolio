@@ -12,7 +12,7 @@ section {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 
 .shadow-image-1 {
@@ -36,5 +36,23 @@ h1 {
     transform: translateX(27%);
     top: -648px;
     z-index: -1;
+  }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 310px) {
+  section {
+    padding: 50px;
+  }
+
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.875rem;
   }
 }

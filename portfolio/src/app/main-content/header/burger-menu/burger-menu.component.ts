@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Renderer2, OnDestroy } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
+import { LanguageService } from '../../../language';
 
 import { Input } from '@angular/core';
 
@@ -16,12 +17,14 @@ import { Input } from '@angular/core';
 export class BurgerMenuComponent {
   constructor(
     private renderer: Renderer2,
+    private languageService: LanguageService,
     @Inject(PLATFORM_ID) private platformId: Object
   ) {}
 
   isOpen: boolean = false;
 
   @Input() goToFn!: (section: string) => void;
+  @Input() switchLang!: (lang: string) => void;
 
   toogleMenuBurger() {
     this.isOpen = !this.isOpen;
@@ -46,5 +49,9 @@ export class BurgerMenuComponent {
     setTimeout(() => {
       this.isOpen = false;
     }, delay);
+  }
+
+  get langPath() {
+    return this.languageService.getCurrentTranslations();
   }
 }

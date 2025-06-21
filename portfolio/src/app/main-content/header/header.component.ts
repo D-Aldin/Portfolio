@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { LanguageService } from '../../language';
 import { ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -21,6 +21,7 @@ export class HeaderComponent {
   ) {}
 
   @ViewChild('burger') burgerMenu!: BurgerMenuComponent;
+
   sectionIsActive: string = '';
 
   isOnImpressum(): boolean {
