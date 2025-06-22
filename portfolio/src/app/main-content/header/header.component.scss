@@ -12,14 +12,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // position: sticky;
-  // top: 0;
   z-index: 999999;
   width: 100%;
 }
 
 nav {
-  @include flex-center($justify: space-between);
+  @include flex-setup($justify: space-between);
   width: 100%;
 }
 
@@ -37,7 +35,7 @@ nav {
 
 .nav-links-wrapper {
   margin: 0;
-  @include flex-center;
+  @include flex-setup;
   gap: 100px;
 }
 

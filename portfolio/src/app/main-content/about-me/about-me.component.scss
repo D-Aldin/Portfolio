@@ -2,7 +2,7 @@
 @import "./../../../styles/mixins";
 
 section {
-  @include flex-center($justify: space-between);
+  @include flex-setup($justify: space-between);
   z-index: 1001;
   position: relative;
   width: 100%;
@@ -70,7 +70,7 @@ section {
 }
 
 .portrait-container {
-  @include flex-center($justify: flex-end);
+  @include flex-setup($justify: flex-end);
   margin: 0;
   width: 100%;
 

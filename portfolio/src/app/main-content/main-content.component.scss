@@ -14,14 +14,13 @@ app-header {
   top: 0;
   background: white;
   width: 100%;
-  // padding: 1rem;
-  z-index: 1000000; /* ensures header stays above other content */
+  z-index: 1000000;
   display: block;
 }
 
 @media only screen and (max-width: 970px) and (min-width: 670px) {
   .page-wrapper {
-    overflow-y: visible;
+    overflow-y: hidden;
   }
 }
 

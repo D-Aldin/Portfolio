@@ -1,4 +1,11 @@
-@mixin flex-center($justify: center, $align: center, $direction: null) {
+$breakpoints: (
+  xl: 1300,
+  lg: 1024,
+  md: 768,
+  sm: 480,
+);
+
+@mixin flex-setup($justify: center, $align: center, $direction: null) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
@@ -63,4 +70,18 @@
   &:hover::before {
     transform: scaleX(1);
   }
+}
+
+@mixin respond-between($min, $max) {
+  @media only screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin shadow-img-small {
+  width: 540px;
+  height: 540px;
+  position: relative;
+  top: -50px;
+  left: 0;
 }

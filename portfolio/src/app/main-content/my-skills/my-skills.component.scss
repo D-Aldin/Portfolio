@@ -18,7 +18,7 @@ section {
 }
 
 .my-skills-container {
-  @include flex-center();
+  @include flex-setup();
   gap: 300px;
 }
 
