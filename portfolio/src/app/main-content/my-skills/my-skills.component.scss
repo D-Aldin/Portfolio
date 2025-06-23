@@ -6,6 +6,31 @@ section {
   padding: 50px 0 0 100px;
   color: white;
   scroll-margin-top: 300px;
+
+  @include respond-between(1301px, 1600px) {
+    padding: 50px 0 0 70px;
+    margin-top: 80px;
+  }
+
+  @include respond-between(1024px, 1300px) {
+    padding: 50px 0 0 50px;
+    margin-top: 80px;
+  }
+
+  @include respond-between(970px, 12024px) {
+    padding: 50px 0 0 50px;
+    margin-top: 80px;
+  }
+
+  @include respond-between(670px, 970px) {
+    padding: 10px 0 0 20px;
+    margin-top: 80px;
+  }
+
+  @include respond-between(310px, 670px) {
+    padding: 10px 0 0 20px;
+    margin-top: 80px;
+  }
 }
 
 @for $i from 0 through 10 {
@@ -20,6 +45,32 @@ section {
 .my-skills-container {
   @include flex-setup();
   gap: 300px;
+
+  @include respond-between(1601px, 1920px) {
+    gap: 120px;
+  }
+
+  @include respond-between(1301px, 1600px) {
+    gap: 50px;
+  }
+
+  @include respond-between(1024px, 1300px) {
+    gap: 50px;
+  }
+
+  @include respond-between(970px, 1024px) {
+    gap: 50px;
+  }
+
+  @include respond-between(670px, 970px) {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  @include respond-between(310px, 670px) {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
 }
 
 .my-skills {
@@ -29,6 +80,28 @@ section {
     font-family: fontPoppins;
     font-weight: normal;
   }
+
+  @include respond-between(1301px, 1600px) {
+    h3 {
+      font-size: 1rem;
+    }
+  }
+
+  @include respond-between(970px, 1300px) {
+    h3 {
+      font-size: 0.875rem;
+    }
+  }
+
+  @include respond-between(670px, 970px) {
+    h3 {
+      font-size: 1rem;
+    }
+  }
+
+  @include respond-between(310px, 670px) {
+    font-size: 1rem;
+  }
 }
 
 .title {
@@ -36,10 +109,45 @@ section {
   align-items: center;
   gap: 30px;
   justify-content: flex-end;
+
   h1 {
     font-size: 90px;
     font-family: fontPoppinsMedium;
     margin-right: 0;
+  }
+
+  @include respond-between(1601px, 1920px) {
+    h1 {
+      font-size: 5.025rem;
+    }
+  }
+
+  @include respond-between(1301px, 1600px) {
+    h1 {
+      font-size: 4.225rem !important;
+    }
+  }
+
+  @include respond-between(1024px, 1300px) {
+    font-size: 3.125rem !important;
+  }
+
+  @include respond-between(970px, 1024px) {
+    h1 {
+      font-size: 3.1rem !important;
+    }
+  }
+
+  @include respond-between(670px, 970px) {
+    h1 {
+      font-size: 2.813rem !important;
+    }
+  }
+
+  @include respond-between(310px, 670px) {
+    h1 {
+      font-size: 2.45rem !important;
+    }
   }
 }
 
@@ -50,10 +158,35 @@ section {
 
 .line {
   @include purple-line($width: 70px, $margin: 0);
+
+  @include respond-between(970px, 1024px) {
+    width: 50px;
+  }
+
+  @include respond-between(310px, 670px) {
+    width: 35px;
+  }
 }
 
 .text-container {
   padding-right: 100px;
+
+  @include respond-between(970px, 1024px) {
+    padding-right: 80px;
+  }
+
+  @include respond-between(670px, 970px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include respond-between(310px, 670px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
 }
 
 .another-skill {
@@ -72,11 +205,39 @@ section {
   span {
     color: $color-purple;
   }
+
+  @include respond-between(1024px, 1300px) {
+    h2,
+    span {
+      font-size: 1.65rem !important;
+    }
+  }
+
+  @include respond-between(970px, 1024px) {
+    font-size: 1.563rem;
+  }
+
+  @include respond-between(310px, 670px) {
+    padding: 20px;
+    h2,
+    span {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
+
+  @include respond-between(310px, 970px) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    > :nth-last-child(-n + 1) {
+      display: none;
+    }
+  }
 }
 
 .icon-container {
@@ -89,12 +250,34 @@ section {
   img {
     margin-bottom: 12px;
   }
+
+  @include respond-between(1301px, 1600px) {
+    padding: 25px;
+  }
+
+  @include respond-between(970px, 1300px) {
+    padding: 20px;
+  }
+
+  @include respond-between(310px, 670px) {
+    padding: 10px;
+  }
 }
 
 .icons {
   transition: transform 0.3s ease;
   &:hover {
     transform: translateY(-10px);
+  }
+
+  @include respond-between(970px, 1024px) {
+    width: 52px;
+    height: auto;
+  }
+
+  @include respond-between(310px, 670px) {
+    width: 30px;
+    height: auto;
   }
 }
 
@@ -118,6 +301,15 @@ section {
 
     &:hover {
       background-image: url("./../../../assets/icons/my-skills/interest-white.png");
+    }
+
+    @include respond-between(310px, 670px) {
+      .interest {
+        padding: 10px !important;
+        background-size: 60px auto;
+        width: 128px !important;
+        height: 75px !important;
+      }
     }
   }
 
@@ -154,154 +346,33 @@ button {
     transform: translateX(69%);
     top: -318px;
   }
-}
 
-@media only screen and (max-width: 1920px) and (min-width: 1601px) {
-  h1 {
-    font-size: 5.025rem;
+  @include respond-between(670px, 970px) {
+    img {
+      top: -699px !important;
+      width: 260px;
+      height: auto;
+    }
   }
 
-  .my-skills-container {
-    gap: 120px;
-  }
-}
-
-@media only screen and (max-width: 1600px) and (min-width: 1301px) {
-  section {
-    padding: 50px 0 0 70px;
-    margin-top: 80px;
-  }
-
-  h1 {
-    font-size: 4.225rem !important;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  .my-skills-container {
-    gap: 50px;
-  }
-
-  .icon-container {
-    padding: 25px;
+  @include respond-between(310px, 670px) {
+    img {
+      top: -699px !important;
+      width: 228px;
+      height: auto;
+    }
   }
 }
 
-@media only screen and (max-width: 1300px) and (min-width: 1024px) {
-  section {
-    padding: 50px 0 0 50px;
-    margin-top: 80px;
-  }
-
-  h1 {
-    font-size: 3.125rem !important;
-  }
-
-  h3 {
-    font-size: 0.875rem;
-  }
-
-  h2,
-  span {
-    font-size: 1.65rem !important;
-  }
-
-  .my-skills-container {
-    gap: 50px;
-  }
-
-  .icon-container {
-    padding: 20px;
-
-    // img {
-    //   width: 50px;
-    //   height: 20px;
-    // }
-  }
-}
-@media only screen and (max-width: 1024px) and (min-width: 970px) {
-  section {
-    padding: 50px 0 0 50px;
-    margin-top: 80px;
-  }
-
-  .my-skills-container {
-    gap: 50px;
-  }
-
-  h1 {
-    font-size: 3.1rem !important;
-  }
-
-  h3 {
-    font-size: 0.875rem;
-  }
-
-  .icon-container {
-    padding: 20px;
-  }
-
-  .icons {
-    width: 52px;
-    height: auto;
-  }
-
-  .another-skill {
-    font-size: 1.563rem;
-  }
-
-  .line {
-    width: 50px;
-  }
-
-  .text-container {
-    padding-right: 80px;
+.stack {
+  @include respond-between(310px, 970px) {
+    @include flex-setup($direction: column);
   }
 }
 
-@media only screen and (max-width: 970px) and (min-width: 670px) {
-  section {
-    padding: 10px 0 0 20px;
-    margin-top: 80px;
-  }
-
-  h1 {
-    font-size: 2.813rem !important;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  .my-skills-container {
-    flex-direction: column-reverse;
-    gap: 50px;
-  }
-
-  .stack {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-
-  .text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .mobile-view {
-    display: flex;
-    align-items: center;
-    justify-self: center;
+.mobile-view {
+  @include respond-between(670px, 970px) {
+    @include flex-setup();
     gap: 20px;
 
     div {
@@ -313,59 +384,8 @@ button {
     }
   }
 
-  .grid-container > :nth-last-child(-n + 1) {
-    display: none;
-  }
-
-  .shadow-image img {
-    top: -699px !important;
-    width: 260px;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 670px) and (min-width: 310px) {
-  section {
-    padding: 10px 0 0 20px;
-    margin-top: 80px;
-  }
-
-  h1 {
-    font-size: 2.45rem !important;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  .my-skills-container {
-    flex-direction: column-reverse;
-    gap: 50px;
-  }
-
-  .stack {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-
-  .text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-
-  .mobile-view {
-    display: flex;
-    align-items: center;
-    justify-self: center;
+  @include respond-between(310px, 670px) {
+    @include flex-setup();
     gap: 20px;
 
     div {
@@ -376,50 +396,14 @@ button {
       padding: 0;
     }
   }
+}
 
-  .grid-container > :nth-last-child(-n + 1) {
-    display: none;
-  }
-
-  .shadow-image img {
-    top: -699px !important;
-    width: 228px;
-    height: auto;
-  }
-
-  .icons {
-    width: 30px;
-    height: auto;
-  }
-
-  .icon-container {
+.icon-10 {
+  @include respond-between(310px, 670px) {
     padding: 10px;
   }
+}
 
-  .interest {
-    padding: 10px !important;
-    background-size: 60px auto;
-    width: 128px !important;
-    height: 75px !important;
-  }
-
-  .another-skill {
-    padding: 20px;
-    h2,
-    span {
-      font-size: 1.5rem;
-    }
-  }
-
-  .line {
-    width: 35px;
-  }
-
-  .icon-10 {
-    padding: 10px;
-  }
-
-  .tech-experience {
-    padding: 20px;
-  }
+.tech-experience {
+  padding: 20px;
 }

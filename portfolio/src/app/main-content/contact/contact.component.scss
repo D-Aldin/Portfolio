@@ -3,6 +3,10 @@
 
 section {
   margin-top: 200px;
+
+  @include respond-between(310px, 670px) {
+    margin-top: 80px;
+  }
 }
 
 .title {
@@ -23,6 +27,58 @@ section {
     font-family: fontPoppinsMedium;
     order: 2;
   }
+
+  @include respond-between(1601px, 1920px) {
+    .line {
+      width: 35% !important;
+    }
+  }
+
+  @include respond-between(1301px, 1600px) {
+    .line {
+      width: 30% !important;
+    }
+  }
+
+  @include respond-between(1024px, 1300px) {
+    h1 {
+      font-size: 3.125rem !important;
+    }
+
+    .line {
+      width: 35% !important;
+    }
+  }
+
+  @include respond-between(970px, 1024px) {
+    h1 {
+      font-size: 3.1rem !important;
+    }
+
+    .line {
+      width: 35% !important;
+    }
+  }
+
+  @include respond-between(670px, 970px) {
+    h1 {
+      font-size: 2.813rem !important;
+    }
+
+    .line {
+      width: 35% !important;
+    }
+  }
+
+  @include respond-between(310px, 670px) {
+    h1 {
+      font-size: 2.45rem !important;
+    }
+
+    .line {
+      width: 20% !important;
+    }
+  }
 }
 
 .content-wrapper {
@@ -30,6 +86,28 @@ section {
   gap: 170px;
   display: flex;
   justify-content: space-between;
+
+  @include respond-between(1601px, 1920px) {
+    padding: 100px 100px 100px 100px;
+    gap: 90px;
+  }
+
+  @include respond-between(1301px, 1600px) {
+    padding: 100px 70px 100px 70px;
+    gap: 60px;
+  }
+
+  @include respond-between(970px, 1300px) {
+    padding: 90px 50px 90px 50px;
+    gap: 50px;
+  }
+
+  @include respond-between(310px, 970px) {
+    padding: 90px 30px 90px 30px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .text {
@@ -47,6 +125,24 @@ section {
     font-weight: normal;
     margin-bottom: 20px;
   }
+
+  @include respond-between(1024px, 1300px) {
+    h2 {
+      font-size: 1.7rem !important;
+    }
+  }
+
+  @include respond-between(970px, 1024px) {
+    h3 {
+      font-size: 0.875rem !important;
+    }
+  }
+
+  @include respond-between(670px, 970px) {
+    h3 {
+      font-size: 0.875rem !important;
+    }
+  }
 }
 
 .shadow {
@@ -59,6 +155,21 @@ section {
     bottom: 114px;
     z-index: 1;
   }
+
+  @include respond-between(670px, 970px) {
+    img {
+      width: 290px;
+      height: auto;
+    }
+  }
+
+  @include respond-between(310px, 670px) {
+    img {
+      width: 167px;
+      height: auto;
+      bottom: 60px;
+    }
+  }
 }
 
 .go-back-wrapper {
@@ -68,6 +179,10 @@ section {
   position: relative;
   bottom: 100px;
   padding-right: 120px;
+
+  @include respond-between(310px, 670px) {
+    padding: 30px 20px 0 0;
+  }
 }
 
 .go-back {
@@ -82,130 +197,5 @@ section {
 
   &:hover {
     background-image: url("./../../../assets/icons/contact/up-hover.png");
-  }
-}
-
-@media only screen and (max-width: 1920px) and (min-width: 1601px) {
-  .content-wrapper {
-    padding: 100px 100px 100px 100px;
-    gap: 90px;
-  }
-
-  .line {
-    width: 35% !important;
-  }
-}
-
-@media only screen and (max-width: 1600px) and (min-width: 1301px) {
-  .content-wrapper {
-    padding: 100px 70px 100px 70px;
-    gap: 60px;
-  }
-
-  .line {
-    width: 30% !important;
-  }
-}
-
-@media only screen and (max-width: 1300px) and (min-width: 1024px) {
-  h1 {
-    font-size: 3.125rem !important;
-  }
-
-  h2 {
-    font-size: 1.7rem !important;
-  }
-
-  .content-wrapper {
-    padding: 90px 50px 90px 50px;
-    gap: 50px;
-  }
-
-  .line {
-    width: 35% !important;
-  }
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 970px) {
-  h1 {
-    font-size: 3.1rem !important;
-  }
-
-  h3 {
-    font-size: 0.875rem !important;
-  }
-
-  .line {
-    width: 35% !important;
-  }
-
-  .content-wrapper {
-    padding: 90px 50px 90px 50px;
-    gap: 50px;
-  }
-}
-
-@media only screen and (max-width: 970px) and (min-width: 670px) {
-  h1 {
-    font-size: 2.813rem !important;
-  }
-
-  h3 {
-    font-size: 0.875rem !important;
-  }
-
-  .line {
-    width: 35% !important;
-  }
-
-  .content-wrapper {
-    padding: 90px 30px 90px 30px;
-    gap: 50px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .shadow img {
-    width: 290px;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 670px) and (min-width: 310px) {
-  section {
-    margin-top: 80px;
-  }
-
-  h1 {
-    font-size: 2.45rem !important;
-  }
-
-  h3 {
-    font-size: 0.875rem !important;
-  }
-
-  .line {
-    width: 35% !important;
-  }
-
-  .content-wrapper {
-    padding: 90px 25px 90px 25px;
-    gap: 50px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .shadow {
-    // bottom: 60px;
-
-    img {
-      width: 167px;
-      height: auto;
-      bottom: 60px;
-    }
-  }
-
-  .line {
-    width: 20% !important;
   }
 }

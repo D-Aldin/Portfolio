@@ -12,6 +12,10 @@ section {
   position: relative;
   width: 160px;
   height: 40px;
+
+  @include respond-between(310px, 970px) {
+    top: 69px;
+  }
 }
 
 .shadow {
@@ -20,21 +24,40 @@ section {
   background-size: contain;
 
   position: relative;
-  // top: 889px;
   left: 120%;
+
+  @include respond-between(670px, 970px) {
+    width: 1750px;
+    height: 650px;
+    top: 910px;
+    left: 60%;
+    z-index: -1;
+  }
+
+  @include respond-between(310px, 670px) {
+    width: 1750px;
+    height: 300px;
+    top: 1026px;
+    left: 30%;
+    z-index: -1;
+  }
 }
 
 .first-line {
   @include purple-line();
   justify-self: end;
   margin-right: 20px;
+
+  @include respond-between(310px, 670px) {
+    width: 40%;
+    margin-right: 0;
+  }
 }
 
 .secound-line {
   @include purple-line($width: 100%);
   flex-grow: 1;
   min-width: 20px !important;
-  // margin-left: 20px;
   width: 100%;
   max-width: calc(100vw - 50%) !important;
 }
@@ -59,6 +82,42 @@ section {
     font-family: fontPoppinsMedium;
     order: 2;
   }
+
+  @include respond-between(1601px, 1920px) {
+    h1 {
+      font-size: 5.025rem !important;
+    }
+  }
+
+  @include respond-between(1301px, 1600px) {
+    h1 {
+      font-size: 4.225rem !important;
+    }
+  }
+
+  @include respond-between(1024px, 1300px) {
+    h1 {
+      font-size: 3.125rem !important;
+    }
+  }
+
+  @include respond-between(970px, 1024px) {
+    h1 {
+      font-size: 3.1rem !important;
+    }
+  }
+
+  @include respond-between(670px, 970px) {
+    h1 {
+      font-size: 2.813rem !important;
+    }
+  }
+
+  @include respond-between(310px, 670px) {
+    h1 {
+      font-size: 2.45rem !important;
+    }
+  }
 }
 
 .guide {
@@ -69,6 +128,22 @@ section {
   h3 {
     font-family: fontPoppins;
     font-weight: normal;
+  }
+
+  @include respond-between(970px, 1024px) {
+    h3 {
+      font-size: 0.875rem;
+    }
+  }
+
+  @include respond-between(310px, 970px) {
+    h3 {
+      font-size: 0.9rem;
+    }
+  }
+
+  @include respond-between(310px, 670px) {
+    padding: 20px;
   }
 }
 
@@ -81,6 +156,26 @@ section {
     transform: translateX(100%);
     top: 806px;
   }
+
+  @include respond-between(1301px, 1600px) {
+    img {
+      width: 440px;
+      height: auto;
+    }
+  }
+
+  @include respond-between(970px, 1300px) {
+    position: relative;
+
+    img {
+      position: absolute;
+      right: 100%;
+      transform: translateX(100%);
+      top: 870px;
+      width: 280px;
+      height: auto;
+    }
+  }
 }
 
 .shadow-2 {
@@ -92,44 +187,8 @@ section {
     transform: translateX(0%);
     bottom: -29px;
   }
-}
 
-@media only screen and (max-width: 1920px) and (min-width: 1601px) {
-  h1 {
-    font-size: 5.025rem !important;
-  }
-}
-
-@media only screen and (max-width: 1600px) and (min-width: 1301px) {
-  h1 {
-    font-size: 4.225rem !important;
-  }
-
-  .shadow img {
-    width: 440px;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 1300px) and (min-width: 1024px) {
-  h1 {
-    font-size: 3.125rem !important;
-  }
-
-  .shadow {
-    position: relative;
-
-    img {
-      position: absolute;
-      right: 100%;
-      transform: translateX(100%);
-      top: 806px;
-      width: 280px;
-      height: auto;
-    }
-  }
-
-  .shadow-2 {
+  @include respond-between(1024px, 1300px) {
     position: relative;
 
     img {
@@ -141,84 +200,8 @@ section {
       height: auto;
     }
   }
-}
 
-@media only screen and (max-width: 1024px) and (min-width: 970px) {
-  h1 {
-    font-size: 3.1rem !important;
-  }
-
-  h3 {
-    font-size: 0.875rem;
-  }
-
-  .shadow {
-    position: relative;
-
-    img {
-      position: absolute;
-      right: 100%;
-      transform: translateX(100%);
-      top: 806px;
-      width: 280px;
-      height: auto;
-    }
-  }
-}
-
-@media only screen and (max-width: 970px) and (min-width: 670px) {
-  h1 {
-    font-size: 2.813rem !important;
-  }
-
-  h3 {
-    font-size: 0.9rem;
-  }
-
-  .shadow-wrapper {
-    top: 69px;
-  }
-
-  .shadow {
-    width: 1750px;
-    height: 650px;
-    top: 910px;
-    left: 60%;
-    z-index: -1;
-  }
-
-  .shadow-2 {
-    bottom: 281px;
-
-    img {
-      width: 220px;
-      height: auto;
-    }
-  }
-}
-
-@media only screen and (max-width: 670px) and (min-width: 310px) {
-  h1 {
-    font-size: 2.45rem !important;
-  }
-
-  h3 {
-    font-size: 0.9rem;
-  }
-
-  .shadow-wrapper {
-    top: 69px;
-  }
-
-  .shadow {
-    width: 1750px;
-    height: 300px;
-    top: 1026px;
-    left: 30%;
-    z-index: -1;
-  }
-
-  .shadow-2 {
+  @include respond-between(670px, 970px) {
     bottom: 281px;
 
     img {
@@ -227,12 +210,12 @@ section {
     }
   }
 
-  .guide {
-    padding: 20px;
-  }
+  @include respond-between(310px, 670px) {
+    bottom: 281px;
 
-  .first-line {
-    width: 40%;
-    margin-right: 0;
+    img {
+      width: 220px;
+      height: auto;
+    }
   }
 }

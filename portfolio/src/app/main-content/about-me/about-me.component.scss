@@ -6,6 +6,10 @@ section {
   z-index: 1001;
   position: relative;
   width: 100%;
+
+  @include respond-between(1301px, 1600px) {
+    margin-top: -90px;
+  }
 }
 
 .about-me-container {
@@ -18,9 +22,73 @@ section {
     font-family: fontPoppinsMedium;
   }
 
-  h4 {
+  h4,
+  span {
     font-family: fontPoppins;
     font-weight: normal;
+
+    @include respond-between(1024px, 1300px) {
+      font-size: 0.875rem !important;
+    }
+
+    @include respond-between(310px, 670px) {
+      h4 {
+        font-size: 1rem;
+        z-index: 2222;
+        position: relative;
+      }
+
+      span {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  @include respond-between(1601px, 1920px) {
+    padding: 0 100px 0 140px;
+
+    h1 {
+      font-size: 5.025rem !important;
+    }
+  }
+
+  @include respond-between(1301px, 1600px) {
+    padding: 0 70px 0 70px;
+
+    h1 {
+      font-size: 4.225rem;
+    }
+  }
+
+  @include respond-between(1024px, 1300px) {
+    padding: 0 50px 0 50px;
+
+    h1 {
+      font-size: 3.125rem !important;
+    }
+  }
+
+  @include respond-between(970px, 1023px) {
+    padding: 0 50px 0 50px;
+
+    h1 {
+      font-size: 3.1rem !important;
+    }
+  }
+
+  @include respond-between(670px, 970px) {
+    padding: 0 50px 0 50px;
+    h1 {
+      font-size: 2.813rem !important;
+    }
+  }
+
+  @include respond-between(310px, 670px) {
+    padding: 0 25px 0 25px;
+    h1 {
+      font-size: 2.45rem !important;
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -90,6 +158,44 @@ section {
     margin: 0;
     z-index: 100;
   }
+
+  @include respond-between(1601px, 1920px) {
+    width: 383px;
+    height: 383px;
+  }
+
+  @include respond-between(1301px, 1600px) {
+    img {
+      width: 300px !important;
+      height: 300px !important;
+    }
+
+    .line {
+      width: 120px;
+    }
+  }
+
+  @include respond-between(1024px, 1300px) {
+    img {
+      width: 250px !important;
+      height: 250px !important;
+    }
+
+    .line {
+      width: 90px;
+    }
+  }
+
+  @include respond-between(970px, 1023px) {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  @include respond-between(310px, 970px) {
+    display: none;
+  }
 }
 
 .shadow {
@@ -105,104 +211,24 @@ section {
     left: 100%;
     transform: translateX(-100%);
     bottom: -160px;
-  }
-}
-
-@media only screen and (max-width: 1920px) and (min-width: 1601px) {
-  .about-me-container {
-    padding: 0 100px 0 140px;
+    z-index: -1;
   }
 
-  .portrait-container img {
-    width: 383px !important;
-    height: 383px !important;
-  }
-
-  h1 {
-    font-size: 5.025rem !important;
-  }
-}
-
-@media only screen and (max-width: 1600px) and (min-width: 1301px) {
-  section {
-    margin-top: -90px;
-  }
-
-  .about-me-container {
-    padding: 0 70px 0 70px;
-  }
-
-  .portrait-container {
+  @include respond-between(1301px, 1600px) {
     img {
-      width: 300px !important;
-      height: 300px !important;
-    }
-
-    .line {
-      width: 120px;
+      bottom: -190px;
     }
   }
 
-  h1 {
-    font-size: 4.225rem !important;
-  }
-
-  .shadow-image img {
-    bottom: -190px !important;
-  }
-}
-
-@media only screen and (max-width: 1300px) and (min-width: 1024px) {
-  .about-me-container {
-    padding: 0 50px 0 50px;
-  }
-
-  .portrait-container {
+  @include respond-between(1024px, 1300px) {
     img {
-      width: 250px !important;
-      height: 250px !important;
-    }
-
-    .line {
-      width: 90px;
+      bottom: -20px;
+      width: 234px;
+      height: auto;
     }
   }
 
-  h1 {
-    font-size: 3.125rem !important;
-  }
-
-  h4,
-  span {
-    font-size: 0.875rem !important;
-  }
-
-  .shadow-image img {
-    bottom: -20px !important;
-    width: 234px;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 1023px) and (min-width: 970px) {
-  .about-me-container {
-    padding: 0 50px 0 50px;
-  }
-
-  h1 {
-    font-size: 3.1rem !important;
-  }
-
-  .portrait-container img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .line {
-    width: 50px !important;
-  }
-
-  .shadow-image {
+  @include respond-between(970px, 1023px) {
     bottom: 212px;
 
     img {
@@ -210,56 +236,18 @@ section {
       height: auto;
     }
   }
-}
 
-@media only screen and (max-width: 970px) and (min-width: 670px) {
-  h1 {
-    font-size: 2.813rem !important;
-  }
+  @include respond-between(670px, 970px) {
+    .shadow-image {
+      bottom: 212px;
 
-  .portrait-container {
-    display: none;
-  }
-
-  .about-me-container {
-    padding: 0 50px 0 50px;
-  }
-
-  .shadow-image {
-    bottom: 212px;
-
-    img {
-      width: 190px;
-      height: auto;
+      img {
+        width: 190px;
+        height: auto;
+      }
     }
   }
-}
-
-@media only screen and (max-width: 670px) and (min-width: 310px) {
-  h1 {
-    font-size: 2.45rem !important;
-    margin-bottom: 10px;
-  }
-
-  h4 {
-    font-size: 1rem;
-    z-index: 2222;
-    position: relative;
-  }
-
-  span {
-    font-size: 0.8rem;
-  }
-
-  .portrait-container {
-    display: none;
-  }
-
-  .about-me-container {
-    padding: 0 25px 0 25px;
-  }
-
-  .shadow-image {
+  @include respond-between(310px, 670px) {
     bottom: 212px;
 
     img {
@@ -267,7 +255,15 @@ section {
       height: auto;
     }
   }
+}
 
+.line {
+  @include respond-between(970px, 1023px) {
+    width: 50px !important;
+  }
+}
+
+@include respond-between(310px, 670px) {
   .image-light-bulb,
   .image-location,
   .image-puzzle {

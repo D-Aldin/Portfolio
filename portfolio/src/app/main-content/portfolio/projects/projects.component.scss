@@ -7,6 +7,35 @@
   padding: 0 300px 0 300px;
   z-index: 999;
   gap: 280px;
+
+  @include respond-between(1601px, 1920px) {
+    gap: 240px;
+    padding: 0 100px 0 100px;
+  }
+
+  @include respond-between(1301px, 1600px) {
+    gap: 70px;
+    padding: 0 70px 0 70px;
+  }
+
+  @include respond-between(970px, 1300px) {
+    gap: 60px;
+    padding: 0 50px 0 50px;
+  }
+
+  @include respond-between(670px, 970px) {
+    gap: 5px;
+    padding: 0 30px 50px 30px;
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  @include respond-between(310px, 670px) {
+    gap: 5px;
+    padding: 0 25px 50px 25px;
+    display: flex;
+    flex-direction: column !important;
+  }
 }
 
 .image-container {
@@ -18,12 +47,41 @@
     height: 500px;
     z-index: 999;
   }
+
+  @include respond-between(1301px, 1600px) {
+    width: 400px;
+    height: 400px;
+  }
+
+  @include respond-between(1024px, 1300px) {
+    img {
+      width: 350px;
+      height: 350px;
+    }
+  }
+  @include respond-between(970px, 1024px) {
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  @include respond-between(310px, 970px) {
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
 }
 
 .text-wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  @include respond-between(310px, 970px) {
+    @include flex-setup();
+  }
 }
 
 .title {
@@ -44,6 +102,28 @@
     color: $color-green;
     white-space: pre-wrap;
   }
+
+  @include respond-between(1024px, 1300px) {
+    h4 {
+      font-size: 2rem !important;
+    }
+  }
+
+  @include respond-between(970px, 1024px) {
+    h4 {
+      font-size: 1.125rem !important;
+    }
+  }
+
+  @include respond-between(670px, 970px) {
+    h4 {
+      font-size: 1.125rem !important;
+    }
+  }
+
+  @include respond-between(310px, 670px) {
+    font-size: 0.825rem !important;
+  }
 }
 
 .description {
@@ -51,9 +131,18 @@
     font-size: 16px;
     font-weight: normal;
   }
+
+  @include respond-between(1024px, 1300px) {
+    h5 {
+      font-size: 0.875rem !important;
+    }
+  }
 }
 
 .buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+
   .test-btn,
   .git-btn {
     height: 58px;
@@ -66,200 +155,69 @@
     &:hover {
       background-color: $color-green;
     }
+
+    @include respond-between(1024px, 1300px) {
+      margin: 25px 25px 25px 0;
+      width: 115.5px;
+      font-size: 1.2rem !important;
+    }
+
+    @include respond-between(970px, 1024px) {
+      margin: 25px 25px 25px 0;
+      width: 100.7px;
+      font-size: 1.1rem !important;
+      height: 48px;
+    }
+
+    @include respond-between(310px, 970px) {
+      margin: 25px 25px 25px 0;
+      width: 100.7px;
+      font-size: 1.1rem !important;
+      height: 48px;
+    }
   }
 
   .test-btn {
     margin: 30px 30px 30px 0;
     width: 152px;
+
+    // Optionally override styles in small viewports
+    @include respond-between(970px, 1300px) {
+      width: 115.5px;
+      margin: 25px 25px 25px 0;
+    }
+
+    @include respond-between(310px, 970px) {
+      width: 100.7px;
+    }
   }
 
   .git-btn {
     width: 137px;
     border: 1px solid $color-green !important;
     @include button-style(transparent);
-  }
-}
 
-@media only screen and (max-width: 1920px) and (min-width: 1601px) {
-  .content-wrapper {
-    gap: 240px;
-    padding: 0 100px 0 100px;
-  }
-}
-
-@media only screen and (max-width: 1600px) and (min-width: 1301px) {
-  .content-wrapper {
-    gap: 70px;
-    padding: 0 70px 0 70px;
-  }
-
-  .image-container img {
-    width: 400px;
-    height: 400px;
-  }
-}
-
-@media only screen and (max-width: 1300px) and (min-width: 1024px) {
-  .content-wrapper {
-    gap: 60px;
-    padding: 0 50px 0 50px;
-  }
-
-  .image-container img {
-    width: 350px;
-    height: 350px;
-  }
-
-  h3 {
-    font-size: 2rem !important;
-  }
-
-  .tech h4 {
-    font-size: 1.125rem !important;
-  }
-
-  .description h5 {
-    font-size: 0.875rem !important;
-  }
-
-  .buttons-container {
-    // height: 50px;
-
-    .test-btn,
-    .git-btn {
-      margin: 25px 25px 25px 0;
+    @include respond-between(970px, 1300px) {
       width: 115.5px;
-      font-size: 1.2rem !important;
+      margin: 25px 25px 25px 0;
+    }
+
+    @include respond-between(310px, 970px) {
+      width: 100.7px;
     }
   }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 970px) {
-  .content-wrapper {
-    gap: 60px;
-    padding: 0 50px 50px 50px;
-  }
-
-  .image-container img {
-    width: 300px;
-    height: 300px;
-  }
-
-  h3 {
+h3 {
+  @include respond-between(1024px, 1300px) {
     font-size: 2rem !important;
   }
 
-  .tech h4 {
-    font-size: 1.125rem !important;
-  }
-
-  .buttons-container {
-    // height: 50px;
-
-    .test-btn,
-    .git-btn {
-      margin: 25px 25px 25px 0;
-      width: 100.7px;
-      font-size: 1.1rem !important;
-    }
-  }
-
-  .buttons-container {
-    .test-btn,
-    .git-btn {
-      height: 48px;
-    }
-  }
-}
-
-@media only screen and (max-width: 970px) and (min-width: 670px) {
-  .content-wrapper {
-    gap: 5px;
-    padding: 0 30px 50px 30px;
-    display: flex;
-    flex-direction: column !important;
-  }
-
-  .image-container img {
-    width: 250px;
-    height: 250px;
-  }
-
-  h3 {
+  @include respond-between(970px, 1024px) {
     font-size: 2rem !important;
   }
 
-  .tech h4 {
-    font-size: 1.125rem !important;
-  }
-
-  .buttons-container {
-    // height: 50px;
-
-    .test-btn,
-    .git-btn {
-      margin: 25px 25px 25px 0;
-      width: 100.7px;
-      font-size: 1.1rem !important;
-    }
-  }
-
-  .buttons-container {
-    .test-btn,
-    .git-btn {
-      height: 48px;
-    }
-  }
-
-  .text-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 670px) and (min-width: 310px) {
-  .content-wrapper {
-    gap: 5px;
-    padding: 0 25px 50px 25px;
-    display: flex;
-    flex-direction: column !important;
-  }
-
-  .image-container img {
-    width: 250px;
-    height: 250px;
-  }
-
-  h3 {
+  @include respond-between(310px, 970px) {
     font-size: 2rem !important;
-  }
-
-  .tech h4 {
-    font-size: 0.825rem !important;
-  }
-
-  .buttons-container {
-    // height: 50px;
-
-    .test-btn,
-    .git-btn {
-      margin: 25px 25px 25px 0;
-      width: 100.7px;
-      font-size: 1.1rem !important;
-    }
-  }
-
-  .buttons-container {
-    .test-btn,
-    .git-btn {
-      height: 48px;
-    }
-  }
-
-  .text-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
