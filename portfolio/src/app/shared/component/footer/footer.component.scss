@@ -12,18 +12,41 @@ footer {
   position: relative;
   height: 291px;
   flex-direction: column;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(112, 230, 28, 0.9),
+      // Using your green color
+      rgba(255, 255, 255, 1),
+      // Bright white core
+      rgba(112, 230, 28, 0.9),
+      transparent
+    );
+    animation: laserSweep 2s linear infinite;
+    transform: translateX(-100%);
+    filter: blur(1px);
+    box-shadow: 0 0 3px rgba(112, 230, 28, 0.7);
+    z-index: 1;
+  }
+
+  @keyframes laserSweep {
+    100% {
+      transform: translateX(100%);
+    }
+  }
 
   span {
     font-size: 23px;
     color: white;
-  }
-}
-
-.logo {
-  img {
-    height: 60px;
-    width: 200px;
-    margin: 0;
   }
 }
 

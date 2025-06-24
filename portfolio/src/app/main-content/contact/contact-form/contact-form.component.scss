@@ -56,7 +56,6 @@ input[type="checkbox"] {
   }
 }
 
-/* Style the submit button with a specific background color etc */
 input[type="submit"] {
   width: 253px;
   height: 58px;
@@ -69,12 +68,10 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
   background-color: transparent;
@@ -264,7 +261,7 @@ textarea {
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
 }
 
 @media only screen and (max-width: 670px) and (min-width: 310px) {
@@ -292,6 +289,6 @@ textarea {
   .contact-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
   }
 }

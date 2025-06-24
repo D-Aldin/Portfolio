@@ -93,6 +93,7 @@
 .tech {
   display: flex;
   align-items: center;
+  gap: 10px;
 
   h4,
   span {
@@ -100,7 +101,8 @@
     font-size: 23px;
     font-weight: normal;
     color: $color-green;
-    white-space: pre-wrap;
+    // white-space: pre-wrap;
+    display: flex;
   }
 
   @include respond-between(1024px, 1300px) {
@@ -123,6 +125,12 @@
 
   @include respond-between(310px, 670px) {
     font-size: 0.825rem !important;
+    gap: 5px;
+
+    h4,
+    span {
+      font-size: 18.4px;
+    }
   }
 }
 

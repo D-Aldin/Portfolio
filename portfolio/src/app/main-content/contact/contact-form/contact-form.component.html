@@ -25,7 +25,7 @@
     </div>
   
     <div class="submit-btn">
-       <input [ngClass]="{'isChecked': isChecked}" type="submit" value="Send message :)">
+       <input [ngClass]="{'isChecked': isChecked && name.valid && email.valid && message.valid}" type="submit" value="Send message :)">
     </div>
    
   </form>

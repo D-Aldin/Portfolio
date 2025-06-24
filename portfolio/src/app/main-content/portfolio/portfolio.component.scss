@@ -54,7 +54,7 @@ section {
   }
 }
 
-.secound-line {
+.second-line {
   @include purple-line($width: 100%);
   flex-grow: 1;
   min-width: 20px !important;

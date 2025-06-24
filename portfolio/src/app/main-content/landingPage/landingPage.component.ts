@@ -13,7 +13,7 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrl: './landingPage.component.scss',
 })
 export class LandingPageComponent implements OnInit {
-  width: number = 1920; // Default value
+  width: number = 1920;
   imageWidth: number = 23.51;
 
   constructor(
@@ -55,23 +55,5 @@ export class LandingPageComponent implements OnInit {
 
   get currentWidth() {
     return this.width;
-  }
-
-  transformStyle() {
-    const baseWidth = 1920;
-    const baseOffset = 36.51;
-
-    let adjustedOffset: number;
-
-    if (this.width < baseWidth) {
-      const widthDifference = baseWidth - this.width;
-      adjustedOffset = baseOffset + widthDifference * 0.0478;
-    } else {
-      adjustedOffset = baseOffset;
-    }
-
-    return {
-      transform: `translate(-50%, -${adjustedOffset}%)`,
-    };
   }
 }
