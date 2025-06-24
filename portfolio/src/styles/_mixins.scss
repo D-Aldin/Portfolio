@@ -85,3 +85,8 @@ $breakpoints: (
   top: -50px;
   left: 0;
 }
+
+@mixin glow-effect($color, $first-value, $second-value, $third-value) {
+  box-shadow: 0 0 $first-value rgba($color, 0.8),
+    0 0 $second-value rgba($color, 0.6), 0 0 $third-value rgba($color, 0.4);
+}

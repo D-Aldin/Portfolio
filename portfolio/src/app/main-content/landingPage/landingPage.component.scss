@@ -690,6 +690,7 @@ span {
 
 .line {
   @include purple-line($width: 110px);
+  @include glow-effect($color-purple, 10px, 20px, 30px);
 
   @include respond-between(670px, 970px) {
     min-width: calc(100% - 181px);

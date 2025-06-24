@@ -20,11 +20,6 @@
     flex-direction: column-reverse;
     align-items: center;
   }
-
-  // @include respond-between(310px, 670px) {
-  //      flex-direction: column-reverse;
-  //   align-items: center;
-  // }
 }
 
 .exclamation {
@@ -52,6 +47,7 @@
   border-radius: 25px;
   justify-content: center;
   align-items: center;
+  @include glow-effect($color-green, 10px, 20px, 9px);
 
   @include respond-between(1601px, 1920px) {
     width: 1091px;
@@ -115,6 +111,7 @@
 
 .line-in-review {
   @include purple-line($width: 95%);
+  @include glow-effect($color-purple, 10px, 20px, 30px);
 }
 
 .image-container {
@@ -129,6 +126,7 @@
     width: 242px;
     height: 245px;
     object-fit: cover;
+    @include glow-effect($color-purple, 10px, 20px, 9px);
   }
 
   @include respond-between(1024px, 1300px) {
@@ -165,6 +163,7 @@
 
 .line {
   @include purple-line($width: 104px);
+  @include glow-effect($color-purple, 10px, 20px, 30px);
 
   @include respond-between(1024px, 1300px) {
     width: 80px;
@@ -234,153 +233,3 @@ span {
     position: relative;
   }
 }
-
-// @media only screen and (max-width: 1920px) and (min-width: 1601px) {
-//   .review-container {
-//     width: 1091px;
-//   }
-// }
-
-// @media only screen and (max-width: 1600px) and (min-width: 1301px) {
-//   .review-container {
-//     width: 810px;
-//   }
-
-//   .review-text {
-//     padding: 0 25px 0 25px;
-//   }
-
-//   span {
-//     font-size: 0.813rem;
-//   }
-// }
-
-// @media only screen and (max-width: 1300px) and (min-width: 1024px) {
-//   // .review-container {
-//   //   width: 600px;
-//   // }
-
-//   // .review-text {
-//   //   padding: 20px 20px 20px 20px;
-//   // }
-
-//   // span {
-//   //   font-size: 0.793rem;
-//   // }
-
-//   // .image-container img {
-//   //   width: 220px;
-//   //   height: 220px;
-//   // }
-
-//   // .line {
-//   //   width: 80px;
-//   // }
-
-//   .name h3 {
-//     font-size: 0.875rem;
-//   }
-// }
-
-// @media only screen and (max-width: 1024px) and (min-width: 970px) {
-// .review-container {
-//   width: 600px;
-// }
-
-// .review-text {
-//   padding: 20px 20px 20px 20px;
-// }
-
-// span {
-//   font-size: 0.793rem;
-// }
-
-// .image-container img {
-//   width: 200px;
-//   height: 200px;
-// }
-
-// .line {
-//   width: 50px;
-// }
-
-// .name h3 {
-//   font-size: 0.875rem;
-// }
-
-//   .review-buttons {
-//     margin: 10px 90px 10px 0;
-//   }
-// }
-
-// @media only screen and (max-width: 970px) and (min-width: 670px) {
-//   .review-block {
-//     flex-direction: column-reverse;
-//     align-items: center;
-//   }
-
-// .review-container {
-//   width: 600px;
-// }
-
-// span {
-//   font-size: 0.793rem;
-// }
-
-//   .image-container {
-//     width: 100%;
-//     display: flex;
-//     justify-content: flex-end;
-//   }
-
-//   .line {
-//     min-width: calc(100% - 484px);
-//   }
-// }
-
-// @media only screen and (max-width: 670px) and (min-width: 310px) {
-// .review-block {
-//   flex-direction: column-reverse;
-//   align-items: center;
-// }
-
-// .review-container {
-//   width: 280px;
-//   height: 457px;
-// }
-
-// span {
-//   font-size: 0.793rem;
-//   z-index: 2222;
-//   position: relative;
-// }
-
-// .image-container {
-//   width: 100%;
-//   display: flex;
-//   justify-content: flex-end;
-// }
-
-// .line {
-//   min-width: calc(100% - 484px);
-// }
-
-// .image-container img {
-//   width: 144px;
-//   height: 144px;
-// }
-
-// .exclamation img {
-//   width: 45px;
-//   height: auto;
-//   bottom: 210px;
-// }
-
-// .review-text {
-//   padding: 8px;
-// }
-
-//   .name h3 {
-//     font-size: 0.793rem;
-//   }
-// }

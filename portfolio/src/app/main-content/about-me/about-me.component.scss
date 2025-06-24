@@ -149,6 +149,7 @@ section {
     border-radius: 50%;
     margin: 0;
     object-fit: cover;
+    @include glow-effect($color-green, 10px, 20px, 9px);
   }
 
   .line {
@@ -157,11 +158,7 @@ section {
     height: 2px;
     margin: 0;
     z-index: 100;
-  }
-
-  @include respond-between(1601px, 1920px) {
-    width: 383px;
-    height: 383px;
+    @include glow-effect($color-green, 10px, 20px, 30px);
   }
 
   @include respond-between(1301px, 1600px) {

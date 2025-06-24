@@ -45,6 +45,7 @@ section {
 
 .first-line {
   @include purple-line();
+  @include glow-effect($color-purple, 10px, 20px, 30px);
   justify-self: end;
   margin-right: 20px;
 
@@ -56,6 +57,7 @@ section {
 
 .second-line {
   @include purple-line($width: 100%);
+  @include glow-effect($color-purple, 10px, 20px, 30px);
   flex-grow: 1;
   min-width: 20px !important;
   width: 100%;
