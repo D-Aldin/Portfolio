@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
 export class ContactFormComponent {
   http = inject(HttpClient);
   isChecked: boolean = false;
-  mailTest: boolean = true;
+  mailTest: boolean = false;
 
   contactData = {
     name: '',
@@ -24,13 +24,13 @@ export class ContactFormComponent {
   };
 
   post = {
-    endPoint: 'https://www.aldin-dobric.de//sendMail.php',
+    endPoint: 'https://www.aldin-dobric.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
-        'Content-Type': 'text/plain',
-        responseType: 'text',
+        'Content-Type': 'application/json',
       },
+      responseType: 'text' as const,
     },
   };
 

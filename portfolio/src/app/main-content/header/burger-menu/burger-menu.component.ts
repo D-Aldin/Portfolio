@@ -29,6 +29,10 @@ export class BurgerMenuComponent {
   toogleMenuBurger() {
     this.isOpen = !this.isOpen;
     this.preventScrolling();
+    console.log(this.isOpen);
+    if (this.isOpen) {
+      this.renderer.removeClass(document.body, 'no-scroll');
+    }
   }
 
   ngOnDestroy() {
