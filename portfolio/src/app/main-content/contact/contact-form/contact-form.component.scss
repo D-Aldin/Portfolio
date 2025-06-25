@@ -186,6 +186,25 @@ textarea {
   }
 }
 
+.feedback-wrapper {
+  width: 100%;
+  height: 15px;
+  margin-bottom: 40px;
+}
+
+.success-msg {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+  display: flex;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1600px) and (min-width: 1301px) {
   input[type="text"],
   textarea,
@@ -289,6 +308,6 @@ textarea {
   .contact-form {
     display: flex;
     flex-direction: column;
-    // align-items: center;
+    align-items: center;
   }
 }

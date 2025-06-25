@@ -16,6 +16,8 @@ export class ContactFormComponent {
   http = inject(HttpClient);
   isChecked: boolean = false;
   mailTest: boolean = false;
+  feedbackMessage: string = '';
+  feedbackType: 'success' | 'error' | '' = '';
 
   contactData = {
     name: '',
@@ -37,12 +39,21 @@ export class ContactFormComponent {
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http
-        .post(this.post.endPoint, this.post.body(this.contactData))
+        .post(
+          this.post.endPoint,
+          this.post.body(this.contactData),
+          this.post.options
+        )
         .subscribe({
           next: (response) => {
+            this.feedbackMessage = 'Message sent successfully!';
+            this.feedbackType = 'success';
             ngForm.resetForm();
           },
           error: (error) => {
+            this.feedbackMessage =
+              'Message could not be sent. Please try again.';
+            this.feedbackType = 'error';
             console.error(error);
           },
           complete: () => console.info('send post complete'),
@@ -50,5 +61,9 @@ export class ContactFormComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
     }
+    setTimeout(() => {
+      this.feedbackMessage = '';
+      this.feedbackType = '';
+    }, 4500);
   }
 }

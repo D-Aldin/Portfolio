@@ -624,6 +624,10 @@ span {
 .in-wrapper {
   display: flex;
   align-items: center;
+
+  a:hover {
+    scale: 1.4;
+  }
 }
 
 .scroll {

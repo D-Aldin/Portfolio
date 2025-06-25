@@ -23,7 +23,9 @@
       <label for="policy">I've read the <span>privacy policy</span> and agree to the processing of my data as outlined</label>
       <input type="checkbox" id="policy" name="policy" value="newsletter" [(ngModel)] = "isChecked" required >
     </div>
-  
+    <div class="feedback-wrapper">
+          <div *ngIf="feedbackMessage" [ngClass]="{'success-msg': feedbackType === 'success', 'error-msg': feedbackType === 'error'}">{{ feedbackMessage }}</div>
+    </div>
     <div class="submit-btn">
        <input [ngClass]="{'isChecked': isChecked && name.valid && email.valid && message.valid}" type="submit" value="Send message :)">
     </div>
