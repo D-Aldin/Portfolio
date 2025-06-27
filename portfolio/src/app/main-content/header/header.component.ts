@@ -1,4 +1,4 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component } from '@angular/core';
 import { LanguageService } from '../../language';
 import { ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -49,13 +49,25 @@ export class HeaderComponent {
   }
 
   goTo(section: string) {
-    const element = document.getElementById(section);
-    const headerOffset = 100;
-    if (element) {
-      const y =
-        element.getBoundingClientRect().top + window.pageYOffset - headerOffset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
+    const scrollToSection = () => {
+      const element = document.getElementById(section);
+      const headerOffset = 100;
+      if (element) {
+        const y =
+          element.getBoundingClientRect().top +
+          window.pageYOffset -
+          headerOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+      this.sectionIsActive = section;
+    };
+
+    if (this.isOnImpressum()) {
+      this.router.navigate(['/']).then(() => {
+        setTimeout(scrollToSection, 50);
+      });
+    } else {
+      scrollToSection();
     }
-    this.sectionIsActive = section;
   }
 }
