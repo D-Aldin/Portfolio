@@ -36,10 +36,10 @@ h3 {
   }
 
   @include respond-between(670px, 970px) {
-    font-size: 3.9rem;
+    font-size: 3rem;
 
     .title-container[data-custom="de"] & {
-      font-size: 2.54rem !important;
+      font-size: 1.94rem !important;
     }
   }
 
@@ -183,8 +183,8 @@ span {
   }
 
   @include respond-between(670px, 970px) {
-    width: 620px;
-    height: 620px;
+    width: 490px;
+    height: 490px;
     position: relative;
     top: -50px;
     left: 0;
@@ -228,11 +228,11 @@ span {
 
   @include respond-between(670px, 970px) {
     height: auto;
-    max-height: 384.9px;
+    max-height: 332.9px;
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translate(-50%, -57.2149%);
+    transform: translate(-50%, -66.2149%);
     z-index: 1000;
   }
 
@@ -319,10 +319,10 @@ span {
   @include respond-between(670px, 970px) {
     @include flex-setup();
     position: relative;
-    top: -246px;
     left: 0;
     right: 0;
     margin: 0;
+    top: -257px;
   }
 
   @include respond-between(310px, 670px) {
@@ -354,6 +354,10 @@ span {
 
   @include respond-between(1140px, 1200px) {
     padding-top: 50px;
+  }
+
+  @include respond-between(670px, 970px) {
+    padding-top: 60px;
   }
 
   @include respond-between(970px, 1139px) {
@@ -395,7 +399,7 @@ span {
     }
 
     @include respond-between(670px, 970px) {
-      font-size: 4.5rem;
+      font-size: 3.3rem;
     }
 
     @include respond-between(310px, 670px) {
@@ -474,7 +478,7 @@ span {
   }
 
   @include respond-between(670px, 970px) {
-    font-size: 2.9rem !important;
+    font-size: 2.1rem !important;
   }
 
   @include respond-between(310px, 670px) {
@@ -547,6 +551,14 @@ span {
     }
   }
 
+  @include respond-between(670px, 970px) {
+    button {
+      margin-top: 20px;
+      width: 143px;
+      height: 49px;
+    }
+  }
+
   @include respond-between(310px, 670px) {
     margin-top: 0px;
     button {
@@ -592,6 +604,7 @@ span {
 
   @include respond-between(670px, 970px) {
     min-height: 570px;
+    top: 195.4px;
   }
 
   @include respond-between(310px, 670px) {
@@ -744,7 +757,7 @@ span {
   }
 
   @include respond-between(670px, 970px) {
-    top: 730px;
+    top: 474px;
   }
 
   @include respond-between(310px, 670px) {

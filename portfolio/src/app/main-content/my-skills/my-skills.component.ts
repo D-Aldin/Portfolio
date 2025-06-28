@@ -86,7 +86,7 @@ export class MySkillsComponent implements OnInit, AfterViewInit {
   }
 
   repositionElements() {
-    if (this.windowWidth < 970) {
+    if (this.windowWidth < 570) {
       const anotherSkillParent = this.renderer.parentNode(
         this.anotherSkill.nativeElement
       );
@@ -106,7 +106,7 @@ export class MySkillsComponent implements OnInit, AfterViewInit {
   }
 
   moveGridElements(element: HTMLElement) {
-    if (this.windowWidth < 970) {
+    if (this.windowWidth < 570) {
       this.mobileView.nativeElement.appendChild(element);
       this.mobileView.nativeElement.appendChild(this.bubble.nativeElement);
     }

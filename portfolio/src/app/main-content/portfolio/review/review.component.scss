@@ -30,11 +30,26 @@
     right: -30px;
   }
 
-  @include respond-between(310px, 670px) {
+  @include respond-between(670px, 740px) {
+    img {
+      width: 50px;
+      height: auto;
+    }
+  }
+
+  @include respond-between(510px, 670px) {
     img {
       width: 45px;
       height: auto;
-      bottom: 210px;
+      bottom: 160px;
+    }
+  }
+
+  @include respond-between(310px, 510px) {
+    img {
+      width: 45px;
+      height: auto;
+      bottom: 187px;
     }
   }
 }
@@ -57,13 +72,22 @@
     width: 810px;
   }
 
+  @include respond-between(1200px, 1299px) {
+    width: 750px !important;
+  }
+
   @include respond-between(670px, 1300px) {
     width: 600px;
   }
 
-  @include respond-between(310px, 670px) {
-    width: 280px;
-    height: 457px;
+  @include respond-between(510px, 670px) {
+    width: 470px;
+    height: 347px;
+  }
+
+  @include respond-between(310px, 510px) {
+    width: 290px;
+    height: 400px;
   }
 }
 
@@ -124,7 +148,7 @@
     border: 3px solid $color-purple;
     border-radius: 50%;
     width: 242px;
-    height: 245px;
+    height: 242px;
     object-fit: cover;
     @include glow-effect($color-purple, 10px, 20px, 9px);
   }
@@ -174,11 +198,13 @@
   }
 
   @include respond-between(670px, 970px) {
-    min-width: calc(100% - 484px);
+    min-width: calc(100% - 242px - 50%);
+    width: calc(100% - 121px - 50%);
   }
 
   @include respond-between(310px, 670px) {
-    min-width: calc(100% - 484px);
+    min-width: calc(100% - 144px - 50%);
+    width: calc(100% - 72px - 50%);
   }
 }
 

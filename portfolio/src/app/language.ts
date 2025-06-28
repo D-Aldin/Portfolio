@@ -1,4 +1,5 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { TRANSLATION } from './translation';
 
 type LanguageKey = 'en' | 'de';
@@ -7,14 +8,28 @@ type LanguageKey = 'en' | 'de';
   providedIn: 'root',
 })
 export class LanguageService {
-  language: LanguageKey = (localStorage.getItem('lang') as LanguageKey) || 'en';
+  language: LanguageKey = 'en';
   langLink = TRANSLATION;
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+    if (isPlatformBrowser(this.platformId)) {
+      const storedLang = localStorage.getItem('lang') as LanguageKey;
+      if (storedLang === 'en' || storedLang === 'de') {
+        this.language = storedLang;
+      }
+    }
+
+    this.getCurrentTranslations();
+  }
 
   getCurrentTranslations() {
     return this.langLink[this.language];
   }
 
-  constructor() {
-    this.getCurrentTranslations();
+  setLanguage(lang: LanguageKey) {
+    this.language = lang;
+    if (isPlatformBrowser(this.platformId)) {
+      localStorage.setItem('lang', lang);
+    }
   }
 }

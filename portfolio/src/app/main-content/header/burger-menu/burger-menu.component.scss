@@ -88,6 +88,10 @@
   background-size: 60px 60px;
   z-index: 9999;
   cursor: pointer;
+
+  &:hover {
+    scale: (1.3);
+  }
 }
 
 .topnav a:hover {

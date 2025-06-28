@@ -20,7 +20,7 @@
     }
 
     <div #privacyPolicy class="checkbox">
-      <label  for="policy">I've read the <a routerLink="/privacyPolicy">privacy policy</a> and agree to the processing of my data as outlined</label>
+      <label  for="policy">I've read the <a class="policy-link" routerLink="/privacyPolicy">privacy policy</a> and agree to the processing of my data as outlined</label>
       <input type="checkbox" id="policy" name="policy" value="newsletter" [(ngModel)] = "isChecked" required >
     </div>
     <div class="feedback-wrapper">

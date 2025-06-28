@@ -56,6 +56,11 @@ input[type="checkbox"] {
   }
 }
 
+.policy-link {
+  text-decoration: none;
+  color: $color-purple;
+}
+
 input[type="submit"] {
   width: 253px;
   height: 58px;
@@ -283,7 +288,19 @@ textarea {
   // align-items: center;
 }
 
-@media only screen and (max-width: 670px) and (min-width: 310px) {
+@media only screen and (max-width: 670px) and (min-width: 480px) {
+  input[type="text"],
+  textarea,
+  select {
+    width: 430px !important;
+  }
+
+  .contact-form {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 310px) {
   input[type="text"],
   textarea,
   select {

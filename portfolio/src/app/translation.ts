@@ -316,10 +316,10 @@ export const TRANSLATION = {
     contact: {
       title: 'Ein Problem zu lösen?',
       content:
-        'Wenn du auf der Suche nach einem leidenschaftlichen und zuverlässigen Frontend-Entwickler bist, der deine Ideen zum Leben erweckt, dann melde dich gerne bei mir! Ich bin offen für neue Chancen, spannende Kooperationen oder einfach ein gutes Gespräch über großartige digitale Erlebnisse.<br><br>\
+        'Wenn du auf der Suche nach einem leidenschaftlichen und zuverlässigen Frontend-Entwickler bist, der deine Ideen zum Leben erweckt, dann melde dich gerne bei mir! Ich bin offen für neue Chancen, spannende Kooperationen oder einfach ein gutes Gespräch über großartige digitale Erlebnisse.\
          Lass uns vernetzen und gemeinsam etwas Bedeutungsvolles schaffen!\
-         Ich bin ein Frontend-Entwickler mit einem starken Fokus auf benutzerfreundliche, responsive und visuell ansprechende Web-Oberflächen. Besonders interessiere ich mich für Rollen, in denen ich eng mit Design- und Backend-Teams zusammenarbeiten kann, um nahtlose Nutzererfahrungen zu gestalten.<br><br>\
-         Ich bringe echten Mehrwert für dein Projekt, indem ich sauberen, wartbaren Code mit einem tiefen Verständnis für UI/UX-Prinzipien verbinde. Dabei lege ich großen Wert auf Performance, Barrierefreiheit und ein intuitives Nutzungserlebnis. Ob es darum geht, Ladezeiten zu optimieren, die mobile Darstellung zu verbessern oder komplexe Features in reibungslose Interaktionen zu verwandeln – ich sorge dafür, dass deine Vision Wirklichkeit wird.<br><br>\
+         Ich bin ein Frontend-Entwickler mit einem starken Fokus auf benutzerfreundliche, responsive und visuell ansprechende Web-Oberflächen. Besonders interessiere ich mich für Rollen, in denen ich eng mit Design- und Backend-Teams zusammenarbeiten kann, um nahtlose Nutzererfahrungen zu gestalten.\
+         Ich bringe echten Mehrwert für dein Projekt, indem ich sauberen, wartbaren Code mit einem tiefen Verständnis für UI/UX-Prinzipien verbinde. Dabei lege ich großen Wert auf Performance, Barrierefreiheit und ein intuitives Nutzungserlebnis. Ob es darum geht, Ladezeiten zu optimieren, die mobile Darstellung zu verbessern oder komplexe Features in reibungslose Interaktionen zu verwandeln ich sorge dafür, dass deine Vision Wirklichkeit wird.\
          Lass uns gemeinsam etwas Außergewöhnliches erschaffen!',
       contactMe:
         'Brauchen Sie einen Frontend-Entwickler? Kontaktieren Sie mich!',

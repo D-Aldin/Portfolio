@@ -39,13 +39,15 @@ export class HeaderComponent {
   switchLang(value: string) {
     if (value === 'en' || value === 'de') {
       this.languageService.language = value;
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('lang', value);
+      }
     } else {
       console.warn(`Unsupported language: ${value}`);
     }
   }
 
   get currentLanguageActive() {
-    localStorage.setItem('lang', this.languageService.language);
     return this.languageService.language;
   }
 

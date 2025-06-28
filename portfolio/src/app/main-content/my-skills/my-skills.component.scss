@@ -231,7 +231,7 @@ section {
   display: grid;
   grid-template-columns: auto auto auto auto;
 
-  @include respond-between(310px, 970px) {
+  @include respond-between(310px, 570px) {
     display: grid;
     grid-template-columns: auto auto auto;
 
@@ -276,6 +276,11 @@ section {
     height: auto;
   }
 
+  @include respond-between(650px, 970px) {
+    // padding: 60px;
+    gap: 50px;
+  }
+
   @include respond-between(310px, 670px) {
     width: 30px;
     height: auto;
@@ -286,11 +291,12 @@ section {
   position: relative;
 
   .interest {
-    padding: 30px;
+    padding: 25px;
     transform: translateY(-9px);
     background-image: url("./../../../assets/icons/my-skills/interest.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100px, 100px;
     width: 140px;
     height: 175px;
 
@@ -303,14 +309,14 @@ section {
     &:hover {
       background-image: url("./../../../assets/icons/my-skills/interest-white.png");
     }
+  }
 
-    @include respond-between(310px, 670px) {
-      .interest {
-        padding: 10px !important;
-        background-size: 60px auto;
-        width: 128px !important;
-        height: 75px !important;
-      }
+  @include respond-between(310px, 670px) {
+    .interest {
+      padding: 10px;
+      width: 128px;
+      height: 120px;
+      background-size: 80px, 80px !important;
     }
   }
 
