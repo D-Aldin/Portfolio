@@ -48,7 +48,7 @@ nav {
 
 .navigation-links a {
   color: white;
-  @include link-underline($color-green);
+  // @include link-underline($color-green);
 
   &:hover {
     color: $color-green;

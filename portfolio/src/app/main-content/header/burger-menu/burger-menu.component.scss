@@ -46,6 +46,11 @@
     position: relative;
     top: 30%;
     cursor: pointer;
+    @include link-underline($color-green);
+
+    &:hover {
+      color: $color-green;
+    }
   }
 }
 
