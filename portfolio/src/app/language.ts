@@ -7,7 +7,7 @@ type LanguageKey = 'en' | 'de';
   providedIn: 'root',
 })
 export class LanguageService {
-  language: LanguageKey = 'en';
+  language: LanguageKey = (localStorage.getItem('lang') as LanguageKey) || 'en';
   langLink = TRANSLATION;
 
   getCurrentTranslations() {

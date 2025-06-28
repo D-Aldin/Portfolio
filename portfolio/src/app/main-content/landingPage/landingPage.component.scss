@@ -4,6 +4,10 @@
 section {
   background-color: $background-primary-color;
   width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h3 {
@@ -88,6 +92,7 @@ span {
   @include flex-setup($justify: flex-start);
   position: relative;
   padding-top: 130px;
+  width: 100%;
 
   @include respond-between(1140px, 1200px) {
     padding-top: 90px;
@@ -121,6 +126,7 @@ span {
 
   @include respond-between(1140px, 1200px) {
     top: 0px;
+    gap: 10px;
   }
 
   @include respond-between(970px, 1139px) {
@@ -195,11 +201,11 @@ span {
 
 .me {
   height: auto;
-  max-height: 665px;
+  max-height: 640px;
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, -36.8149%);
+  transform: translate(-50%, -38.4149%);
   z-index: 1000;
 
   @include respond-between(1200px, 1399px) {
@@ -222,11 +228,11 @@ span {
 
   @include respond-between(670px, 970px) {
     height: auto;
-    max-height: 465px;
+    max-height: 384.9px;
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translate(-50%, -44.8149%);
+    transform: translate(-50%, -57.2149%);
     z-index: 1000;
   }
 

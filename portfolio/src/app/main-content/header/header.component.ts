@@ -28,6 +28,10 @@ export class HeaderComponent {
     return this.router.url === '/impressum';
   }
 
+  isOnPolicy(): boolean {
+    return this.router.url === '/privacyPolicy';
+  }
+
   get langPath() {
     return this.languageService.getCurrentTranslations();
   }
@@ -41,6 +45,7 @@ export class HeaderComponent {
   }
 
   get currentLanguageActive() {
+    localStorage.setItem('lang', this.languageService.language);
     return this.languageService.language;
   }
 
@@ -48,7 +53,17 @@ export class HeaderComponent {
     return str.replace(' ', '-').toLowerCase();
   }
 
+  translateID(str: string) {
+    if (str === 'über-mich') {
+      str = 'about-me';
+    } else if (str === 'fähigkeiten') {
+      str = 'skills';
+    }
+    return str;
+  }
+
   goTo(section: string) {
+    section = this.translateID(section);
     const scrollToSection = () => {
       const element = document.getElementById(section);
       const headerOffset = 100;
@@ -62,7 +77,7 @@ export class HeaderComponent {
       this.sectionIsActive = section;
     };
 
-    if (this.isOnImpressum()) {
+    if (this.isOnImpressum() || this.isOnPolicy()) {
       this.router.navigate(['/']).then(() => {
         setTimeout(scrollToSection, 50);
       });

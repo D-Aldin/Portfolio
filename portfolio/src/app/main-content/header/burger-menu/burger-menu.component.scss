@@ -45,6 +45,7 @@
     font-size: 2.5rem;
     position: relative;
     top: 30%;
+    cursor: pointer;
   }
 }
 
@@ -81,6 +82,7 @@
   background-repeat: no-repeat;
   background-size: 60px 60px;
   z-index: 9999;
+  cursor: pointer;
 }
 
 .topnav a:hover {

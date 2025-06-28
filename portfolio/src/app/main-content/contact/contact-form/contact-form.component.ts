@@ -4,11 +4,13 @@ import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
+import { ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [FormsModule, HttpClientModule, CommonModule],
+  imports: [FormsModule, HttpClientModule, CommonModule, RouterLink],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss',
 })
@@ -24,6 +26,8 @@ export class ContactFormComponent {
     email: '',
     message: '',
   };
+
+  @ViewChild('privacyPolicy') privacyPolicy!: ElementRef;
 
   post = {
     endPoint: 'https://www.aldin-dobric.de/sendMail.php',

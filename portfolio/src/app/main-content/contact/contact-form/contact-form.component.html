@@ -19,8 +19,8 @@
       <h6 class="wrong-input">Your message is empty</h6>
     }
 
-    <div class="checkbox">
-      <label for="policy">I've read the <span>privacy policy</span> and agree to the processing of my data as outlined</label>
+    <div #privacyPolicy class="checkbox">
+      <label  for="policy">I've read the <a routerLink="/privacyPolicy">privacy policy</a> and agree to the processing of my data as outlined</label>
       <input type="checkbox" id="policy" name="policy" value="newsletter" [(ngModel)] = "isChecked" required >
     </div>
     <div class="feedback-wrapper">

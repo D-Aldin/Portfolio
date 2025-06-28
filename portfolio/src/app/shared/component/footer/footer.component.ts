@@ -1,4 +1,4 @@
-import { Component, viewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ScrollService } from '../../../scrollToContact';
 import { ViewChild, ElementRef } from '@angular/core';
