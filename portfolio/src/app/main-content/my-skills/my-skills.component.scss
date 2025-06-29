@@ -160,6 +160,11 @@ section {
   @include purple-line($width: 70px, $margin: 0);
   @include glow-effect($color-purple, 10px, 20px, 30px);
 
+  @include respond-between(1921px, 3500px) {
+    width: 100vw;
+    margin-right: calc(-100vw + 10%);
+  }
+
   @include respond-between(970px, 1024px) {
     width: 50px;
   }
@@ -350,22 +355,28 @@ button {
   img {
     position: absolute;
     right: 100%;
-    transform: translateX(69%);
+    transform: translateX(29%);
     top: -318px;
+  }
+
+  @include respond-between(1921px, 3500px) {
+    img {
+      transform: translate(29%);
+    }
   }
 
   @include respond-between(670px, 970px) {
     img {
-      top: -699px !important;
-      width: 260px;
+      top: -409px !important;
+      width: 550px;
       height: auto;
     }
   }
 
   @include respond-between(310px, 670px) {
     img {
-      top: -699px !important;
-      width: 228px;
+      top: -900px !important;
+      width: 550px;
       height: auto;
     }
   }

@@ -191,10 +191,10 @@ span {
   }
 
   @include respond-between(310px, 670px) {
-    width: 300px;
-    height: 300px;
+    width: 335px;
+    height: 335px;
     position: relative;
-    top: -50px;
+    top: -71px;
     left: 0;
   }
 }
@@ -221,7 +221,7 @@ span {
   }
 
   @include respond-between(970px, 1139px) {
-    transform: translate(-50%, -48.5821%) !important;
+    transform: translate(-50%, -49.4821%) !important;
     width: 320px;
     height: 420px;
   }
@@ -232,7 +232,7 @@ span {
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translate(-50%, -66.2149%);
+    transform: translate(-50%, -69.6149%);
     z-index: 1000;
   }
 
@@ -242,7 +242,7 @@ span {
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translate(-50%, -43.6149%);
+    transform: translate(-50%, -58.2149%);
     z-index: 1000;
   }
 }
@@ -581,9 +581,10 @@ span {
 .hero-background-image {
   position: absolute;
   top: 327.1px;
-  left: 0;
-  width: 100%;
-  min-height: 880px;
+  left: -50%;
+  right: -50%;
+  min-width: 100vw;
+  min-height: 925px;
   background-image: url("./../../../assets/img/heroImages/background.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -714,6 +715,11 @@ span {
 .line {
   @include purple-line($width: 110px);
   @include glow-effect($color-purple, 10px, 20px, 30px);
+
+  @include respond-between(1921px, 3500px) {
+    width: 100vw;
+    margin-left: calc(-100vw + 50%);
+  }
 
   @include respond-between(670px, 970px) {
     min-width: calc(100% - 181px);

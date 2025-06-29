@@ -206,31 +206,40 @@ section {
   img {
     position: absolute;
     left: 100%;
-    transform: translateX(-100%);
+    transform: translateX(-45%);
     bottom: -160px;
     z-index: -1;
+  }
+
+  @include respond-between(1921px, 3500px) {
+    img {
+      transform: translateX(-15%);
+    }
   }
 
   @include respond-between(1301px, 1600px) {
     img {
       bottom: -190px;
+      transform: translateX(-35%);
     }
   }
 
   @include respond-between(1024px, 1300px) {
     img {
-      bottom: -20px;
-      width: 234px;
+      bottom: -90px;
+      width: 446px;
       height: auto;
     }
   }
 
   @include respond-between(970px, 1023px) {
-    bottom: 212px;
+    .shadow-image {
+    }
 
     img {
-      width: 240px;
+      width: 360px;
       height: auto;
+      bottom: -80px;
     }
   }
 
@@ -244,17 +253,29 @@ section {
       }
     }
   }
+
+  @include respond-between(310px, 400px) {
+    img {
+      bottom: 212px;
+    }
+  }
+
   @include respond-between(310px, 670px) {
     bottom: 212px;
 
     img {
-      width: 180px;
+      width: 380px;
       height: auto;
     }
   }
 }
 
 .line {
+  @include respond-between(1921px, 3500px) {
+    width: 100vw !important;
+    margin-right: calc(-100vw + 50%) !important;
+  }
+
   @include respond-between(970px, 1023px) {
     width: 50px !important;
   }

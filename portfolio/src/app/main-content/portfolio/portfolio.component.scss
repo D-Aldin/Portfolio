@@ -22,9 +22,19 @@ section {
   background-image: url("./../../../assets/img/portfolio/shadow1.png");
   background-repeat: no-repeat;
   background-size: contain;
-
   position: relative;
-  left: 120%;
+  top: 740px;
+  left: -200%;
+  width: 1000px;
+  height: 1000px;
+
+  @include respond-between(970px, 1300px) {
+    width: 1750px;
+    height: 650px;
+    top: 910px;
+    left: -150%;
+    z-index: -1;
+  }
 
   @include respond-between(670px, 970px) {
     width: 1750px;
@@ -62,6 +72,11 @@ section {
   min-width: 20px !important;
   width: 100%;
   max-width: calc(100vw - 50%) !important;
+
+  @include respond-between(1921px, 3500px) {
+    width: 100vw !important;
+    margin-right: calc(-100vw + 50%) !important;
+  }
 }
 
 .title-wrapper {
@@ -185,20 +200,21 @@ section {
 
   img {
     position: absolute;
-    right: 0;
-    transform: translateX(0%);
-    bottom: -29px;
+    right: -540px;
+    transform: translateX(-10%);
+    bottom: -145px;
+    rotate: 80deg;
   }
 
-  @include respond-between(1024px, 1300px) {
+  @include respond-between(970px, 1300px) {
     position: relative;
 
     img {
       position: absolute;
-      right: 0;
+      left: 760px;
       transform: translateX(0%);
       bottom: -29px;
-      width: 280px;
+      width: 490px;
       height: auto;
     }
   }

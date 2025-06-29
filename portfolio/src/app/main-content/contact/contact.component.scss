@@ -29,6 +29,13 @@ section {
     order: 2;
   }
 
+  @include respond-between(1921px, 3500px) {
+    .line {
+      width: 100vw !important;
+      margin-left: calc(-100vw + 36%) !important;
+    }
+  }
+
   @include respond-between(1601px, 1920px) {
     .line {
       width: 35% !important;
@@ -153,7 +160,7 @@ section {
   img {
     position: absolute;
     right: 100%;
-    transform: translateX(100%) translateY(50%);
+    transform: translateX(60%) translateY(80%);
     bottom: 114px;
     z-index: 1;
   }
