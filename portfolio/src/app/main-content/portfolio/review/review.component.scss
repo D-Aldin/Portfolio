@@ -153,7 +153,7 @@
     @include glow-effect($color-purple, 10px, 20px, 9px);
   }
 
-  @include respond-between(1921px, 3500px) {
+  @include respond-between(1921px, 4500px) {
     .line {
       width: 100vw !important;
       margin-right: calc(-100vw + 50%) !important;

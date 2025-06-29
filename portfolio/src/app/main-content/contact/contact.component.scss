@@ -29,7 +29,7 @@ section {
     order: 2;
   }
 
-  @include respond-between(1921px, 3500px) {
+  @include respond-between(1921px, 4500px) {
     .line {
       width: 100vw !important;
       margin-left: calc(-100vw + 36%) !important;

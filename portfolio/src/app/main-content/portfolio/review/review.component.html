@@ -1,18 +1,15 @@
 <div class="review-wrapper">
-   
    <div class="review-block">
       <div class="review-container">
          <div class="exclamation">
-      <img src="./../../../../assets/icons/portfolio/review/exclamation.png" alt="">
-   </div>
+            <img src="./../../../../assets/icons/portfolio/review/exclamation.png" alt="">
+         </div>
          <div class="review-text">
             @if(this.currentLanguage === "en") {
-               <span>{{this.reviews[this.counter].englishReview}}</span><br><br>
+            <span>{{this.reviews[this.counter].englishReview}}</span><br><br>
             } @else {
-               <span>{{this.reviews[this.counter].germanReview}}</span><br><br>
+            <span>{{this.reviews[this.counter].germanReview}}</span><br><br>
             }
-
-            <!-- <span>{{this.reviews[this.counter].englishReview}}</span><br><br><br><br> -->
             <div class="name">
                <div class="line-in-review"></div>
                <h3>{{this.reviews[this.counter].name}}</h3>

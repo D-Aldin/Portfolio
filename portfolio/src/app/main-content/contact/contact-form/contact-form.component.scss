@@ -37,8 +37,8 @@ textarea {
 
 input[type="checkbox"] {
   background-image: url("./../../../../assets/icons/contact/default.png");
-  width: 24px;
-  height: 24px;
+  width: 34px;
+  height: 34px;
   -webkit-appearance: none;
   background-position: center;
   background-repeat: no-repeat;
@@ -254,7 +254,7 @@ textarea {
   }
 
   .checkbox label {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   input[type="submit"] {
@@ -272,7 +272,7 @@ textarea {
   }
 
   .checkbox label {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   input[type="submit"] {
@@ -286,6 +286,12 @@ textarea {
   display: flex;
   flex-direction: column;
   // align-items: center;
+}
+
+@media only screen and (max-width: 970px) and (min-width: 310px) {
+  .contact-form {
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 670px) and (min-width: 480px) {
@@ -308,7 +314,7 @@ textarea {
   }
 
   .checkbox label {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   input[type="submit"] {

@@ -31,7 +31,6 @@ body {
   min-height: 100vh;
   width: 100%;
   background-color: rgb(19, 28, 46);
-  overflow: hidden;
 }
 
 // * {
@@ -49,4 +48,10 @@ main {
 .no-scroll {
   height: 100vh !important;
   position: fixed;
+}
+
+@media only screen and (max-width: 4500px) and (min-width: 1921px) {
+  body {
+    overflow: hidden;
+  }
 }

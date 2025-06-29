@@ -117,6 +117,24 @@ footer {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 4500px) and (min-width: 1921px) {
+  footer {
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+
+  .footer-wrapper {
+    max-width: 1920px;
+  }
+
+  .legal-notice {
+    max-width: 1920px;
+  }
+}
+
 @media only screen and (max-width: 970px) and (min-width: 670px) {
   footer {
     padding: 30px;

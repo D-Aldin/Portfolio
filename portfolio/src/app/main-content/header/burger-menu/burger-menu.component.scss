@@ -22,6 +22,14 @@
     width: 120px;
     height: auto;
   }
+
+  @include iphone4-portrait() {
+    height: 60px;
+  }
+
+  img {
+    width: 80px;
+  }
 }
 
 .open-menu {
@@ -73,12 +81,21 @@
   font-size: 17px;
   display: flex;
   align-items: center;
+
+  @include iphone4-portrait() {
+    padding: 8px 30px;
+  }
 }
 
 .topnav a.icon {
   width: 65px;
   height: 65px;
   display: block;
+
+  @include iphone4-portrait() {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .icon {
@@ -91,6 +108,10 @@
 
   &:hover {
     scale: (1.3);
+  }
+
+  @include iphone4-portrait() {
+    background-size: 40px 40px;
   }
 }
 

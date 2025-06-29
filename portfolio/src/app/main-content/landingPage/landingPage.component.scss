@@ -50,6 +50,10 @@ h3 {
       font-size: 1.34rem !important;
     }
   }
+
+  @include iphone4-portrait() {
+    font-size: 1.6rem;
+  }
 }
 
 h4 {
@@ -245,6 +249,16 @@ span {
     transform: translate(-50%, -58.2149%);
     z-index: 1000;
   }
+
+  @include iphone-se() {
+    max-height: 260px;
+    transform: translate(-50%, -64.2149%);
+  }
+
+  @include iphone4-portrait() {
+    max-height: 210px;
+    transform: translate(-50%, -80.2149%);
+  }
 }
 
 .title-container {
@@ -363,6 +377,10 @@ span {
   @include respond-between(970px, 1139px) {
     padding-top: 50px;
   }
+
+  @include iphone-se() {
+    padding-top: 38px;
+  }
 }
 
 .name {
@@ -404,6 +422,10 @@ span {
 
     @include respond-between(310px, 670px) {
       font-size: 2.45rem !important;
+    }
+
+    @include iphone4-portrait() {
+      font-size: 1.75rem !important;
     }
   }
 }
@@ -483,6 +505,10 @@ span {
 
   @include respond-between(310px, 670px) {
     font-size: 1.55rem !important;
+  }
+
+  @include iphone4-portrait() {
+    font-size: 1.25rem !important;
   }
 }
 
@@ -566,6 +592,15 @@ span {
       height: 49px;
     }
   }
+
+  @include iphone-se() {
+    button {
+      width: 117px;
+      height: 37px;
+      margin-top: 5px;
+      font-size: 1.138rem;
+    }
+  }
 }
 
 .hero-background {
@@ -635,6 +670,12 @@ span {
 
     @include respond-between(970px, 1139px) {
       font-size: 1.375rem;
+    }
+  }
+  @include iphone4-portrait() {
+    a {
+      width: 20px;
+      height: 20px;
     }
   }
 }
@@ -716,7 +757,7 @@ span {
   @include purple-line($width: 110px);
   @include glow-effect($color-purple, 10px, 20px, 30px);
 
-  @include respond-between(1921px, 3500px) {
+  @include respond-between(1921px, 4500px) {
     width: 100vw;
     margin-left: calc(-100vw + 50%);
   }
@@ -767,7 +808,15 @@ span {
   }
 
   @include respond-between(310px, 670px) {
-    top: 380px;
+    top: 410px;
+  }
+
+  @include iphone-se() {
+    top: 320px;
+  }
+
+  @include iphone4-portrait() {
+    top: 269px;
   }
 }
 

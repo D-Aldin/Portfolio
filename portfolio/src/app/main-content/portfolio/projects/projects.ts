@@ -29,14 +29,14 @@ export const PROJECTS = [
     image: 'pokemon',
     pageLink: 'https://aldin-dobric.de/pokedex/index.html',
   },
-  {
-    name: 'DA Bubble',
-    englishDescription:
-      'This app is a Slack clone. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
-    germanDescription:
-      'Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeitnachrichten und einer leistungsstarken Kanalorganisation.',
-    technology: ['Angular', 'TypeScript', 'Firebase'],
-    image: 'dab',
-    pageLink: 'https://aldin-dobric.de/pokedex/index.html',
-  },
+  // {
+  //   name: 'DA Bubble',
+  //   englishDescription:
+  //     'This app is a Slack clone. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
+  //   germanDescription:
+  //     'Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeitnachrichten und einer leistungsstarken Kanalorganisation.',
+  //   technology: ['Angular', 'TypeScript', 'Firebase'],
+  //   image: 'dab',
+  //   pageLink: 'https://aldin-dobric.de/pokedex/index.html',
+  // },
 ];

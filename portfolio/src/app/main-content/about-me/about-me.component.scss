@@ -211,7 +211,7 @@ section {
     z-index: -1;
   }
 
-  @include respond-between(1921px, 3500px) {
+  @include respond-between(1921px, 4500px) {
     img {
       transform: translateX(-15%);
     }
@@ -271,7 +271,7 @@ section {
 }
 
 .line {
-  @include respond-between(1921px, 3500px) {
+  @include respond-between(1921px, 4500px) {
     width: 100vw !important;
     margin-right: calc(-100vw + 50%) !important;
   }

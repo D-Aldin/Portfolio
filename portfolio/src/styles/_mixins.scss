@@ -78,6 +78,18 @@ $breakpoints: (
   }
 }
 
+@mixin iphone-se {
+  @media (max-width: 375px) and (max-height: 667px) {
+    @content;
+  }
+}
+
+@mixin iphone4-portrait {
+  @media only screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+    @content;
+  }
+}
+
 @mixin shadow-img-small {
   width: 540px;
   height: 540px;
