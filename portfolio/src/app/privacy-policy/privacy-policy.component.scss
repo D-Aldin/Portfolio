@@ -1,12 +1,12 @@
 .section-wrapper {
   max-width: 1920px;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 section {
   color: white;
-  padding: 100px;
+  padding: 120px;
   display: inline-block;
   z-index: 999;
 }

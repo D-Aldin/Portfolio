@@ -2,7 +2,7 @@
    <div class="about-me-container">
       <div class="title">
          <h1>{{langPath.aboutMe.title}}</h1>
-         <h4>{{langPath.aboutMe.description}}</h4>
+         <h4 >{{langPath.aboutMe.description}}</h4>
       </div>
       <div *ngFor="let block of aboutBlocks; let i = index"  [class]="block.cssClass">
       <div [class]="'image-' + block.alt" ></div>

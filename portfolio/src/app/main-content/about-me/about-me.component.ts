@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from '../../language';
-import { TRANSLATION } from '../../translation';
 
 @Component({
   selector: 'app-about-me',

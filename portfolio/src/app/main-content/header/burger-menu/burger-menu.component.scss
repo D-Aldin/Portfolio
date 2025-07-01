@@ -105,9 +105,12 @@
   background-size: 60px 60px;
   z-index: 9999;
   cursor: pointer;
+  transition: filter 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    scale: (1.3);
+    filter: brightness(1.3) drop-shadow(0 0 2px rgb(18, 116, 18))
+      drop-shadow(0 0 10px $color-purple);
+    transform: scale(1.05);
   }
 
   @include iphone4-portrait() {

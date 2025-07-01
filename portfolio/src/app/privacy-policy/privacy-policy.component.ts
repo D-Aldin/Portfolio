@@ -9,23 +9,22 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   standalone: true,
   imports: [HeaderComponent],
   templateUrl: './privacy-policy.component.html',
-  styleUrl: './privacy-policy.component.scss',
+  styleUrls: ['./privacy-policy.component.scss'],
 })
 export class PrivacyPolicyComponent {
+  translation: string = '';
+
   constructor(
     private languageService: LanguageService,
     private sanitizer: DomSanitizer
   ) {}
 
-  translation = TRANSLATION.en.privacyPolicy.policy;
-
-  get langPath() {
-    return this.languageService.getCurrentTranslations();
+  ngOnInit() {
+    const content = this.languageService.getCurrentTranslations();
+    this.translation = content.privacyPolicy.policy[0];
   }
 
   get safeHTMLContent(): SafeHtml {
-    return this.sanitizer.bypassSecurityTrustHtml(
-      this.langPath.privacyPolicy.policy[0]
-    );
+    return this.sanitizer.bypassSecurityTrustHtml(this.translation);
   }
 }

@@ -526,6 +526,7 @@ span {
     &:hover {
       background-color: $color-purple;
       transform: scale(1.2);
+      box-shadow: 0 0 8px 3px rgba($color-purple, 0.6);
     }
   }
 

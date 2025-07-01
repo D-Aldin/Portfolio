@@ -161,6 +161,8 @@
 
     &:hover {
       background-color: $color-green;
+      transform: scale(1.2);
+      box-shadow: 0 0 8px 3px rgba($color-green, 0.6);
     }
 
     @include respond-between(1024px, 1300px) {

@@ -124,12 +124,14 @@ section {
 
   @include respond-between(1301px, 1600px) {
     h1 {
-      font-size: 4.225rem !important;
+      font-size: 4.025rem !important;
     }
   }
 
   @include respond-between(1024px, 1300px) {
-    font-size: 3.125rem !important;
+    h1 {
+      font-size: 3.125rem !important;
+    }
   }
 
   @include respond-between(970px, 1024px) {
@@ -346,6 +348,7 @@ button {
   &:hover {
     background-color: $color-purple;
     transform: scale(1.2);
+    box-shadow: 0 0 8px 3px rgba($color-purple, 0.6);
   }
 }
 

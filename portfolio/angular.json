@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "allowedCommonJsDependencies": ["aos"],
             "outputPath": "dist/portfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -24,8 +25,8 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
-            "scripts": [],
+            "styles": ["node_modules/aos/dist/aos.css", "src/styles.scss"],
+            "scripts": ["node_modules/aos/dist/aos.js"],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -37,13 +38,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
+                  "maximumWarning": "600kb",
                   "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "18kb"
+                  "maximumWarning": "20kb",
+                  "maximumError": "30kb"
                 }
               ],
               "outputHashing": "all"

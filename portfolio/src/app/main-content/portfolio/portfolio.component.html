@@ -15,7 +15,10 @@
       <div class="shadow"></div>
    </div>
    @for(project of projects; track project.name; let i = $index) {
-   <app-projects [project]="project" [isReversed]="i % 2 === 0"></app-projects>
+      <div [attr.data-aos]="i % 2 === 0 ? 'fade-up-right' : 'fade-up-left'">
+         <app-projects [project]="project" [isReversed]="i % 2 === 0"></app-projects>
+      </div>
+   
    }
    <app-review></app-review>
    <div class="shadow-2">
