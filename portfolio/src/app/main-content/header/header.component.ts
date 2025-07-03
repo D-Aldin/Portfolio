@@ -37,7 +37,7 @@ export class HeaderComponent {
   }
 
   switchLang(value: string) {
-    if (value === 'en' || value === 'de') {
+    if (value === 'en' || value === 'de' || value === 'bs') {
       this.languageService.language = value;
       if (typeof window !== 'undefined') {
         localStorage.setItem('lang', value);

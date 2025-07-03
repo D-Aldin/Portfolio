@@ -530,4 +530,265 @@ export const TRANSLATION = {
       ],
     },
   },
+
+  bs: {
+    header: {
+      links: ['O meni', 'Vještine', 'Portfolio'],
+    },
+
+    landingPage: {
+      me: 'Ja sam',
+      developer: 'FRONTEND DEVELOPER',
+    },
+
+    aboutMe: {
+      title: 'O meni',
+      description: `
+        Moje putovanje u programiranje počelo je sa znatiželjom, posebno kada sam otkrio Python.
+        Bio sam fasciniran time kako se jednostavan i čitljiv jezik može koristiti za automatizaciju zadataka i izgradnju logičkih sistema.
+        Nakon što sam izgradio čvrst temelj u Pythonu, prešao sam na web development i počeo učiti HTML, CSS i JavaScript.
+        Privukla me vizuelna i interaktivna strana kodiranja - mogućnost stvaranja stvari koje korisnici mogu vidjeti i koristiti u stvarnom vremenu bila je nevjerovatno ispunjavajuća.
+        S vremenom, kodiranje je iz interesa preraslo u pravu strast. Volim kreativnost, rješavanje problema i stalno učenje koje nudi.
+      `,
+      blocks: [
+        `Trenutno živim u Frankfurtu na Majni, gradu koji mi se jako sviđa - ali sam također vrlo otvoren kada je u pitanju način i mjesto rada. Bilo da je riječ o radu na daljinu, saradnji u hibridnom okruženju ili čak preseljenju za pravu priliku, fleksibilan sam i uzbuđen zbog novih iskustava. Ono što mi je najvažnije je da budem dio tima u kojem mogu rasti, doprinositi i graditi značajne projekte.`,
+        `Uvijek sam znatiželjan i otvoren za učenje nečeg novog. Bilo da je riječ o novoj tehnologiji, alatu ili načinu rada, uživam u izazovima i sticanju novih vještina. Volim osjećaj rasta i vidjeti kako svaki korak poboljšava moj rad.`,
+        `Kada se suočim sa problemom, volim miješati analitičko razmišljanje sa kreativnošću kako bih pronašao najbolje rješenje. Uživam u razbijanju stvari na dijelove i istraživanju različitih ideja, i uvijek sam otvoren za saradnju s drugima kako bih dobio svježe perspektive. Svaki izazov me nečemu nauči, i koristim to da nastavim rasti i postajem bolji.`,
+      ],
+    },
+
+    skills: {
+      title: 'Moje vještine',
+      descriptionExperience: `
+        Izgradio sam nekoliko frontend projekata koristeći različite alate. U svojoj Join Kanban aplikaciji, radio sam sa HTML-om, CSS-om, JavaScriptom i Firebase-om.
+        Kreirao sam Valkyrie igru koristeći OOP u JavaScriptu, i izgradio Pokémon Desk sa REST API-jem.
+        Također uživam u radu sa TypeScript-om, Angular-om, Material Design-om i korištenjem Git-a u Scrum timovima.
+      `,
+      lookingFor: 'Tražim',
+      anotherSkill: 'drugu vještinu',
+      descriptionAnother: `
+        Uvijek sam uzbuđen kada učim nove tehnologije i okvire.
+        Uživam u istraživanju kako različiti alati rade zajedno kako bi se izgradile bolje, brže i dinamičnije aplikacije.
+        Bilo da je riječ o uranjanju u novi JavaScript okvir, eksperimentisanju sa backend servisima poput Firebase-a ili usavršavanju UI-a sa modernim dizajn sistemima,
+        volim izazov da ostanem u toku i konstantno poboljšavam svoje vještine.
+      `,
+    },
+
+    portfolio: {
+      guide:
+        'Istražite izbor mog rada ovdje - interakcija sa projektima kako biste vidjeli moje vještine u akciji',
+    },
+
+    contact: {
+      title: 'Imate problem koji treba riješiti?',
+      content:
+        'Ako tražite strastvenog i pouzdanog frontend developera koji će vaše ideje pretvoriti u stvarnost, slobodno me kontaktirajte! Uvijek sam otvoren za nove prilike, saradnje ili samo dobar razgovor o izgradnji sjajnih digitalnih iskustava.\n\
+                Hajde da se povežemo i zajedno napravimo nešto značajno! Ja sam frontend developer sa jakim fokusom na kreiranje korisnički prijatljivih, responzivnih i vizuelno privlačnih web interfejsa. Posebno me zanimaju uloge u kojima mogu blisko sarađivati sa dizajn i backend timovima kako bih izgradio besprijekorna korisnička iskustva.\n\
+                Vrijednost vašem projektu donosim kombinujući čist, održiv kod sa dubokim razumijevanjem UI/UX principa. Brinem se o performansama, pristupačnosti i osiguravanju da krajnji proizvod ne samo da radi odlično, već i da se korisnicima čini intuitivnim. Bilo da je riječ o optimizaciji vremena učitavanja, poboljšanju mobilne responzivnosti ili pretvaranju kompleksnih funkcionalnosti u glatke interakcije - osiguravam da vaša vizija postane stvarnost.\n\
+                Hajde da zajedno napravimo nešto izuzetno!',
+      contactMe: 'Trebate Frontend developera? Kontaktirajte me!',
+    },
+
+    legalNotice: {
+      legalNoticeTitle: ['Pravna napomena'],
+      informationAccording: ['Informacije prema'],
+      represented: ['Predstavlja'],
+      contact: ['Kontakt'],
+
+      liability: ['Odricanje od odgovornosti'],
+      liabilityForContent: [
+        'Odgovornost za sadržaj',
+        'Sadržaj naših stranica kreiran je s najvećom pažnjom. Međutim, ne možemo garantovati tačnost, potpunost ili ažurnost sadržaja.\n\
+         Kao pružalac usluga, odgovorni smo za vlastiti sadržaj na ovim stranicama u skladu sa § 7 (1) DDG i opštim zakonima.\n\
+         Prema §§ 8 do 10 DDG, kao pružalac usluga nismo obavezni da nadgledamo prenesene ili pohranjene eksterne informacije\n\
+         ili da istražujemo okolnosti koje ukazuju na nezakonitu aktivnost. Obaveze uklanjanja ili blokiranja korištenja informacija prema opštim zakonima ostaju nepromijenjene.\n\
+         Međutim, odgovornost u tom smislu moguća je tek od trenutka saznanja o konkretnoj pravnoj povredi.\n\
+         Nakon što postanemo svjesni takvih pravnih povreda, odmah ćemo ukloniti ovaj sadržaj.',
+      ],
+      liabilityForLinks: [
+        'Odgovornost za linkove',
+        'Naša web stranica sadrži linkove ka eksternim web stranicama trećih strana, čiji sadržaj ne kontrolišemo.\n\
+         Stoga ne možemo preuzeti bilo kakvu odgovornost za ovaj eksterni sadržaj. Odgovornost za sadržaj pojedinih linkovanih stranica uvijek snosi odgovarajući pružalac usluga ili operator.\n\
+         Linkovane stranice su provjerene u pogledu mogućih pravnih povreda u vrijeme linkovanja. Nezakonit sadržaj nije bio prepoznatljiv u vrijeme linkovanja.\n\
+         Kontinuirana kontrola sadržaja linkovanih stranica nije razumna bez konkretnih naznaka pravne povrede.\n\
+         Ako postanemo svjesni bilo kakvih pravnih povreda, odmah ćemo ukloniti takve linkove.',
+      ],
+      copyright: [
+        'Autorska prava',
+        'Sadržaj i djela kreirana od strane operatora stranice na ovim stranicama podliježu njemačkom zakonu o autorskim pravima.\n\
+         Umnožavanje, obrada, distribucija i bilo koja vrsta korištenja izvan granica autorskog prava zahtijevaju pismenu saglasnost\n\
+         odgovarajućeg autora ili kreatora. Preuzimanje i kopiranje ove stranice dozvoljeno je samo za privatnu, nekomercijalnu upotrebu.\n\
+         Ako sadržaj na ovoj stranici nije kreiran od strane operatora, poštuju se autorska prava trećih strana.\n\
+         Posebno, sadržaj trećih strana je označen kao takav. Ako ipak primijetite povredu autorskih prava, molimo vas da nas obavijestite.\n\
+         Nakon što postanemo svjesni pravnih povreda, odmah ćemo ukloniti takav sadržaj.',
+      ],
+      dataProtection: [
+        'Zaštita podataka',
+        `Korištenje naše web stranice u principu je moguće bez navođenja ličnih podataka. Ukoliko se lični podaci
+         (kao što su ime, adresa ili email adrese) prikupljaju na našoj stranici, to se uvijek radi na dobrovoljnoj osnovi, gdje je to moguće.
+         Ovi podaci neće biti proslijeđeni trećim stranama bez vaše izričite saglasnosti.
+         Napominjemo da prijenos podataka preko interneta (npr. komunikacija putem emaila) može imati sigurnosne propuste.
+         Potpuna zaštita podataka od pristupa trećih strana nije moguća.
+         Korištenje kontakt podataka objavljenih u okviru obaveze impresuma od strane trećih strana za slanje neželjene reklame i
+         informativnih materijala ovim se izričito zabranjuje. Operatori stranice izričito zadržavaju pravo poduzimanja pravnih koraka u slučaju
+         slanja neželjene reklame, kao što su spam emailovi.`,
+      ],
+    },
+    privacyPolicy: {
+      policy: [
+        `<h1>Politika privatnosti</h1>
+<p>Posljednje ažuriranje: 28. juni 2025.</p>
+<p>Ova Politika privatnosti opisuje Naše politike i procedure u vezi prikupljanja, korištenja i otkrivanja Vaših podataka kada koristite Uslugu i obavještava Vas o Vašim pravima privatnosti i kako Vas zakon štiti.</p>
+<p>Koristimo Vaše lične podatke za pružanje i unapređenje Usluge. Korištenjem Usluge, slažete se sa prikupljanjem i korištenjem informacija u skladu sa ovom Politikom privatnosti. Ova Politika privatnosti kreirana je uz pomoć <a href="https://www.termsfeed.com/privacy-policy-generator/" target="_blank">Privacy Policy Generator</a>.</p>
+
+<h2>Tumačenje i definicije</h2>
+<h3>Tumačenje</h3>
+<p>Riječi čije je početno slovo veliko imaju značenja definisana pod sljedećim uslovima. Sljedeće definicije imaju isto značenje bez obzira da li se pojavljuju u jednini ili množini.</p>
+
+<h3>Definicije</h3>
+<p>Za potrebe ove Politike privatnosti:</p>
+<ul>
+    <li><strong>Račun</strong> znači jedinstveni račun kreiran za Vas da biste pristupili našoj Usluzi ili dijelovima naše Usluge.</li>
+    <li><strong>Povezana kompanija</strong> znači pravno lice koje kontroliše, kontrolisano je ili je pod zajedničkom kontrolom sa strankom, gdje "kontrola" znači vlasništvo od 50% ili više dionica, udjela ili drugih vrijednosnih papira sa pravom glasa za izbor direktora ili drugog upravnog organa.</li>
+    <li><strong>Kompanija</strong> (u ovom Ugovoru se odnosi na "Kompanija", "Mi", "Nas" ili "Naš") odnosi se na Moj Portfolio.</li>
+    <li><strong>Kolačići</strong> su male datoteke koje se postavljaju na Vaš računar, mobilni uređaj ili bilo koji drugi uređaj od strane web stranice, koje sadrže detalje Vaše historije pregledanja na toj web stranici među svojim mnogim upotrebama.</li>
+    <li><strong>Zemlja</strong> odnosi se na: Hessen, Njemačka</li>
+    <li><strong>Uređaj</strong> znači bilo koji uređaj koji može pristupiti Usluzi kao što je računar, mobilni telefon ili digitalni tablet.</li>
+    <li><strong>Lični podaci</strong> su bilo koje informacije koje se odnose na identifikovanu ili identifikabilnu osobu.</li>
+    <li><strong>Usluga</strong> odnosi se na Web stranicu.</li>
+    <li><strong>Pružalac usluga</strong> znači bilo koje fizičko ili pravno lice koje obrađuje podatke u ime Kompanije. Odnosi se na treće strane ili pojedince koje Kompanija zapošljava da olakša Uslugu, da pruži Uslugu u ime Kompanije, da obavlja usluge povezane sa Uslugom ili da pomaže Kompaniji u analizi načina korištenja Usluge.</li>
+    <li><strong>Podaci o korištenju</strong> odnose se na podatke prikupljene automatski, bilo generisane korištenjem Usluge ili iz same infrastrukture Usluge (na primjer, trajanje posjete stranici).</li>
+    <li><strong>Web stranica</strong> odnosi se na Moj Portfolio, dostupan na <a href="https://www.aldin-dobric.de/" rel="external nofollow noopener" target="_blank">https://www.aldin-dobric.de/</a></li>
+    <li><strong>Vi</strong> znači pojedinca koji pristupa ili koristi Uslugu, ili kompaniju, ili drugi pravni subjekt u čije ime takav pojedinac pristupa ili koristi Uslugu, kako je primjenjivo.</li>
+</ul>
+
+<h2>Prikupljanje i korištenje Vaših ličnih podataka</h2>
+<h3>Vrste prikupljenih podataka</h3>
+
+<h4>Lični podaci</h4>
+<p>Tijekom korištenja Naše Usluge, možemo tražiti od Vas da nam dostavite određene lične podatke koji se mogu koristiti za kontaktiranje ili identifikaciju. Lični podaci mogu uključivati, ali nisu ograničeni na:</p>
+<ul>
+    <li>Email adresu</li>
+    <li>Ime i prezime</li>
+    <li>Podatke o korištenju</li>
+</ul>
+
+<h4>Podaci o korištenju</h4>
+<p>Podaci o korištenju se prikupljaju automatski prilikom korištenja Usluge.</p>
+<p>Podaci o korištenju mogu uključivati informacije kao što je IP adresa Vašeg uređaja, tip pretraživača, verzija pretraživača, stranice naše Usluge koje posjetite, vrijeme i datum Vaše posjete, vrijeme provedeno na tim stranicama, jedinstvene identifikatore uređaja i druge dijagnostičke podatke.</p>
+<p>Kada pristupite Usluzi putem mobilnog uređaja, možemo prikupiti određene informacije automatski, uključujući, ali ne ograničavajući se na, tip mobilnog uređaja koji koristite, jedinstveni ID Vašeg mobilnog uređaja, IP adresu Vašeg mobilnog uređaja, operativni sistem Vašeg mobilnog uređaja, tip mobilnog internet pretraživača koji koristite, jedinstvene identifikatore uređaja i druge dijagnostičke podatke.</p>
+<p>Također možemo prikupiti informacije koje Vaš pretraživač šalje kad god posjetite našu Uslugu ili kada pristupite Usluzi putem mobilnog uređaja.</p>
+
+<h4>Tehnologije praćenja i Kolačići</h4>
+<p>Koristimo Kolačiće i slične tehnologije praćenja da pratimo aktivnost na našoj Usluzi i pohranjujemo određene informacije. Korištene tehnologije praćenja uključuju beacone, tagove i skripte za prikupljanje i praćenje informacija i za poboljšanje i analizu Naše Usluge. Tehnologije koje koristimo mogu uključivati:</p>
+<ul>
+    <li><strong>Kolačići ili Pretraživački kolačići.</strong> Kolačić je mala datoteka postavljena na Vaš uređaj. Možete uputiti Vaš pretraživač da odbije sve Kolačiće ili da naznači kada se šalje Kolačić. Međutim, ako ne prihvatite Kolačiće, možda nećete moći koristiti neke dijelove naše Usluge. Osim ako niste podesili Vaš pretraživač da odbija Kolačiće, naša Usluga može koristiti Kolačiće.</li>
+    <li><strong>Web beaconi.</strong> Određeni dijelovi naše Usluge i naši emailovi mogu sadržavati male elektronske datoteke poznate kao web beaconi (također poznati kao clear gifs, pixel tags i single-pixel gifs) koje omogućavaju Kompaniji, na primjer, da broji korisnike koji su posjetili te stranice ili otvorili email i za druge povezane statistike web stranice (na primjer, bilježenje popularnosti određenog dijela i provjeru integriteta sistema i servera).</li>
+</ul>
+
+<p>Kolačići mogu biti "Trajni" ili "Sesijski" Kolačići. Trajni Kolačići ostaju na Vašem računaru ili mobilnom uređaju kada se odspojite, dok se Sesijski Kolačići brišu čim zatvorite Vaš web pretraživač. Možete saznati više o kolačićima u članku na <a href="https://www.termsfeed.com/blog/cookies/#What_Are_Cookies" target="_blank">TermsFeed web stranici</a>.</p>
+
+<p>Koristimo i Sesijske i Trajne Kolačiće u svrhe navedene ispod:</p>
+<ul>
+    <li>
+        <strong>Neophodni / Esencijalni Kolačići</strong>
+        <p>Tip: Sesijski Kolačići</p>
+        <p>Upravlja: Mi</p>
+        <p>Svrha: Ovi Kolačići su neophodni za pružanje Usluga dostupnih putem Web stranice i omogućavanje Vam da koristite neke od njenih funkcionalnosti. Pomažu u autentifikaciji korisnika i sprečavanju zloupotrebe korisničkih računa. Bez ovih Kolačića, usluge koje ste tražili ne mogu biti pružene, i mi koristimo ove Kolačiće samo za pružanje tih usluga.</p>
+    </li>
+    <li>
+        <strong>Kolačići Politike / Prihvatanja Obavještenja o Kolačićima</strong>
+        <p>Tip: Trajni Kolačići</p>
+        <p>Upravlja: Mi</p>
+        <p>Svrha: Ovi Kolačići identifikuju da li su korisnici prihvatili korištenje kolačića na Web stranici.</p>
+    </li>
+    <li>
+        <strong>Funkcionalni Kolačići</strong>
+        <p>Tip: Trajni Kolačići</p>
+        <p>Upravlja: Mi</p>
+        <p>Svrha: Ovi Kolačići omogućavaju nam da pamtimo izbore koje napravite prilikom korištenja Web stranice, kao što je pamćenje Vaših podataka za prijavu ili preferencije jezika. Svrha ovih Kolačića je pružiti Vam personalizovanije iskustvo i izbjeći da morate ponovo unositi Vaše preferencije svaki put kada koristite Web stranicu.</p>
+    </li>
+</ul>
+
+<p>Za više informacija o kolačićima koje koristimo i Vašim izborima u vezi kolačića, posjetite našu Politiku kolačića ili dio Kolačići u našoj Politici privatnosti.</p>
+
+<h3>Korištenje Vaših ličnih podataka</h3>
+<p>Kompanija može koristiti Lične podatke u sljedeće svrhe:</p>
+<ul>
+    <li><strong>Za pružanje i održavanje naše Usluge</strong>, uključujući praćenje korištenja naše Usluge.</li>
+    <li><strong>Za upravljanje Vašim računom:</strong> za upravljanje Vašom registracijom kao korisnika Usluge. Lični podaci koje dostavite mogu Vam omogućiti pristup različitim funkcionalnostima Usluge koje su dostupne Vama kao registriranom korisniku.</li>
+    <li><strong>Za izvršenje ugovora:</strong> razvoj, ispunjenje i preuzimanje ugovora o kupovini proizvoda, stavki ili usluga koje ste kupili ili bilo kojeg drugog ugovora sa Nama putem Usluge.</li>
+    <li><strong>Da Vas kontaktiramo:</strong> Da Vas kontaktiramo putem emaila, telefonskih poziva, SMS-a ili drugih ekvivalentnih oblika elektronske komunikacije, kao što su push obavještenja mobilne aplikacije u vezi sa ažuriranjima ili informativnim komunikacijama povezanim sa funkcionalnostima, proizvodima ili ugovorenim uslugama, uključujući sigurnosna ažuriranja, kada je potrebno ili razumno za njihovu implementaciju.</li>
+    <li><strong>Da Vam pružimo</strong> vijesti, posebne ponude i opšte informacije o drugim robama, uslugama i događajima koje nudimo a koji su slični onima koje ste već kupili ili za koje ste se interesovali, osim ako ste odbili primanje takvih informacija.</li>
+    <li><strong>Za upravljanje Vašim zahtjevima:</strong> Za odgovaranje i upravljanje Vašim zahtjevima upućenim Nama.</li>
+    <li><strong>Za poslovne transfere:</strong> Možemo koristiti Vaše informacije za procjenu ili sprovođenje spajanja, otudžbe, restrukturiranja, reorganizacije, raspuštanja ili druge prodaje ili transfera nekih ili svih Naših sredstava, bilo kao dio poslovanja ili kao dio stečaja, likvidacije ili sličnog postupka, u kojem su Lični podaci koje držimo o korisnicima naše Usluge među sredstvima koja se prenose.</li>
+    <li><strong>Za druge svrhe</strong>: Možemo koristiti Vaše informacije za druge svrhe, kao što su analiza podataka, identifikacija trendova korištenja, određivanje efektivnosti naših promotivnih kampanja i evaluacija i unapređenje naše Usluge, proizvoda, usluga, marketinga i Vašeg iskustva.</li>
+</ul>
+
+<p>Možemo dijeliti Vaše lične informacije u sljedećim situacijama:</p>
+<ul>
+    <li><strong>Sa Pružaocima usluga:</strong> Možemo dijeliti Vaše lične informacije sa Pružaocima usluga kako bismo pratili i analizirali korištenje naše Usluge, kako bismo Vas kontaktirali.</li>
+    <li><strong>Za poslovne transfere:</strong> Možemo dijeliti ili prenijeti Vaše lične informacije u vezi sa, ili tokom pregovora o, bilo kojem spajanju, prodaji sredstava Kompanije, finansiranju, ili akviziciji cijelog ili dijela Našeg poslova drugoj kompaniji.</li>
+    <li><strong>Sa Povezanim kompanijama:</strong> Možemo dijeliti Vaše informacije sa Našim povezanim kompanijama, u kojem slučaju ćemo zahtijevati od tih povezanih kompanija da poštuju ovu Politiku privatnosti. Povezane kompanije uključuju Našu matičnu kompaniju i bilo koje druge podružnice, partnere u zajedničkom pothvatu ili druge kompanije koje kontrolišemo ili koje su pod zajedničkom kontrolom sa Nama.</li>
+    <li><strong>Sa poslovnim partnerima:</strong> Možemo dijeliti Vaše informacije sa Našim poslovnim partnerima kako bismo Vam ponudili određene proizvode, usluge ili promocije.</li>
+    <li><strong>Sa drugim korisnicima:</strong> kada dijelite lične informacije ili na drugi način komunicirate u javnim oblastima sa drugim korisnicima, takve informacije mogu vidjeti svi korisnici i mogu biti javno distribuirane.</li>
+    <li><strong>Sa Vašom saglasnošću</strong>: Možemo otkriti Vaše lične informacije za bilo koju drugu svrhu sa Vašom saglasnošću.</li>
+</ul>
+
+<h3>Zadržavanje Vaših ličnih podataka</h3>
+<p>Kompanija će zadržati Vaše Lične podatke samo onoliko dugo koliko je potrebno za svrhe navedene u ovoj Politici privatnosti. Zadržaćemo i koristiti Vaše Lične podatke u mjeri u kojoj je potrebno da ispunimo naše zakonske obaveze (na primjer, ako smo obavezni da zadržimo Vaše podatke da bismo se pridržavali primjenjivih zakona), riješimo sporove i provodimo naše pravne ugovore i politike.</p>
+<p>Kompanija će također zadržati Podatke o korištenju u interne svrhe analize. Podaci o korištenju se generalno zadržavaju za kraći period vremena, osim kada se ovi podaci koriste za jačanje sigurnosti ili poboljšanje funkcionalnosti Naše Usluge, ili smo zakonski obavezni da zadržimo ove podatke duži period vremena.</p>
+
+<h3>Transfer Vaših ličnih podataka</h3>
+<p>Vaše informacije, uključujući Lične podatke, obrađuju se u operativnim kancelarijama Kompanije i na svim drugim mjestima gdje se nalaze strane uključene u obradu. To znači da ove informacije mogu biti prenesene - i održavane - na računarima koji se nalaze izvan Vaše države, pokrajine, zemlje ili druge vladine jurisdikcije gdje zakoni o zaštiti podataka mogu biti drugačiji od onih u Vašoj jurisdikciji.</p>
+<p>Vaša saglasnost sa ovom Politikom privatnosti nakon čega slijedi Vaše dostavljanje takvih informacija predstavlja Vaš pristanak na takav transfer.</p>
+<p>Kompanija će poduzeti sve razumno potrebne korake kako bi osigurala da se Vaši podaci tretiraju sigurno i u skladu sa ovom Politikom privatnosti i da se ne vrši transfer Vaših Ličnih podataka organizaciji ili zemlji osim ako postoje adekvatne kontrole uključujući sigurnost Vaših podataka i drugih ličnih informacija.</p>
+
+<h3>Brisanje Vaših ličnih podataka</h3>
+<p>Imate pravo da izbrišete ili zatražite od Nas da pomognemo u brisanju Ličnih podataka koje smo prikupili o Vama.</p>
+<p>Naša Usluga Vam može dati mogućnost da izbrišete određene informacije o Vama iz Usluge.</p>
+<p>Možete ažurirati, ispraviti ili izbrisati Vaše informacije u bilo kojem trenutku tako što ćete se prijaviti na Vaš Račun, ako ga imate, i posjetiti sekciju postavki računa koja Vam omogućava upravljanje Vašim ličnim informacijama. Također nas možete kontaktirati da zatražite pristup, ispravku ili brisanje bilo kojih ličnih informacija koje ste nam dostavili.</p>
+<p>Imajte na umu, međutim, da možemo biti obavezni da zadržimo određene informacije kada imamo zakonsku obavezu ili pravnu osnovu za to.</p>
+
+<h3>Otkriivanje Vaših ličnih podataka</h3>
+<h4>Poslovne transakcije</h4>
+<p>Ako je Kompanija uključena u spajanje, akviziciju ili prodaju sredstava, Vaši Lični podaci mogu biti preneseni. Obavijestit ćemo Vas prije nego što Vaši Lični podaci budu preneseni i postanu predmet druge Politike privatnosti.</p>
+
+<h4>Provedba zakona</h4>
+<p>Pod određenim okolnostima, Kompanija može biti obavezna da otkrije Vaše Lične podatke ako je to potrebno u skladu sa zakonom ili kao odgovor na valjane zahtjeve javnih organa (npr. sud ili vladina agencija).</p>
+
+<h4>Drugi zakonski zahtjevi</h4>
+<p>Kompanija može otkriti Vaše Lične podatke u dobrom uvjerenju da je takva radnja neophodna kako bi:</p>
+<ul>
+    <li>Ispunila zakonsku obavezu</li>
+    <li>Zaštitila i branila prava ili imovinu Kompanije</li>
+    <li>Spriječila ili istražila moguće nedjela u vezi sa Uslugom</li>
+    <li>Zaštitila ličnu sigurnost Korisnika Usluge ili javnosti</li>
+    <li>Zaštitila od pravne odgovornosti</li>
+</ul>
+
+<h3>Sigurnost Vaših ličnih podataka</h3>
+<p>Sigurnost Vaših ličnih podataka nam je važna, ali imajte na umu da nijedna metoda prijenosa preko interneta ili elektroničkog pohranjivanja nije 100% sigurna. Iako nastojimo koristiti komercijalno prihvatljive načine za zaštitu Vaših ličnih podataka, ne možemo garantovati njihovu apsolutnu sigurnost.</p>
+
+<h2>Privatnost djece</h2>
+<p>Naša Usluga nije namijenjena osobama mlađim od 13 godina. Namjerno ne prikupljamo osobne podatke od osoba mlađih od 13 godina. Ako ste roditelj ili skrbnik i znate da je Vaše dijete dostavilo nam lične podatke, molimo Vas da nas kontaktirate. Ako ustanovimo da smo prikupili lične podatke od osobe mlađe od 13 godina bez provjere roditeljskog pristanka, poduzimamo korake da uklonimo te podatke sa naših servera.</p>
+<p>Ako trebamo osloniti na pristanak kao pravnu osnovu za obradu Vaših podataka i Vaša zemlja zahtijeva roditeljski pristanak, možemo tražiti pristanak roditelja prije nego što prikupimo i koristimo te informacije.</p>
+
+<h2>Linkovi ka drugim web stranicama</h2>
+<p>Naša Usluga može sadržavati linkove ka drugim web stranicama koje ne upravljamo mi. Ako kliknete na link treće strane, bićete preusmjereni na stranicu te treće strane. Toplo preporučujemo da pregledate Politiku privatnosti svake stranice koju posjetite.</p>
+<p>Nemamo kontrolu nad i ne preuzimamo odgovornost za sadržaj, politike privatnosti ili prakse bilo koje stranice ili usluge treće strane.</p>
+
+<h2>Izmjene ove Politike privatnosti</h2>
+<p>Možemo povremeno ažurirati našu Politiku privatnosti. Obavijestićemo Vas o bilo kakvim promjenama objavljivanjem nove Politike privatnosti na ovoj stranici.</p>
+<p>Obavijestit ćemo Vas putem e-maila i/ili istaknutom obaviješću na našoj Usluzi prije nego što promjena postane efektivna i ažurirati datum "Posljednje ažuriranje" na vrhu ove Politike privatnosti.</p>
+<p>Preporučujemo Vam da periodično pregledate ovu Politiku privatnosti radi bilo kakvih promjena. Promjene ove Politike privatnosti postaju efektivne kada se objave na ovoj stranici.</p>
+
+<h2>Kontaktirajte nas</h2>
+<p>Ako imate bilo kakvih pitanja o ovoj Politici privatnosti, možete nas kontaktirati:</p>
+<ul>
+    <li>Posjetom ove stranice na našoj web stranici: <a href="https://www.aldin-dobric.de/" rel="external nofollow noopener" target="_blank">https://www.aldin-dobric.de/</a></li>
+</ul>`,
+      ],
+    },
+  },
 };

@@ -8,6 +8,7 @@ interface projects {
   name: string;
   englishDescription: string;
   germanDescription: string;
+  bosnianDescription?: string; // Optional for Bosnian description
   technology: string[];
   image: string;
   pageLink: string;

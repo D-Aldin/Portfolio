@@ -2,7 +2,7 @@ import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { TRANSLATION } from './translation';
 
-type LanguageKey = 'en' | 'de';
+type LanguageKey = 'en' | 'de' | 'bs';
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +14,7 @@ export class LanguageService {
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
     if (isPlatformBrowser(this.platformId)) {
       const storedLang = localStorage.getItem('lang') as LanguageKey;
-      if (storedLang === 'en' || storedLang === 'de') {
+      if (storedLang === 'en' || storedLang === 'de' || storedLang === 'bs') {
         this.language = storedLang;
       }
     }

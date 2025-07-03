@@ -7,8 +7,10 @@
          <div class="review-text">
             @if(this.currentLanguage === "en") {
             <span>{{this.reviews[this.counter].englishReview}}</span><br><br>
-            } @else {
+            } @else if(this.currentLanguage === "de") {
             <span>{{this.reviews[this.counter].germanReview}}</span><br><br>
+            } @else {
+            <span>{{this.reviews[this.counter].bosnianReview}}</span><br><br>
             }
             <div class="name">
                <div class="line-in-review"></div>
