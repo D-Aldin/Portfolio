@@ -90,6 +90,10 @@
   color: $color-purple;
 }
 
+.title[data-custom="de"] {
+  color: $color-red;
+}
+
 .tech {
   display: flex;
   align-items: center;
@@ -130,6 +134,13 @@
     span {
       font-size: 18.4px;
     }
+  }
+}
+
+.tech[data-custom="de"] {
+  h4,
+  span {
+    color: $color-orange;
   }
 }
 

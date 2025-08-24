@@ -195,6 +195,18 @@ section {
   }
 }
 
+.portrait-container {
+  .line[data-custom="de"] {
+    border: 2px solid $color-orange;
+    @include glow-effect($color-orange, 10px, 20px, 30px);
+  }
+
+  img[data-custom="de"] {
+    border: 4px solid $color-orange;
+    @include glow-effect($color-orange, 10px, 20px, 9px);
+  }
+}
+
 .shadow {
   width: 100%;
   height: auto;

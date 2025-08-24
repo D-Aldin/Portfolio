@@ -15,9 +15,9 @@
                   <h1>Aldin Dobric</h1>
                </div>
                <div>
-                  <h2 class="frontend-text" [ngStyle]="{'font-size': currentLang === 'de' ? '3.438rem' : '3.625rem'}">{{langPath.landingPage.developer}}</h2>
+                  <h2 [attr.data-custom]="currentLang" class="frontend-text" [ngStyle]="{'font-size': currentLang === 'de' ? '3.438rem' : '3.625rem'}">{{langPath.landingPage.developer}}</h2>
                </div>
-               <div class="lets-talk">
+               <div [attr.data-custom]="currentLang" class="lets-talk">
                   <button (click)="goToContact()">Let's talk!</button>
                </div>
             </div>
@@ -27,7 +27,7 @@
          <div class="social-wrapper">
             <div>
                <div class="social-container">
-                  <div class="line"></div>
+                  <div class="line" [attr.data-custom]="currentLang"></div>
                   <div class="social-buttons">
                      <div class="git-wrapper">
                         <a class="git" href="https://github.com/D-Aldin" target="_blank" rel="noopener noreferrer"></a>

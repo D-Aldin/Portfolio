@@ -134,7 +134,7 @@
 }
 
 .line-in-review {
-  @include purple-line($width: 95%);
+  @include horizontalLine($width: 95%, $color: $color-purple);
   @include glow-effect($color-purple, 10px, 20px, 30px);
 }
 
@@ -193,7 +193,7 @@
 }
 
 .line {
-  @include purple-line($width: 104px);
+  @include horizontalLine($width: 104px, $color: $color-purple);
   @include glow-effect($color-purple, 10px, 20px, 30px);
 
   @include respond-between(1024px, 1300px) {

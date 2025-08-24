@@ -44,4 +44,8 @@ export class AboutMeComponent {
       'aboutMe'
     );
   }
+
+  get currentLang() {
+    return this.languageService.language;
+  }
 }

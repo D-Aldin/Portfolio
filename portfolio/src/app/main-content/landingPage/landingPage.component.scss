@@ -512,6 +512,10 @@ span {
   }
 }
 
+.frontend-text[data-custom="de"] {
+  color: $color-red;
+}
+
 .lets-talk {
   @include flex-setup();
   margin-right: 5px;
@@ -601,6 +605,12 @@ span {
       margin-top: 5px;
       font-size: 1.138rem;
     }
+  }
+}
+
+.lets-talk[data-custom="de"] {
+  button {
+    @include button-style($color-orange);
   }
 }
 
@@ -755,7 +765,7 @@ span {
 }
 
 .line {
-  @include purple-line($width: 110px);
+  @include horizontalLine($width: 110px, $color: $color-purple);
   @include glow-effect($color-purple, 10px, 20px, 30px);
 
   @include respond-between(1921px, 4500px) {
@@ -771,6 +781,11 @@ span {
     min-width: calc(100% - 166px);
     width: 50%;
   }
+}
+
+.line[data-custom="de"] {
+  @include horizontalLine($width: 110px, $color: $color-red);
+  @include glow-effect($color-red, 10px, 20px, 30px);
 }
 
 .email {

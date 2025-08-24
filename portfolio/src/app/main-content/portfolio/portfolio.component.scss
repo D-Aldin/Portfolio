@@ -13,6 +13,10 @@ section {
   right: 286px;
   top: 747px;
 
+  img {
+    position: absolute;
+  }
+
   @include respond-between(310px, 970px) {
     top: 69px;
   }
@@ -58,7 +62,7 @@ section {
 }
 
 .first-line {
-  @include purple-line();
+  @include horizontalLine($color: $color-purple);
   @include glow-effect($color-purple, 10px, 20px, 30px);
   justify-self: end;
   margin-right: 20px;
@@ -69,8 +73,13 @@ section {
   }
 }
 
+.first-line[data-custom="de"] {
+  @include horizontalLine($color: $color-red);
+  @include glow-effect($color-red, 10px, 20px, 30px);
+}
+
 .second-line {
-  @include purple-line($width: 100%);
+  @include horizontalLine($width: 100%, $color: $color-purple);
   @include glow-effect($color-purple, 10px, 20px, 30px);
   flex-grow: 1;
   min-width: 20px !important;
@@ -81,6 +90,11 @@ section {
     width: 100vw !important;
     margin-right: calc(-100vw + 50%) !important;
   }
+}
+
+.second-line[data-custom="de"] {
+  @include horizontalLine($width: 100%, $color: $color-red);
+  @include glow-effect($color-red, 10px, 20px, 30px);
 }
 
 .title-wrapper {

@@ -24,8 +24,8 @@ $breakpoints: (
   font-size: 1.438rem;
 }
 
-@mixin purple-line($width: 100px, $margin: 0) {
-  border: 2px solid rgb(151, 71, 255);
+@mixin horizontalLine($width: 100px, $color, $margin: 0) {
+  border: 2px solid $color;
   border-radius: 10px;
   width: $width;
   height: 2px;

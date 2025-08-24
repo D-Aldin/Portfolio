@@ -120,4 +120,8 @@ export class MySkillsComponent implements OnInit, AfterViewInit {
       'skills'
     );
   }
+
+  get currentLang() {
+    return this.languageService.language;
+  }
 }

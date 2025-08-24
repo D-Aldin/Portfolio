@@ -10,7 +10,7 @@
               
             </div>
             <div #bubble class="bubble-container">
-               <div class="interest"></div>
+               <div class="interest" [attr.data-custom]="currentLang"></div>
                <img class="bubble" src="./../../../assets/icons/my-skills/bubble.png" alt="">
             </div>
          </div>
@@ -20,18 +20,18 @@
       <div #skills class="my-skills">
          <div class="title">
             <h1>{{langPath.skills.title}}</h1>
-            <div class="line"></div>
+            <div class="line" [attr.data-custom]="currentLang"></div>
          </div>
          <div class="text-container">
             <div class="tech-experience">
                <h3>{{langPath.skills.descriptionExperience}}</h3>
             </div>
             <div #anotherSkill class="another-skill">
-               <h2>{{langPath.skills.lookingFor}} <span>{{langPath.skills.anotherSkill}}</span>?</h2>
+               <h2>{{langPath.skills.lookingFor}} <span [attr.data-custom]="currentLang">{{langPath.skills.anotherSkill}}</span>?</h2>
                <h3>{{langPath.skills.descriptionAnother}}</h3>
             </div>
             <div class="button-container">
-               <button (click)="goToContact()">Get in touch</button>
+               <button (click)="goToContact()" [attr.data-custom]="currentLang">Get in touch</button>
             </div>
          </div>
       </div>

@@ -17,7 +17,7 @@ section {
   color: white;
 
   .line {
-    @include purple-line($width: 39%);
+    @include horizontalLine($width: 39%, $color: $color-purple);
     @include glow-effect($color-purple, 10px, 20px, 30px);
     position: absolute;
     left: 0;
