@@ -7,6 +7,7 @@ import { HostListener } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID, OnInit } from '@angular/core';
 import { ViewChildren, QueryList } from '@angular/core';
+import { returnImagePath } from './../../imagePath';
 
 @Component({
   selector: 'app-my-skills',
@@ -110,5 +111,13 @@ export class MySkillsComponent implements OnInit, AfterViewInit {
       this.mobileView.nativeElement.appendChild(element);
       this.mobileView.nativeElement.appendChild(this.bubble.nativeElement);
     }
+  }
+
+  get imagePath(): string {
+    return returnImagePath(
+      this.languageService.language,
+      './../../../assets/img/skills/',
+      'skills'
+    );
   }
 }

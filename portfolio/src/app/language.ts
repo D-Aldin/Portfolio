@@ -1,6 +1,7 @@
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { TRANSLATION } from './translation';
+import { BehaviorSubject } from 'rxjs';
 
 type LanguageKey = 'en' | 'de' | 'bs';
 

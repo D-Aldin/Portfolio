@@ -10,16 +10,16 @@ section {
 
 .shadow-wrapper {
   position: relative;
-  width: 160px;
-  height: 40px;
+  right: 286px;
+  top: 747px;
 
   @include respond-between(310px, 970px) {
     top: 69px;
   }
 }
 
-.shadow {
-  background-image: url("./../../../assets/img/portfolio/shadow1.png");
+.shadow [data-custom="en"] {
+  background-image: url("./../../../assets/img/portfolio/portfolio1-en.png");
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;

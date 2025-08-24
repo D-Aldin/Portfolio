@@ -12,7 +12,7 @@
       <h3>{{langPath.portfolio.guide}}</h3>
    </div>
    <div class="shadow-wrapper">
-      <div class="shadow"></div>
+      <img [src]="imagePath" alt="shadow">
    </div>
    @for(project of projects; track project.name; let i = $index) {
       <div [attr.data-aos]="i % 2 === 0 ? 'fade-up-right' : 'fade-up-left'">
@@ -22,6 +22,6 @@
    }
    <app-review></app-review>
    <div class="shadow-2">
-      <img src="./../../../assets/img/portfolio/shadow2.png" alt="">
+      <img [src]='imagePathSecond' alt="shadow">
    </div>
 </section>

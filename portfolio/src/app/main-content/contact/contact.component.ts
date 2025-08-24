@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { LanguageService } from '../../language';
+import { returnImagePath } from '../../imagePath';
 
 @Component({
   selector: 'app-contact',
@@ -14,5 +15,13 @@ export class ContactComponent {
 
   get langPath() {
     return this.languageService.getCurrentTranslations();
+  }
+
+  get imagePath(): string {
+    return returnImagePath(
+      this.languageService.language,
+      './../../../assets/img/footer/',
+      'footer'
+    );
   }
 }

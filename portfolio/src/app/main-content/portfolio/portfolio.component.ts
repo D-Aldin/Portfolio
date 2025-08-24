@@ -7,6 +7,7 @@ import { OnInit, AfterViewInit } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { ChangeDetectorRef } from '@angular/core';
 import { NgZone } from '@angular/core';
+import { returnImagePath } from '../../imagePath';
 import * as AOS from 'aos';
 
 @Component({
@@ -28,6 +29,10 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
     return this.languageService.getCurrentTranslations();
   }
 
+  get currentLang() {
+    return this.languageService.language;
+  }
+
   ngOnInit(): void {}
 
   ngAfterViewInit() {
@@ -45,4 +50,21 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
   }
 
   projects = PROJECTS;
+
+  get imagePath(): string {
+    return returnImagePath(
+      this.languageService.language,
+      './../../../assets/img/portfolio/',
+      'portfolio'
+    );
+  }
+
+  get imagePathSecond(): string {
+    return returnImagePath(
+      this.languageService.language,
+      './../../../assets/img/portfolio/',
+      'portfolio',
+      2
+    );
+  }
 }

@@ -4,6 +4,7 @@ import { ScrollService } from '../../scrollToContact';
 import { CommonModule } from '@angular/common';
 import { HostListener, OnInit } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { returnImagePath } from './../../imagePath'; // Adjusted import path for imagePath service
 
 @Component({
   selector: 'app-landingPage',
@@ -55,5 +56,14 @@ export class LandingPageComponent implements OnInit {
 
   get currentWidth() {
     return this.width;
+  }
+
+  get imagePath(): string {
+    return returnImagePath(
+      this.languageService.language,
+      './../../../assets/img/heroImages/',
+      'heroImage',
+      1
+    );
   }
 }

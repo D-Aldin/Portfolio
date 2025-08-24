@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from '../../language';
+import { returnImagePath } from '../../imagePath';
 
 @Component({
   selector: 'app-about-me',
@@ -11,6 +12,8 @@ import { LanguageService } from '../../language';
 })
 export class AboutMeComponent {
   constructor(private languageService: LanguageService) {}
+
+  // imagePathPurpleEN = './../../../assets/img/aboutImages/purple-en.png';
 
   get langPath() {
     return this.languageService.getCurrentTranslations();
@@ -33,4 +36,12 @@ export class AboutMeComponent {
       cssClass: 'problem-solving',
     },
   ];
+
+  get imagePath(): string {
+    return returnImagePath(
+      this.languageService.language,
+      './../../../assets/img/aboutImages/',
+      'aboutMe'
+    );
+  }
 }
