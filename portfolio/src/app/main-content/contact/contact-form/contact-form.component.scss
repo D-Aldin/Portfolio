@@ -26,12 +26,44 @@ textarea {
 
   &:hover {
     border-color: $color-green;
+    @include glow-effect($color-green, 10px, 20px, 9px);
   }
 
   &:focus {
     border-color: $color-green;
     outline: none;
     background-color: transparent !important;
+  }
+
+  &.wrong-input:hover {
+    border-color: rgb(230, 28, 64);
+
+    @include glow-effect(rgb(230, 28, 64), 10px, 20px, 9px);
+  }
+}
+
+input[type="text"][data-custom="de"],
+select[data-custom="de"],
+textarea[data-custom="de"] {
+  border: 1px solid $color-orange;
+
+  &:hover {
+    border-color: $color-orange;
+    @include glow-effect($color-red, 10px, 20px, 9px);
+  }
+
+  &:focus {
+    border-color: $color-orange;
+  }
+
+  &.wrong-input:hover {
+    border-color: rgb(230, 28, 64);
+    @include glow-effect(rgb(230, 28, 64), 10px, 20px, 9px);
+  }
+
+  &.success-icon:hover {
+    border-color: rgb(0, 255, 55);
+    @include glow-effect(rgb(0, 255, 42), 10px, 20px, 9px);
   }
 }
 
@@ -56,9 +88,29 @@ input[type="checkbox"] {
   }
 }
 
+input[type="checkbox"][data-custom="de"] {
+  background-image: url("./../../../../assets/icons/contact/default1-de.png");
+
+  &:hover {
+    background-image: url("./../../../../assets/icons/contact/default\ -hover1-de.png");
+  }
+
+  &:checked {
+    background-image: url("./../../../../assets/icons/contact/checked1-de.png");
+
+    &:hover {
+      background-image: url("./../../../../assets/icons/contact/checked-hover1-de.png");
+    }
+  }
+}
+
 .policy-link {
   text-decoration: none;
   color: $color-purple;
+}
+
+.policy-link[data-custom="de"] {
+  color: $color-red;
 }
 
 input[type="submit"] {
@@ -166,11 +218,54 @@ input:autofill:active {
   background-position-x: calc(100% - 20px);
   background-position-y: 10px;
   border-color: $color-green !important;
+
+  &:hover {
+    border-color: rgb(0, 255, 55) !important;
+    @include glow-effect(rgb(0, 255, 42), 10px, 20px, 9px);
+  }
+}
+
+.success-icon[data-custom="de"] {
+  background-image: url("./../../../../assets/icons/contact/done.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 10px;
+  border-color: $color-green !important;
+
+  &:hover {
+    border-color: rgb(0, 255, 55) !important;
+    @include glow-effect(rgb(0, 255, 42), 10px, 20px, 9px);
+  }
 }
 
 textarea {
   resize: none;
   background-image: url("./../../../../assets/icons/contact/resize.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 100%;
+  background-origin: content-box;
+
+  &::-webkit-scrollbar {
+    width: 0.15em;
+    height: 1em;
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgb(97, 97, 97);
+    border-radius: 13px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-green;
+    outline: 0.11rem solid $color-green;
+    border-radius: 13px;
+  }
+}
+
+textarea[data-custom="de"] {
+  resize: none;
+  background-image: url("./../../../../assets/icons/contact/resize1-de.png");
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: 100%;

@@ -1,9 +1,9 @@
-<div class="test">
-   <footer>
+<div class="wrapper" >
+   <footer [attr.data-custom]="currentLang">
    <div class="footer-wrapper">
          <div class="left-side">
       <div class="logo">
-         <a href="index.html"><img src="assets/icons/logo.png" alt=""></a>
+         <a href="index.html"><img [src]="imagePath" alt=""></a>
          
       </div>
     
@@ -24,7 +24,7 @@
    </div>
 
      <div #legalNotice class="legal-notice">
-         <a routerLink="/impressum" class="underline">Legal Notice</a>
+         <a routerLink="/impressum" [attr.data-custom]="currentLang" class="underline" >Legal Notice</a>
       </div>
 </footer>
 

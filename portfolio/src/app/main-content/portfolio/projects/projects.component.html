@@ -21,7 +21,7 @@
          <h5>{{project.bosnianDescription}}</h5>
          }
       </div>
-      <div class="buttons-container" [ngStyle]="{justifyContent: isReversed ? 'flex-start' : 'flex-end', alignItems: 'center', display: 'flex'}">
+      <div class="buttons-container" [attr.data-custom]="currentLanguage" [ngStyle]="{justifyContent: isReversed ? 'flex-start' : 'flex-end', alignItems: 'center', display: 'flex'}">
          <a [href]="project.pageLink" class="test-btn" target="_blank" rel="noopener noreferrer">Live test</a>
          <a class="git-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/D-Aldin">Github</a>
       </div>

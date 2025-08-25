@@ -53,6 +53,10 @@ nav {
   &:hover {
     color: $color-green;
   }
+
+  &:hover[data-custom="de"] {
+    color: $color-orange;
+  }
 }
 
 .lang {
@@ -77,6 +81,18 @@ nav {
     background-color: $color-purple;
     transform: scale(1.2);
     box-shadow: 0 0 8px 3px rgba($color-purple, 0.6);
+  }
+}
+
+.lang button[data-custom="de"] {
+  border: 1px solid $color-orange;
+
+  &:hover {
+    background-color: $color-red !important;
+    border-color: $color-red !important;
+    background-color: $color-red;
+    transform: scale(1.2);
+    box-shadow: 0 0 8px 3px rgba($color-red, 0.6);
   }
 }
 

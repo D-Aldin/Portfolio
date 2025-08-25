@@ -24,4 +24,8 @@ export class ContactComponent {
       'footer'
     );
   }
+
+  get currentLang() {
+    return this.languageService.language;
+  }
 }

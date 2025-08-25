@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { REVIEW_DATA } from './review-data';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from '../../../language';
+import { returnImagePath } from '../../../imagePath';
 
 @Component({
   selector: 'app-review',
@@ -38,5 +39,32 @@ export class ReviewComponent {
 
   get currentLanguage() {
     return this.languageService.language;
+  }
+
+  get imageExclamation(): string {
+    return returnImagePath(
+      this.languageService.language,
+      './../../../../assets/icons/portfolio/review/',
+      'exclamation',
+      1
+    );
+  }
+
+  get imageLeft(): string {
+    return returnImagePath(
+      this.languageService.language,
+      './../../../../assets/icons/portfolio/review/',
+      'left',
+      1
+    );
+  }
+
+  get imageRight(): string {
+    return returnImagePath(
+      this.languageService.language,
+      './../../../../assets/icons/portfolio/review/',
+      'right',
+      1
+    );
   }
 }

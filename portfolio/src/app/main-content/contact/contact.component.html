@@ -1,5 +1,5 @@
 <section id="contact">
-   <div class="title">
+   <div class="title" [attr.data-custom]="currentLang">
       <div class="line"></div>
       <h1>Contact</h1>
    </div>
@@ -17,7 +17,7 @@
    <div class="shadow">
       <img [src]="imagePath" alt="">
    </div>
-   <div class="go-back-wrapper">
-      <a  class="go-back" href="#landingPage"></a>
+   <div class="go-back-wrapper" >
+      <a [attr.data-custom]="currentLang" class="go-back" href="#landingPage"></a>
    </div>
 </section>

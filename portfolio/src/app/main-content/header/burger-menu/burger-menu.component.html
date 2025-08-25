@@ -2,7 +2,7 @@
 
 <div class="topnav">
   <a href="index.html" class="active">
-    <img src="../../../../assets/icons/logo.png">
+    <img [src]="imagePath">
   </a>
 
   <a class="icon" (click)="toogleMenuBurger()" [ngStyle]="{
@@ -21,7 +21,8 @@
      
     <div class="lang">
       <a (click)="switchLang('en')">EN / </a>
-      <a (click)="switchLang('de')">DE</a>
+      <a (click)="switchLang('de')">DE / </a>
+      <a (click)="switchLang('bs')">BS</a>
     </div>
   </div>
   

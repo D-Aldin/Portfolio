@@ -1,8 +1,8 @@
 <div class="review-wrapper">
    <div class="review-block">
-      <div class="review-container">
+      <div class="review-container" [attr.data-custom]="currentLanguage">
          <div class="exclamation">
-            <img src="./../../../../assets/icons/portfolio/review/exclamation.png" alt="">
+            <img [src]="imageExclamation" alt="">
          </div>
          <div class="review-text">
             @if(this.currentLanguage === "en") {
@@ -13,23 +13,23 @@
             <span>{{this.reviews[this.counter].bosnianReview}}</span><br><br>
             }
             <div class="name">
-               <div class="line-in-review"></div>
+               <div class="line-in-review" [attr.data-custom]="currentLanguage"></div>
                <h3>{{this.reviews[this.counter].name}}</h3>
             </div>
          </div>
       </div>
-      <div class="image-container">
+      <div class="image-container" [attr.data-custom]="currentLanguage">
          <img [src]="reviews[this.counter].image" alt="">
-         <div class="line"></div>
+         <div class="line" [attr.data-custom]="currentLanguage"></div>
       </div>
    </div>
-   <div class="review-buttons">
-      <img (click)="backReview()" src="./../../../../assets/icons/portfolio/review/left.png" alt="">
+   <div class="review-buttons" >
+      <img (click)="backReview()" [src]="imageLeft" alt="">
       <div class="dots-container">
          @for(review of reviews; let i = $index; track i ) {
-         <div class="dot" [ngClass]="{ 'active-dot': i === this.selectedReview }" id="dot-{{i}}"></div>
+         <div class="dot" [attr.data-custom]="currentLanguage" [ngClass]="{ 'active-dot': i === this.selectedReview }" id="dot-{{i}}"></div>
          }
       </div>
-      <img (click)="nextReview()" src="./../../../../assets/icons/portfolio/review/right.png" alt="">
+      <img (click)="nextReview()" [src]="imageRight" alt="">
    </div>
 </div>

@@ -4,6 +4,7 @@ import { Renderer2, OnDestroy } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
 import { LanguageService } from '../../../language';
+import { returnImagePath } from '../../../imagePath';
 
 import { Input } from '@angular/core';
 
@@ -57,5 +58,14 @@ export class BurgerMenuComponent {
 
   get langPath() {
     return this.languageService.getCurrentTranslations();
+  }
+
+  get imagePath(): string {
+    return returnImagePath(
+      this.languageService.language,
+      'assets/icons/',
+      'logo',
+      1
+    );
   }
 }

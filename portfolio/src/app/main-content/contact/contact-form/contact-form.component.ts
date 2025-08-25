@@ -6,6 +6,7 @@ import { NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ViewChild, ElementRef } from '@angular/core';
+import { LanguageService } from '../../../language';
 
 @Component({
   selector: 'app-contact-form',
@@ -20,6 +21,8 @@ export class ContactFormComponent {
   mailTest: boolean = false;
   feedbackMessage: string = '';
   feedbackType: 'success' | 'error' | '' = '';
+
+  constructor(private languageService: LanguageService) {}
 
   contactData = {
     name: '',
@@ -69,5 +72,9 @@ export class ContactFormComponent {
       this.feedbackMessage = '';
       this.feedbackType = '';
     }, 4500);
+  }
+
+  get currentLang() {
+    return this.languageService.language;
   }
 }

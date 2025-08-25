@@ -91,6 +91,11 @@
   }
 }
 
+.review-container[data-custom="de"] {
+  border: 3px solid $color-orange;
+  @include glow-effect($color-orange, 10px, 20px, 9px);
+}
+
 .review-text {
   padding: 0 50px 0 50px;
   width: 100%;
@@ -136,6 +141,11 @@
 .line-in-review {
   @include horizontalLine($width: 95%, $color: $color-purple);
   @include glow-effect($color-purple, 10px, 20px, 30px);
+}
+
+.line-in-review[data-custom="de"] {
+  @include horizontalLine($width: 95%, $color: $color-red);
+  @include glow-effect($color-red, 10px, 20px, 30px);
 }
 
 .image-container {
@@ -192,6 +202,13 @@
   }
 }
 
+.image-container[data-custom="de"] {
+  img {
+    border: 3px solid $color-red;
+    @include glow-effect($color-red, 10px, 20px, 9px);
+  }
+}
+
 .line {
   @include horizontalLine($width: 104px, $color: $color-purple);
   @include glow-effect($color-purple, 10px, 20px, 30px);
@@ -213,6 +230,11 @@
     min-width: calc(100% - 144px - 50%);
     width: calc(100% - 72px - 50%);
   }
+}
+
+.line[data-custom="de"] {
+  @include horizontalLine($width: 104px, $color: $color-red);
+  @include glow-effect($color-red, 10px, 20px, 30px);
 }
 
 .review-buttons {
@@ -243,8 +265,16 @@
   display: inline-block;
 }
 
+.dot[data-custom="de"] {
+  background-color: $color-red;
+}
+
 .active-dot {
   background-color: $color-green;
+}
+
+.active-dot[data-custom="de"] {
+  background-color: $color-orange;
 }
 
 span {

@@ -1,5 +1,5 @@
 <div class="container">
-  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contact-form">
+  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contact-form" [attr.data-custom]="currentLang">
 
     <label for="name"></label>
     <input
@@ -10,6 +10,7 @@
       id="name"
       name="name"
       placeholder="Your name"
+      [attr.data-custom]="currentLang"
       required
       [ngClass]="{
         'wrong-input': name.invalid && name.touched && !name.disabled,
@@ -31,6 +32,7 @@
       placeholder="Your email"
       required
       pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+      [attr.data-custom]="currentLang"
       [ngClass]="{
         'wrong-input': email.invalid && email.touched && !email.disabled,
         'error-icon': email.invalid && email.touched && !email.disabled,
@@ -51,6 +53,7 @@
       placeholder="Your message"
       style="height: 200px"
       required
+      [attr.data-custom]="currentLang"
       [ngClass]="{
         'wrong-input': message.invalid && message.touched && !message.disabled,
         'error-icon': message.invalid && message.touched && !message.disabled,
@@ -64,6 +67,7 @@
     <div class="checkbox">
       <input
         type="checkbox"
+        [attr.data-custom]="currentLang"
         id="policy"
         name="policy"
         [(ngModel)]="isChecked"
@@ -71,7 +75,7 @@
       />
       <label for="policy">
         I've read the
-        <a class="policy-link" routerLink="/privacyPolicy">privacy policy</a>
+        <a [attr.data-custom]="currentLang" class="policy-link" routerLink="/privacyPolicy">privacy policy</a>
         and agree to the processing of my data as outlined
       </label>
     </div>

@@ -228,6 +228,23 @@
   }
 }
 
+.buttons-container[data-custom="de"] {
+  .test-btn,
+  .git-btn {
+    @include button-style($color-red);
+
+    &:hover {
+      background-color: $color-red;
+      box-shadow: 0 0 8px 3px rgba($color-red, 0.9);
+    }
+  }
+
+  .git-btn {
+    border: 1px solid $color-orange !important;
+    @include button-style(transparent);
+  }
+}
+
 h3 {
   @include respond-between(1024px, 1300px) {
     font-size: 2rem !important;

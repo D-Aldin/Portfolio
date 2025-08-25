@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { ViewEncapsulation } from '@angular/core';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
+import { returnImagePath } from '../../imagePath';
 
 @Component({
   selector: 'app-header',
@@ -86,5 +87,14 @@ export class HeaderComponent {
     } else {
       scrollToSection();
     }
+  }
+
+  get imagePath(): string {
+    return returnImagePath(
+      this.languageService.language,
+      'assets/icons/',
+      'logo',
+      1
+    );
   }
 }
