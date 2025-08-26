@@ -88,10 +88,14 @@
   font-size: 32px;
   font-family: fontPoppinsBold;
   color: $color-purple;
-}
 
-.title[data-custom="de"] {
-  color: $color-red;
+  &[data-custom="de"] {
+    color: $color-red;
+  }
+
+  &[data-custom="bs"] {
+    color: $color-blue;
+  }
 }
 
 .tech {
@@ -141,6 +145,13 @@
   h4,
   span {
     color: $color-orange;
+  }
+}
+
+.tech[data-custom="bs"] {
+  h4,
+  span {
+    color: $color-light-blue;
   }
 }
 
@@ -201,7 +212,6 @@
     margin: 30px 30px 30px 0;
     width: 152px;
 
-    // Optionally override styles in small viewports
     @include respond-between(970px, 1300px) {
       width: 115.5px;
       margin: 25px 25px 25px 0;
@@ -234,13 +244,30 @@
     @include button-style($color-red);
 
     &:hover {
-      background-color: $color-red;
-      box-shadow: 0 0 8px 3px rgba($color-red, 0.9);
+      background-color: $color-orange;
+      box-shadow: 0 0 8px 3px rgba($color-orange, 0.9);
     }
   }
 
   .git-btn {
     border: 1px solid $color-orange !important;
+    @include button-style(transparent);
+  }
+}
+
+.buttons-container[data-custom="bs"] {
+  .test-btn,
+  .git-btn {
+    @include button-style($color-blue);
+
+    &:hover {
+      background-color: $color-light-blue;
+      box-shadow: 0 0 8px 3px rgba($color-light-blue, 0.9);
+    }
+  }
+
+  .git-btn {
+    border: 1px solid $color-light-blue !important;
     @include button-style(transparent);
   }
 }

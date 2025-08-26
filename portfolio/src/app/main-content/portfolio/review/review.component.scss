@@ -64,6 +64,16 @@
   align-items: center;
   @include glow-effect($color-green, 10px, 20px, 9px);
 
+  &[data-custom="de"] {
+    border: 3px solid $color-orange;
+    @include glow-effect($color-orange, 10px, 20px, 9px);
+  }
+
+  &[data-custom="bs"] {
+    border: 3px solid $color-light-blue;
+    @include glow-effect($color-light-blue, 10px, 20px, 9px);
+  }
+
   @include respond-between(1601px, 1920px) {
     width: 1091px;
   }
@@ -89,11 +99,6 @@
     width: 290px;
     height: 400px;
   }
-}
-
-.review-container[data-custom="de"] {
-  border: 3px solid $color-orange;
-  @include glow-effect($color-orange, 10px, 20px, 9px);
 }
 
 .review-text {
@@ -141,11 +146,16 @@
 .line-in-review {
   @include horizontalLine($width: 95%, $color: $color-purple);
   @include glow-effect($color-purple, 10px, 20px, 30px);
-}
 
-.line-in-review[data-custom="de"] {
-  @include horizontalLine($width: 95%, $color: $color-red);
-  @include glow-effect($color-red, 10px, 20px, 30px);
+  &[data-custom="de"] {
+    @include horizontalLine($width: 95%, $color: $color-red);
+    @include glow-effect($color-red, 10px, 20px, 30px);
+  }
+
+  &[data-custom="bs"] {
+    @include horizontalLine($width: 95%, $color: $color-blue);
+    @include glow-effect($color-blue, 10px, 20px, 30px);
+  }
 }
 
 .image-container {
@@ -209,9 +219,26 @@
   }
 }
 
+.image-container[data-custom="bs"] {
+  img {
+    border: 3px solid $color-blue;
+    @include glow-effect($color-blue, 10px, 20px, 9px);
+  }
+}
+
 .line {
   @include horizontalLine($width: 104px, $color: $color-purple);
   @include glow-effect($color-purple, 10px, 20px, 30px);
+
+  &[data-custom="de"] {
+    @include horizontalLine($width: 104px, $color: $color-red);
+    @include glow-effect($color-red, 10px, 20px, 30px);
+  }
+
+  &[data-custom="bs"] {
+    @include horizontalLine($width: 104px, $color: $color-blue);
+    @include glow-effect($color-blue, 10px, 20px, 30px);
+  }
 
   @include respond-between(1024px, 1300px) {
     width: 80px;
@@ -230,11 +257,6 @@
     min-width: calc(100% - 144px - 50%);
     width: calc(100% - 72px - 50%);
   }
-}
-
-.line[data-custom="de"] {
-  @include horizontalLine($width: 104px, $color: $color-red);
-  @include glow-effect($color-red, 10px, 20px, 30px);
 }
 
 .review-buttons {
@@ -263,18 +285,26 @@
   background-color: $color-purple;
   border-radius: 50%;
   display: inline-block;
-}
 
-.dot[data-custom="de"] {
-  background-color: $color-red;
+  &[data-custom="de"] {
+    background-color: $color-red;
+  }
+
+  &[data-custom="bs"] {
+    background-color: $color-blue;
+  }
 }
 
 .active-dot {
   background-color: $color-green;
-}
 
-.active-dot[data-custom="de"] {
-  background-color: $color-orange;
+  &[data-custom="de"] {
+    background-color: $color-orange;
+  }
+
+  &[data-custom="bs"] {
+    background-color: $color-light-blue;
+  }
 }
 
 span {

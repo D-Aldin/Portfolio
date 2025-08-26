@@ -181,6 +181,11 @@ section {
   @include glow-effect($color-red, 10px, 20px, 30px);
 }
 
+.line[data-custom="bs"] {
+  @include horizontalLine($width: 70px, $color: $color-blue, $margin: 0);
+  @include glow-effect($color-blue, 10px, 20px, 30px);
+}
+
 .text-container {
   padding-right: 100px;
 
@@ -242,6 +247,12 @@ section {
 .another-skill {
   span[data-custom="de"] {
     color: $color-red;
+  }
+}
+
+.another-skill {
+  span[data-custom="bs"] {
+    color: $color-blue;
   }
 }
 
@@ -360,6 +371,16 @@ section {
   }
 }
 
+.bubble-container {
+  .interest[data-custom="bs"] {
+    background-image: url("./../../../assets/icons/my-skills/interest-bs.png");
+
+    &:hover {
+      background-image: url("./../../../assets/icons/my-skills/interest-white.png");
+    }
+  }
+}
+
 button {
   width: 200px;
   height: 58px;
@@ -375,6 +396,20 @@ button {
 
 button[data-custom="de"] {
   @include button-style($color-orange);
+
+  &:hover {
+    background-color: $color-red;
+    box-shadow: 0 0 8px 3px rgba($color-red, 0.6);
+  }
+}
+
+button[data-custom="bs"] {
+  @include button-style($color-light-blue);
+
+  &:hover {
+    background-color: $color-blue;
+    box-shadow: 0 0 8px 3px rgba($color-blue, 0.6);
+  }
 }
 
 .shadow-image {

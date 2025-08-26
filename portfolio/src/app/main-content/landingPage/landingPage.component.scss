@@ -17,6 +17,15 @@ h3 {
     .title-container[data-custom="de"] & {
       font-size: 1.74rem !important;
     }
+
+    // .title-container[data-custom="bs"] & {
+    //   font-size: 1.54rem !important;
+    // }
+
+    &[data-custom="bs"] {
+      font-size: 1.6rem !important;
+      margin-right: -9px;
+    }
   }
 
   @include respond-between(970px, 1139px) {
@@ -25,14 +34,19 @@ h3 {
     .title-container[data-custom="de"] & {
       font-size: 1.74rem !important;
     }
+
+    &[data-custom="bs"] {
+      font-size: 1.46rem !important;
+      margin-right: -27.3px;
+    }
   }
 
   @include respond-between(970px, 1139px) {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
 
   @include respond-between(970px, 1071px) {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 
   @include respond-between(670px, 970px) {
@@ -41,6 +55,12 @@ h3 {
     .title-container[data-custom="de"] & {
       font-size: 1.94rem !important;
     }
+
+    &[data-custom="bs"] {
+      font-size: 1.72rem !important;
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
   }
 
   @include respond-between(310px, 670px) {
@@ -48,6 +68,13 @@ h3 {
 
     .title-container[data-custom="de"] & {
       font-size: 1.34rem !important;
+      padding-bottom: 12px;
+    }
+
+    &[data-custom="bs"] {
+      font-size: 1.22rem !important;
+      padding-left: 10px;
+      padding-bottom: 10px;
     }
   }
 
@@ -435,29 +462,42 @@ span {
   display: flex;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  font-size: 4rem;
+  font-size: 3.6rem;
+  margin-bottom: 10px;
 
-  @include respond-between(1601px, 1920px) {
-    font-size: 3.6rem !important;
-    .title-container[data-custom="de"] & {
-      font-size: 2.54rem !important;
-    }
+  &[data-custom="bs"] {
+    font-size: 2.2rem;
+    margin-left: 39px;
   }
 
   @include respond-between(1400px, 1600px) {
-    font-size: 3.1rem !important;
-    margin-bottom: 30px;
-    .title-container[data-custom="de"] & {
-      font-size: 2.14rem !important;
+    font-size: 3em !important;
+    margin-bottom: 8.9px;
+    margin-left: 16px;
+
+    &[data-custom="de"] {
+      font-size: 2.12em !important;
+    }
+
+    &[data-custom="bs"] {
+      font-size: 1.9rem !important;
+      margin-left: 39px !important;
     }
   }
 
   @include respond-between(1200px, 1399px) {
-    font-size: 2.3rem !important;
+    font-size: 2.3em !important;
     margin-bottom: 6px !important;
+    margin-left: 12px;
 
-    .title-container[data-custom="de"] & {
-      font-size: 1.54rem !important;
+    &[data-custom="de"] {
+      font-size: 1.52em !important;
+      margin-left: -1px;
+    }
+
+    &[data-custom="bs"] {
+      font-size: 1.3em !important;
+      margin-bottom: 6px !important;
     }
   }
 
@@ -468,6 +508,16 @@ span {
 
   @include respond-between(970px, 1139px) {
     margin: 0;
+
+    &[data-custom="de"] {
+      font-size: 1.54em !important;
+    }
+  }
+
+  @include respond-between(320px, 670px) {
+    &[data-custom="bs"] {
+      margin-left: 10px;
+    }
   }
 }
 
@@ -505,6 +555,10 @@ span {
 
   @include respond-between(310px, 670px) {
     font-size: 1.55rem !important;
+
+    &[data-custom="bs"] {
+      font-size: 1.35rem !important;
+    }
   }
 
   @include iphone4-portrait() {
@@ -514,6 +568,10 @@ span {
 
 .frontend-text[data-custom="de"] {
   color: $color-red;
+}
+
+.frontend-text[data-custom="bs"] {
+  color: $color-blue;
 }
 
 .lets-talk {
@@ -531,6 +589,16 @@ span {
       background-color: $color-purple;
       transform: scale(1.2);
       box-shadow: 0 0 8px 3px rgba($color-purple, 0.6);
+
+      &[data-custom="de"] {
+        background-color: $color-red;
+        box-shadow: 0 0 8px 3px rgba($color-red, 0.6);
+      }
+
+      &[data-custom="bs"] {
+        background-color: $color-blue;
+        box-shadow: 0 0 8px 3px rgba($color-blue, 0.6);
+      }
     }
   }
 
@@ -558,16 +626,16 @@ span {
     margin-right: 10px;
     button {
       margin-top: 10px;
-      width: 90px;
+      width: 125px;
       height: 43px;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
 
   @include respond-between(1140px, 1200px) {
     button {
       margin-top: 10px;
-      width: 90px;
+      width: 125px;
       height: 43px;
       font-size: 1.1rem;
     }
@@ -576,9 +644,9 @@ span {
   @include respond-between(970px, 1139px) {
     button {
       margin-top: 10px;
-      width: 90px;
+      width: 120px;
       height: 43px;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
 
@@ -611,6 +679,12 @@ span {
 .lets-talk[data-custom="de"] {
   button {
     @include button-style($color-orange);
+  }
+}
+
+.lets-talk[data-custom="bs"] {
+  button {
+    @include button-style($color-light-blue);
   }
 }
 
@@ -786,6 +860,11 @@ span {
 .line[data-custom="de"] {
   @include horizontalLine($width: 110px, $color: $color-red);
   @include glow-effect($color-red, 10px, 20px, 30px);
+}
+
+.line[data-custom="bs"] {
+  @include horizontalLine($width: 110px, $color: $color-blue);
+  @include glow-effect($color-blue, 10px, 20px, 30px);
 }
 
 .email {

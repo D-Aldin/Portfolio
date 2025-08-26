@@ -96,6 +96,13 @@ section {
   }
 }
 
+.title[data-custom="bs"] {
+  .line {
+    @include horizontalLine($width: 39%, $color: $color-blue);
+    @include glow-effect($color-blue, 10px, 20px, 30px);
+  }
+}
+
 .content-wrapper {
   padding: 100px 200px 100px 200px;
   gap: 170px;
@@ -219,5 +226,11 @@ section {
 .go-back[data-custom="de"] {
   &:hover {
     background-image: url("./../../../assets/icons/contact/up-hover1-de.png");
+  }
+}
+
+.go-back[data-custom="bs"] {
+  &:hover {
+    background-image: url("./../../../assets/icons/contact/up-hover1-bs.png");
   }
 }

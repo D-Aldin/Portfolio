@@ -67,6 +67,31 @@ textarea[data-custom="de"] {
   }
 }
 
+input[type="text"][data-custom="bs"],
+select[data-custom="bs"],
+textarea[data-custom="bs"] {
+  border: 1px solid $color-light-blue;
+
+  &:hover {
+    border-color: $color-light-blue;
+    @include glow-effect($color-blue, 10px, 20px, 9px);
+  }
+
+  &:focus {
+    border-color: $color-light-blue;
+  }
+
+  &.wrong-input:hover {
+    border-color: rgb(230, 28, 64);
+    @include glow-effect(rgb(230, 28, 64), 10px, 20px, 9px);
+  }
+
+  &.success-icon:hover {
+    border-color: rgb(0, 255, 55);
+    @include glow-effect(rgb(0, 255, 42), 10px, 20px, 9px);
+  }
+}
+
 input[type="checkbox"] {
   background-image: url("./../../../../assets/icons/contact/default.png");
   width: 34px;
@@ -104,13 +129,33 @@ input[type="checkbox"][data-custom="de"] {
   }
 }
 
+input[type="checkbox"][data-custom="bs"] {
+  background-image: url("./../../../../assets/icons/contact/default1-bs.png");
+
+  &:hover {
+    background-image: url("./../../../../assets/icons/contact/default\ -hover1-bs.png");
+  }
+
+  &:checked {
+    background-image: url("./../../../../assets/icons/contact/checked1-bs.png");
+
+    &:hover {
+      background-image: url("./../../../../assets/icons/contact/checked-hover1-bs.png");
+    }
+  }
+}
+
 .policy-link {
   text-decoration: none;
   color: $color-purple;
-}
 
-.policy-link[data-custom="de"] {
-  color: $color-red;
+  &[data-custom="de"] {
+    color: $color-red;
+  }
+
+  &[data-custom="bs"] {
+    color: $color-blue;
+  }
 }
 
 input[type="submit"] {
@@ -239,6 +284,20 @@ input:autofill:active {
   }
 }
 
+.success-icon[data-custom="bs"] {
+  background-image: url("./../../../../assets/icons/contact/done.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 10px;
+  border-color: $color-green !important;
+
+  &:hover {
+    border-color: rgb(0, 255, 55) !important;
+    @include glow-effect(rgb(0, 255, 42), 10px, 20px, 9px);
+  }
+}
+
 textarea {
   resize: none;
   background-image: url("./../../../../assets/icons/contact/resize.png");
@@ -261,29 +320,13 @@ textarea {
     outline: 0.11rem solid $color-green;
     border-radius: 13px;
   }
-}
 
-textarea[data-custom="de"] {
-  resize: none;
-  background-image: url("./../../../../assets/icons/contact/resize1-de.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-position-y: 100%;
-  background-origin: content-box;
-
-  &::-webkit-scrollbar {
-    width: 0.15em;
-    height: 1em;
-  }
-  &::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 2px rgb(97, 97, 97);
-    border-radius: 13px;
+  &[data-custom="de"] {
+    background-image: url("./../../../../assets/icons/contact/resize1-de.png");
   }
 
-  &::-webkit-scrollbar-thumb {
-    background-color: $color-green;
-    outline: 0.11rem solid $color-green;
-    border-radius: 13px;
+  &[data-custom="bs"] {
+    background-image: url("./../../../../assets/icons/contact/resize1-bs.png");
   }
 }
 
@@ -381,7 +424,6 @@ textarea[data-custom="de"] {
 .contact-form {
   display: flex;
   flex-direction: column;
-  // align-items: center;
 }
 
 @media only screen and (max-width: 970px) and (min-width: 310px) {

@@ -67,15 +67,20 @@ section {
   justify-self: end;
   margin-right: 20px;
 
+  &[data-custom="de"] {
+    @include horizontalLine($color: $color-red);
+    @include glow-effect($color-red, 10px, 20px, 30px);
+  }
+
+  &[data-custom="bs"] {
+    @include horizontalLine($color: $color-blue);
+    @include glow-effect($color-blue, 10px, 20px, 30px);
+  }
+
   @include respond-between(310px, 670px) {
     width: 40%;
     margin-right: 0;
   }
-}
-
-.first-line[data-custom="de"] {
-  @include horizontalLine($color: $color-red);
-  @include glow-effect($color-red, 10px, 20px, 30px);
 }
 
 .second-line {
@@ -86,15 +91,20 @@ section {
   width: 100%;
   max-width: calc(100vw - 50%) !important;
 
+  &[data-custom="de"] {
+    @include horizontalLine($width: 100%, $color: $color-red);
+    @include glow-effect($color-red, 10px, 20px, 30px);
+  }
+
+  &[data-custom="bs"] {
+    @include horizontalLine($width: 100%, $color: $color-blue);
+    @include glow-effect($color-blue, 10px, 20px, 30px);
+  }
+
   @include respond-between(1921px, 4500px) {
     width: 100vw !important;
     margin-right: calc(-100vw + 50%) !important;
   }
-}
-
-.second-line[data-custom="de"] {
-  @include horizontalLine($width: 100%, $color: $color-red);
-  @include glow-effect($color-red, 10px, 20px, 30px);
 }
 
 .title-wrapper {

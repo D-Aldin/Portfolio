@@ -7,8 +7,8 @@
             <img  class="me" src="assets/img/me3.png" alt="">
          </div>
          <div class="title-container" [attr.data-custom]="currentLang">
-            <div class="vertical-text" [ngStyle]="{'font-size': currentLang === 'de' ? '2.813rem' : '4rem'}">
-               <h3>{{langPath.landingPage.me}}</h3>
+            <div class="vertical-text" [attr.data-custom]="currentLang" [ngStyle]="{'font-size': getFontSize()}">
+               <h3 [attr.data-custom]="currentLang">{{langPath.landingPage.me}}</h3>
             </div>
             <div class="title-text">
                <div class="name">
@@ -18,7 +18,7 @@
                   <h2 [attr.data-custom]="currentLang" class="frontend-text" [ngStyle]="{'font-size': currentLang === 'de' ? '3.438rem' : '3.625rem'}">{{langPath.landingPage.developer}}</h2>
                </div>
                <div [attr.data-custom]="currentLang" class="lets-talk">
-                  <button (click)="goToContact()">Let's talk!</button>
+                  <button [attr.data-custom]="currentLang" (click)="goToContact()">Let's talk!</button>
                </div>
             </div>
          </div>
@@ -49,3 +49,4 @@
       </div>
    </div>
 </section>
+

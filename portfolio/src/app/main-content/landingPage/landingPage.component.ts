@@ -66,4 +66,10 @@ export class LandingPageComponent implements OnInit {
       1
     );
   }
+
+  getFontSize(): string {
+    if (this.currentLang === 'de') return '2.413rem';
+    if (this.currentLang === 'bs') return '2.13rem';
+    return '3.6rem';
+  }
 }

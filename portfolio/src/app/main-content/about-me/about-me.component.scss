@@ -207,6 +207,18 @@ section {
   }
 }
 
+.portrait-container {
+  .line[data-custom="bs"] {
+    border: 2px solid $color-light-blue;
+    @include glow-effect($color-light-blue, 10px, 20px, 30px);
+  }
+
+  img[data-custom="bs"] {
+    border: 4px solid $color-light-blue;
+    @include glow-effect($color-light-blue, 10px, 20px, 9px);
+  }
+}
+
 .shadow {
   width: 100%;
   height: auto;

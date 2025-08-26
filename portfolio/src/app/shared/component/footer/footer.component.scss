@@ -54,6 +54,22 @@ footer {
     }
   }
 
+  &[data-custom="bs"] {
+    border-top-color: rgb(1, 183, 224);
+
+    &::before {
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(1, 183, 224, 0.9),
+        rgba(255, 255, 255, 1),
+        rgba(1, 183, 224, 0.9),
+        transparent
+      );
+      box-shadow: 0 0 3px rgba(1, 183, 224, 0.7);
+    }
+  }
+
   @keyframes laserSweep {
     100% {
       transform: translateX(100%);

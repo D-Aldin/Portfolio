@@ -57,6 +57,10 @@ nav {
   &:hover[data-custom="de"] {
     color: $color-orange;
   }
+
+  &:hover[data-custom="bs"] {
+    color: $color-light-blue;
+  }
 }
 
 .lang {
@@ -93,6 +97,18 @@ nav {
     background-color: $color-red;
     transform: scale(1.2);
     box-shadow: 0 0 8px 3px rgba($color-red, 0.6);
+  }
+}
+
+.lang button[data-custom="bs"] {
+  border: 1px solid $color-blue;
+
+  &:hover {
+    background-color: $color-light-blue !important;
+    border-color: $color-light-blue !important;
+    background-color: $color-light-blue;
+    transform: scale(1.2);
+    box-shadow: 0 0 8px 3px rgba($color-light-blue, 0.6);
   }
 }
 
