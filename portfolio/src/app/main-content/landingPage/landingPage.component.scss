@@ -410,6 +410,62 @@ span {
   }
 }
 
+.gradient-effect {
+  background-image: linear-gradient(
+    to right,
+    #a561fd,
+    #9c56f7,
+    #934bf2,
+    #8a3fec,
+    #8033e6,
+    #792ce0,
+    #7324da,
+    #6c1bd4,
+    #6618cc,
+    #6114c4,
+    #5b11bd,
+    #560db5
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  &[data-custom="de"] {
+    background-image: linear-gradient(
+      to right,
+      #f46566,
+      #f25c5c,
+      #f05251,
+      #ee4847,
+      #eb3d3c,
+      #e73635,
+      #e3302f,
+      #df2828,
+      #d92525,
+      #d22121,
+      #cc1e1e,
+      #c61a1b
+    );
+  }
+
+  &[data-custom="bs"] {
+    background-image: linear-gradient(
+      to right,
+      #706ef0,
+      #6663ef,
+      #5c58ef,
+      #514ded,
+      #4541ec,
+      #3d39e7,
+      #3530e2,
+      #2c27dd,
+      #2620d4,
+      #1f1acc,
+      #1712c3,
+      #0d09bb
+    );
+  }
+}
+
 .name {
   margin: 0;
   @include flex-setup($align: flex-start, $direction: column);
@@ -860,11 +916,39 @@ span {
 .line[data-custom="de"] {
   @include horizontalLine($width: 110px, $color: $color-red);
   @include glow-effect($color-red, 10px, 20px, 30px);
+
+  @include respond-between(1921px, 4500px) {
+    width: 100vw;
+    margin-left: calc(-100vw + 50%);
+  }
+
+  @include respond-between(670px, 970px) {
+    min-width: calc(100% - 181px);
+  }
+
+  @include respond-between(310px, 670px) {
+    min-width: calc(100% - 166px);
+    width: 50%;
+  }
 }
 
 .line[data-custom="bs"] {
   @include horizontalLine($width: 110px, $color: $color-blue);
   @include glow-effect($color-blue, 10px, 20px, 30px);
+
+  @include respond-between(1921px, 4500px) {
+    width: 100vw;
+    margin-left: calc(-100vw + 50%);
+  }
+
+  @include respond-between(670px, 970px) {
+    min-width: calc(100% - 181px);
+  }
+
+  @include respond-between(310px, 670px) {
+    min-width: calc(100% - 166px);
+    width: 50%;
+  }
 }
 
 .email {

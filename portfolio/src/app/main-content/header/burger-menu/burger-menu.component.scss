@@ -84,6 +84,11 @@
 
   @include iphone4-portrait() {
     padding: 8px 30px;
+    height: 90px;
+  }
+
+  @include iphone13-portrait() {
+    height: 90px;
   }
 }
 

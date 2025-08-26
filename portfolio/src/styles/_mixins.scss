@@ -90,6 +90,12 @@ $breakpoints: (
   }
 }
 
+@mixin iphone13-portrait {
+  @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+    @content;
+  }
+}
+
 @mixin shadow-img-small {
   width: 540px;
   height: 540px;

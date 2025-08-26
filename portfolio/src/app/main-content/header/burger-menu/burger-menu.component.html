@@ -14,10 +14,10 @@
   </a>
 </div>
   <div #myLinks class="open-menu" [ngClass]="{'close-menu': !isOpen, 'opem-menu': isOpen}" >
-    <a (click)="navigateToSection('about-me')" >{{langPath.header.links[0]}}</a>
-    <a (click)="navigateToSection('skills')">{{langPath.header.links[1]}}</a>
+    <a  (click)="navigateToSection('about-me')" >{{langPath.header.links[0]}}</a>
+    <a  (click)="navigateToSection('skills')">{{langPath.header.links[1]}}</a>
     <a (click)="navigateToSection('portfolio')">{{langPath.header.links[2]}}</a>
-    <a (click)="navigateToSection('contact')">Contact</a>
+    <a  (click)="navigateToSection('contact')">Contact</a>
      
     <div class="lang">
       <a (click)="switchLang('en')">EN / </a>

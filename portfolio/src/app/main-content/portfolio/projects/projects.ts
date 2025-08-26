@@ -23,26 +23,28 @@ export const PROJECTS = [
     image: 'valkyrie',
     pageLink: 'https://www.aldin-dobric.de/valkyrie/index.html',
   },
-  {
-    name: 'Pokedex',
-    englishDescription:
-      'Based on the PokeAPI, a simple library that provides and catalogues Pokémon information.',
-    germanDescription:
-      'Basierend auf der PokeAPI – eine einfache Bibliothek zur Bereitstellung und Katalogisierung von Pokémon-Informationen.',
-    bosnianDescription:
-      'Bazirano na PokeAPI - jednostavna biblioteka koja pruža i katalogizira informacije o Pokémonima.',
-    technology: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
-    image: 'pokemon',
-    pageLink: 'https://aldin-dobric.de/pokedex/index.html',
-  },
   // {
-  //   name: 'DA Bubble',
+  //   name: 'Pokedex',
   //   englishDescription:
-  //     'This app is a Slack clone. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
+  //     'Based on the PokeAPI, a simple library that provides and catalogues Pokémon information.',
   //   germanDescription:
-  //     'Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeitnachrichten und einer leistungsstarken Kanalorganisation.',
-  //   technology: ['Angular', 'TypeScript', 'Firebase'],
-  //   image: 'dab',
+  //     'Basierend auf der PokeAPI – eine einfache Bibliothek zur Bereitstellung und Katalogisierung von Pokémon-Informationen.',
+  //   bosnianDescription:
+  //     'Bazirano na PokeAPI - jednostavna biblioteka koja pruža i katalogizira informacije o Pokémonima.',
+  //   technology: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
+  //   image: 'pokemon',
   //   pageLink: 'https://aldin-dobric.de/pokedex/index.html',
   // },
+  {
+    name: 'DA Bubble',
+    englishDescription:
+      'This app is a Slack clone. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
+    germanDescription:
+      'Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeitnachrichten und einer leistungsstarken Kanalorganisation.',
+    bosnianDescription:
+      'Ova aplikacija je klon Slacka. Ona revolucionira timsku komunikaciju i saradnju sa intuitivnim korisničkim interfejsom, porukama u stvarnom vremenu i moćnom organizacijom kanala.',
+    technology: ['Angular', 'TypeScript', 'Firebase'],
+    image: 'dab',
+    pageLink: 'https://www.aldin-dobric.de/dabubble/index.html',
+  },
 ];

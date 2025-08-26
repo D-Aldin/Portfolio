@@ -68,4 +68,8 @@ export class BurgerMenuComponent {
       1
     );
   }
+
+  get currentLang() {
+    return this.languageService.language;
+  }
 }

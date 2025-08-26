@@ -20,6 +20,12 @@ section {
   @include respond-between(310px, 970px) {
     top: 69px;
   }
+
+  @include respond-between(310px, 790px) {
+    img {
+      width: 570px;
+    }
+  }
 }
 
 .shadow [data-custom="en"] {

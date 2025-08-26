@@ -4,8 +4,8 @@
       <a href="index.html" class="logo">
       <img [src]="imagePath" alt="Aldin">
       </a>
-      <div class="nav-links-wrapper">
-         <div class="navigation-links" >
+      <div class="nav-links-wrapper" >
+         <div class="navigation-links" [attr.data-custom]="currentLanguageActive">
             @for (link of langPath.header.links; track $index) {
             <a (click)="goTo(generateID(link)); " [class]="generateID(link)" [class.underlineActive]="generateID(link) === sectionIsActive" [attr.data-custom]="currentLanguageActive">{{link}}</a>
             }
